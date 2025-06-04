@@ -9,6 +9,7 @@ import {
 } from '@/lib/dataEngine';
 import { AnalysisResult } from '@/types';
 import LeadCaptureForm, { LeadData } from '@/components/LeadCaptureForm';
+import SoftwareSelector from '@/components/dashboard/SoftwareSelector';
 import { 
   TrendingUp, 
   Download, 
@@ -326,42 +327,15 @@ const handleLeadSubmit = (data: LeadData) => {
                 )}
 
                 {/* Current Software */}
+                {/* Enhanced Software Selector with Integration Toggles */}
                 {selectedIndustry && (
-                  <div className="border-t border-gray-200 pt-6">
-                    <label className="block text-sm font-medium text-gray-700 mb-3 flex items-center space-x-2">
-                      <Users className="w-4 h-4" />
-                      <span>Current Software (check all that apply)</span>
-                    </label>
-                    <div className="space-y-2 max-h-48 overflow-y-auto bg-gray-50 rounded-lg p-3 border border-gray-200">
-                      {getSoftwareByIndustryWithIntegrations(selectedIndustry).slice(0, 15).map((software) => (
-                        <label key={software.name} className="flex items-center space-x-3 text-sm text-gray-700 hover:bg-white p-2 rounded transition-colors cursor-pointer">
-                          <input
-                            type="checkbox"
-                            checked={selectedSoftware.includes(software.name)}
-                            onChange={(e) => {
-                              if (e.target.checked) {
-                                setSelectedSoftware([...selectedSoftware, software.name]);
-                              } else {
-                                setSelectedSoftware(selectedSoftware.filter(s => s !== software.name));
-                              }
-                              calculateROI();
-                            }}
-                            className="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
-                          />
-                          <span className="flex-1 font-medium">{software.name}</span>
-                          <span className="text-xs text-gray-500 bg-gray-200 px-2 py-1 rounded">
-                            {software.integration_count} integrations
-                          </span>
-                        </label>
-                      ))}
-                    </div>
-                    {selectedSoftware.length > 0 && (
-                      <p className="text-blue-600 text-sm mt-2 flex items-center space-x-1">
-                        <CheckCircle className="w-4 h-4" />
-                        <span>{selectedSoftware.length} tools selected</span>
-                      </p>
-                    )}
-                  </div>
+                 <SoftwareSelector
+                   selectedIndustry={selectedIndustry}
+                    availableSoftware={getSoftwareByIndustryWithIntegrations(selectedIndustry)}
+                     selectedSoftware={selectedSoftware}
+                     setSelectedSoftware={setSelectedSoftware}
+                     onCalculateROI={calculateROI}
+                    />
                 )}
 
                 {/* Pain Points */}
