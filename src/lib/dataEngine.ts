@@ -5,9 +5,6 @@ import { IndustryDataMap, Software, AnalysisResult, Recommendation } from '@/typ
 
 // Import your JSON data
 import industryData from '@/data/industry-ui.json';
-import frictionData from '@/data/friction-points.json';
-import integrationData from '@/data/integration-data.json';
-import faultToleranceData from '@/data/fault-tolerance.json';
 
 // Type-safe data casting
 const typedIndustryData = industryData as IndustryDataMap;

@@ -4,7 +4,6 @@ import { useState } from 'react';
 import { 
   getIndustries, 
   analyzeIndustry, 
-  buildAIPrompt,
   getSoftwareByIndustry,
   getFrictionsByIndustry 
 } from '@/lib/dataEngine';
@@ -433,7 +432,7 @@ export default function AdvisorPilotDashboard() {
               
               {analysis ? (
                 <div className="space-y-4">
-                  {analysis.recommendations.map((rec, index) => (
+                  {analysis.recommendations.map((rec) => (
                     <div key={rec.id} className={`bg-white/10 rounded-lg p-4 border-l-4 hover:bg-white/15 transition-all cursor-pointer ${
                       rec.priority === 'High' ? 'border-red-400' : 
                       rec.priority === 'Medium' ? 'border-yellow-400' : 'border-green-400'
