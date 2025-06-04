@@ -158,8 +158,8 @@ const handleLeadSubmit = (data: LeadData) => {
             Welcome, {leadData?.name}! 👋
           </h2>
           <p className="text-gray-600 text-lg">
-            Let's analyze {leadData?.company}'s technology stack and find optimization opportunities.
-          </p>
+  Let&apos;s analyze {leadData?.company}&apos;s technology stack and find optimization opportunities.
+</p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
