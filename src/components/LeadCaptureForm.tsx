@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Compass, Users, Building, Mail, Phone, CheckCircle } from 'lucide-react';
+import { Users, Building, Mail, Phone, CheckCircle } from 'lucide-react';
 
 interface LeadCaptureFormProps {
   onSubmit: (data: LeadData) => void;

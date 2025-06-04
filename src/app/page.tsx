@@ -101,8 +101,8 @@ const handleLeadSubmit = (data: LeadData) => {
   };
 
   const getBenchmarkText = () => {
-    if (techMaturityScore >= 80) return "You're ahead of 85% of companies in your industry! 🚀";
-    if (techMaturityScore >= 60) return "You're on par with 60% of industry leaders 📈";
+    if (techMaturityScore >= 80) return "You&apos;re ahead of 85% of companies in your industry! 🚀";
+    if (techMaturityScore >= 60) return "You&apos;re on par with 60% of industry leaders 📈";
     return "Significant opportunity to improve vs industry standards 💡";
   };
 
