@@ -1,0 +1,739 @@
+{
+  "Insurance": {
+    "frictions": [
+      "Fragmented AMS systems causing duplicate data entry",
+      "Slow carrier downloads impacting quote delivery",
+      "Poor integration between CRM and policy management",
+      "Manual claims tracking causing service bottlenecks",
+      "Data privacy and cybersecurity compliance gaps",
+      "Difficulty cross-selling policies across product lines",
+      "Customer churn due to slow service response times",
+      "Manual renewal processes creating E&O exposure",
+      "Difficulty integrating with comparative raters",
+      "Compliance reporting inconsistencies",
+      "Lack of actionable customer analytics",
+      "Siloed communication between underwriters and producers",
+      "Outdated client self-service portals",
+      "Challenges scaling personalized client outreach",
+      "Manual quote generation limiting operational speed"
+    ]
+  },
+  "Healthcare Insurance": {
+    "frictions": [
+      "Prior authorization processing delays",
+      "Claims denials due to incomplete documentation",
+      "Difficulty integrating EHR and claims systems",
+      "Member portal usability issues",
+      "Outdated customer support ticketing systems",
+      "Inefficient plan onboarding processes",
+      "High customer churn rates post open-enrollment",
+      "Challenges in implementing AI-based claims adjudication",
+      "Regulatory compliance tracking gaps (HIPAA, CMS)",
+      "Lack of predictive analytics for risk adjustment scoring",
+      "Limited automation in appeals and grievances handling",
+      "Data security vulnerabilities in third-party integrations",
+      "Manual data reconciliation between eligibility and enrollment files",
+      "Difficulty coordinating care between payers and providers"
+    ]
+  },
+  "Manufacturing": {
+    "frictions": [
+      "Supply chain disruptions impacting production schedules",
+      "Legacy ERP system integration challenges",
+      "Machine downtime not tracked in real time",
+      "Manual quality control inspections leading to rework",
+      "Difficulty forecasting raw material needs accurately",
+      "Production bottlenecks caused by manual scheduling",
+      "Inconsistent reporting between plants and corporate HQ",
+      "Limited predictive maintenance capabilities",
+      "High labor turnover causing skills gaps",
+      "Difficulty integrating IoT sensors into operations",
+      "Inflexible batch production processes",
+      "High inventory carrying costs",
+      "Manual BOM (Bill of Materials) tracking errors",
+      "Difficulty adapting manufacturing lines to custom orders"
+    ]
+  },
+  "Construction": {
+    "frictions": [
+      "Project timeline overruns due to change order mismanagement",
+      "Poor field-to-office communication delaying critical updates",
+      "Inconsistent materials procurement tracking",
+      "Manual inspection documentation increasing regulatory risk",
+      "Fragmented subcontractor coordination platforms",
+      "Difficulty forecasting project cash flow needs",
+      "Outdated equipment tracking and maintenance systems",
+      "Limited visibility into jobsite labor productivity",
+      "Complex permit and compliance processes across municipalities",
+      "Lack of integrated project scheduling tools",
+      "Siloed accounting and project management systems",
+      "High rework costs due to design document misalignment",
+      "Challenges managing multi-site projects simultaneously",
+      "Poor integration between estimating, bidding, and project management software"
+    ]
+  },
+  "Healthcare": {
+    "frictions": [
+      "Patient scheduling inefficiencies leading to appointment backlogs",
+      "Manual insurance verification delaying intake processes",
+      "Data silos between EHR, billing, and scheduling systems",
+      "High clinician burnout due to documentation burden",
+      "Outdated patient portal technologies",
+      "Claims submission errors impacting revenue cycle",
+      "Regulatory compliance tracking gaps (HIPAA violations)",
+      "Poor interoperability between care partners",
+      "Delayed diagnosis support due to lack of clinical decision tools",
+      "Manual follow-up processes for missed appointments",
+      "Patient record duplication across systems",
+      "Fragmented telehealth and in-person care workflows",
+      "Challenges with secure mobile device management in clinical settings",
+      "Inconsistent clinical trial data capture processes"
+    ]
+  },
+  "Financial Services": {
+    "frictions": [
+      "Fragmented client data across multiple systems",
+      "Manual risk profiling causing delays in onboarding",
+      "Difficulty ensuring KYC and AML compliance at scale",
+      "Limited predictive analytics for portfolio management",
+      "High cost of client acquisition",
+      "Poor integration between CRM and financial planning software",
+      "Challenges tracking investment performance across platforms",
+      "Manual document processing increasing operational overhead",
+      "Lack of secure client communication portals",
+      "Difficulty scaling advisor-client personalization",
+      "Outdated compliance reporting processes",
+      "Fragmented fee billing systems",
+      "Difficulty integrating ESG (Environmental, Social, Governance) reporting"
+    ]
+  },
+  "Accounting": {
+    "frictions": [
+      "Manual client onboarding processes delaying engagement",
+      "Fragmented document management across services",
+      "Difficulty standardizing audit workflows",
+      "Outdated time tracking and billing systems",
+      "Poor client self-service portal experiences",
+      "High administrative burden during tax season",
+      "Challenges integrating financial planning and audit platforms",
+      "Inconsistent data collection for advisory services",
+      "Difficulty scaling cloud accounting adoption",
+      "Limited real-time financial dashboarding capabilities",
+      "Manual reconciliation causing delayed reporting",
+      "Difficulty cross-selling advisory services to tax clients",
+      "Poor integration with client bookkeeping platforms"
+    ]
+  },
+  "Real Estate": {
+    "frictions": [
+      "Manual property listing updates across platforms",
+      "Poor CRM integration with MLS and lead sources",
+      "Fragmented client communication channels",
+      "Difficulty tracking transaction compliance steps",
+      "Slow document turnaround impacting deal closure",
+      "Challenges scaling marketing automation across agents",
+      "Limited predictive analytics for property recommendations",
+      "Disorganized pipeline tracking for buyers and sellers",
+      "Outdated client portal and mobile experiences",
+      "Difficulty coordinating between agents, lenders, and escrow",
+      "Manual reporting for brokerage KPIs",
+      "Compliance challenges with Fair Housing Act disclosures"
+    ]
+  },
+  "Property Management": {
+    "frictions": [
+      "Manual rent collection processes",
+      "Poor tenant communication and support tracking",
+      "Fragmented maintenance request handling",
+      "Difficulty integrating leasing CRM with accounting",
+      "Lack of real-time property inspection documentation",
+      "Delayed vendor coordination for repairs",
+      "Limited self-service options for tenants",
+      "Inconsistent vacancy and turnover tracking",
+      "Challenges forecasting maintenance reserve budgets",
+      "Difficulty managing multiple portfolios across owners",
+      "Compliance tracking issues for Section 8 and local ordinances"
+    ]
+  },
+  "Pharmaceuticals": {
+    "frictions": [
+      "Delayed clinical trial data aggregation",
+      "Fragmented regulatory compliance documentation",
+      "Manual adverse event reporting processes",
+      "Poor integration between R&D and commercialization teams",
+      "Difficulty managing large-scale data privacy requirements",
+      "Inefficient collaboration across CROs and internal teams",
+      "Challenges scaling lab automation systems",
+      "Difficulty forecasting supply chain needs for clinical materials",
+      "Manual documentation during regulatory audits",
+      "Difficulty integrating electronic lab notebooks (ELN) with ERP"
+    ]
+  },
+  "Biotechnology": {
+    "frictions": [
+      "Difficulty scaling data integration across research platforms",
+      "Limited real-time tracking for lab workflows",
+      "Manual regulatory compliance documentation for FDA",
+      "Challenges coordinating clinical and preclinical teams",
+      "Fragmented IP (Intellectual Property) management systems",
+      "Difficulty managing large-scale biological data sets",
+      "Slow onboarding of CRO (Contract Research Organization) partners",
+      "Lack of unified project management across research programs",
+      "Outdated tools for genomics or proteomics data analysis",
+      "Difficulty forecasting lab supply chain needs"
+    ]
+  },
+  "Food Services": {
+    "frictions": [
+      "Manual order tracking causing fulfillment errors",
+      "Difficulty integrating POS with inventory systems",
+      "Inconsistent customer loyalty tracking",
+      "High employee turnover disrupting service quality",
+      "Challenges maintaining real-time health code compliance",
+      "Manual reservation and waitlist management",
+      "Fragmented food delivery platform integrations",
+      "Difficulty forecasting food cost volatility",
+      "Limited self-service options for catering and reservations",
+      "Disjointed kitchen and front-of-house communications"
+    ]
+  },
+  "Education": {
+    "frictions": [
+      "Fragmented learning management systems (LMS) integrations",
+      "Difficulty personalizing student engagement strategies",
+      "Manual attendance and performance tracking",
+      "Limited adoption of digital testing and grading tools",
+      "Challenges scaling online learning platforms",
+      "Student data privacy compliance gaps (FERPA, GDPR)",
+      "Poor communication between teachers, students, and parents",
+      "Difficulty identifying at-risk students proactively",
+      "Inconsistent device management across classrooms",
+      "Challenges integrating remote and in-person learning experiences"
+    ]
+  },
+  "E-commerce / Retail": {
+    "frictions": [
+      "Cart abandonment due to friction-filled checkout flows",
+      "Inconsistent inventory synchronization across channels",
+      "Difficulty personalizing marketing campaigns at scale",
+      "Manual return and refund processing",
+      "Limited predictive analytics for purchasing trends",
+      "Difficulty managing omnichannel customer experiences",
+      "Challenges integrating marketplaces like Amazon and eBay",
+      "Delayed customer service responses hurting loyalty",
+      "Poor fraud detection capabilities on online orders",
+      "Difficulty scaling fulfillment and last-mile logistics"
+    ]
+  },
+  "Marketing & Advertising Agencies": {
+    "frictions": [
+      "Difficulty tracking ROI across multi-channel campaigns",
+      "Manual client reporting processes draining resources",
+      "Fragmented creative asset management",
+      "Inconsistent onboarding of new client accounts",
+      "Challenges managing freelance and in-house creative teams",
+      "Difficulty scaling personalized marketing automations",
+      "Poor integration between CRM and marketing platforms",
+      "Lack of predictive analytics on ad performance",
+      "Manual budgeting processes for campaign spend",
+      "Difficulty forecasting client retention risk"
+    ]
+  },
+  "Nonprofit Organizations": {
+    "frictions": [
+      "Manual donor management and reporting processes",
+      "Difficulty tracking grant compliance requirements",
+      "Fragmented volunteer management systems",
+      "Limited marketing automation for fundraising campaigns",
+      "Poor CRM integration with donation platforms",
+      "Challenges scaling outreach to target demographics",
+      "Difficulty securing sponsorships and partnerships",
+      "Limited predictive analytics on donor retention",
+      "Difficulty measuring program impact across initiatives",
+      "Slow processing of recurring donation billing"
+    ]
+  },
+  "Government Contractors": {
+    "frictions": [
+      "Difficulty managing multi-agency compliance requirements",
+      "Fragmented contract and bid tracking",
+      "Manual proposal management and submission processes",
+      "Challenges tracking project milestones against deliverables",
+      "Limited real-time reporting for grant programs",
+      "Difficulty coordinating subcontractor teams",
+      "Manual invoice reconciliation for government projects",
+      "Slow onboarding of cleared personnel",
+      "Poor forecasting of contract renewal opportunities",
+      "Outdated systems for regulatory reporting (FAR, DFARS)"
+    ]
+  },
+  "Energy (Utilities, Oil, Renewables)": {
+    "frictions": [
+      "Inconsistent energy demand forecasting accuracy",
+      "Difficulty integrating smart meter and IoT data",
+      "Manual outage management and restoration tracking",
+      "Regulatory compliance gaps (EPA, DOE)",
+      "Fragmented asset management platforms",
+      "Manual data reconciliation between field crews and corporate",
+      "Poor predictive maintenance adoption for aging infrastructure",
+      "Limited grid visibility across rural areas",
+      "Challenges managing renewable energy credit trading",
+      "Difficulty integrating distributed energy resource management systems"
+    ]
+  },
+  "Hospitality (Hotels, Resorts)": {
+    "frictions": [
+      "Manual guest booking and check-in/check-out processing",
+      "Fragmented loyalty program management",
+      "Difficulty personalizing guest experiences at scale",
+      "Inconsistent property management system (PMS) integrations",
+      "Challenges coordinating events and conferences",
+      "Difficulty forecasting staffing needs for seasonality",
+      "Manual housekeeping workflow management",
+      "Limited upsell/cross-sell targeting at reservation points",
+      "Difficulty managing multi-property operations centrally",
+      "Outdated guest feedback and reputation management systems"
+    ]
+  },
+  "Travel Agencies": {
+    "frictions": [
+      "Manual itinerary creation impacting turnaround speed",
+      "Fragmented CRM and supplier booking integrations",
+      "Difficulty scaling personalized travel recommendations",
+      "Manual reconciliation of commission tracking",
+      "Challenges managing client travel loyalty programs",
+      "Limited predictive analytics for seasonal travel trends",
+      "Poor mobile experiences for booking and trip management",
+      "Difficulty onboarding and managing independent travel agents",
+      "Outdated supplier inventory synchronization",
+      "High customer support workload during disruptions"
+    ]
+  },
+  "Engineering Firms": {
+    "frictions": [
+      "Difficulty integrating CAD, BIM, and project management systems",
+      "Fragmented client and RFP tracking processes",
+      "Manual project milestone reporting slowing down billing",
+      "Limited predictive analytics for resource allocation",
+      "Challenges managing subcontractors and third-party consultants",
+      "Difficulty tracking compliance with OSHA and environmental regulations",
+      "Manual version control for engineering drawings",
+      "Poor forecasting of project profitability margins",
+      "Difficulty coordinating multi-disciplinary teams remotely",
+      "Outdated collaboration tools for design review workflows"
+    ]
+  },
+  "Architecture Firms": {
+    "frictions": [
+      "Difficulty integrating 3D modeling with client presentations",
+      "Manual time tracking and billing systems",
+      "Limited project profitability forecasting tools",
+      "Fragmented file management across project teams",
+      "Challenges collaborating with external consultants and vendors",
+      "Difficulty onboarding clients and capturing project scope accurately",
+      "Manual RFI (Request for Information) tracking",
+      "Inconsistent document control for design changes",
+      "Poor CRM adoption across client engagement processes",
+      "Difficulty balancing design innovation and regulatory compliance"
+    ]
+  },
+  "Legal Services": {
+    "frictions": [
+      "Manual conflict checks slowing client onboarding",
+      "Fragmented document management across practice groups",
+      "Difficulty forecasting case profitability",
+      "Limited adoption of eDiscovery automation tools",
+      "Slow contract review turnaround due to manual processes",
+      "Challenges coordinating litigation support services",
+      "Poor integration between CRM and matter management platforms",
+      "Difficulty ensuring regulatory compliance (GDPR, CCPA, HIPAA)",
+      "Manual billing and invoice dispute handling",
+      "Difficulty scaling client intake automation"
+    ]
+  },
+  "Consulting Firms": {
+    "frictions": [
+      "Difficulty balancing project delivery and business development efforts",
+      "Manual client onboarding workflows",
+      "Fragmented proposal and SOW (Statement of Work) management",
+      "Limited resource scheduling automation",
+      "Difficulty maintaining knowledge bases for IP protection",
+      "Challenges standardizing client deliverables across teams",
+      "Manual tracking of project milestone billing triggers",
+      "Difficulty forecasting project staffing needs",
+      "Poor integration between CRM, project management, and accounting tools",
+      "Inconsistent consultant utilization tracking"
+    ]
+  },
+  "SaaS / Software Companies": {
+    "frictions": [
+      "Difficulty scaling onboarding for new users/customers",
+      "Fragmented product analytics tracking",
+      "Manual customer success processes delaying renewals",
+      "Limited visibility into upsell/cross-sell opportunities",
+      "Challenges maintaining product roadmap alignment with customer needs",
+      "Difficulty integrating support tickets with product feedback loops",
+      "Manual handling of subscription churn forecasting",
+      "Limited personalization capabilities for marketing automation",
+      "Challenges integrating multi-tenant SaaS data security frameworks",
+      "Inconsistent deployment pipelines and CI/CD processes"
+    ]
+  },
+  "Telecommunications": {
+    "frictions": [
+      "Difficulty integrating customer billing and CRM systems",
+      "Manual provisioning processes slowing service activation",
+      "Fragmented network monitoring and alerting platforms",
+      "Challenges coordinating service delivery across fiber, wireless, and cable",
+      "Limited predictive analytics for churn prevention",
+      "Manual tracking of service outages and SLA compliance",
+      "Difficulty scaling customer support with growing subscriber bases",
+      "Poor coordination between sales and network engineering teams",
+      "Difficulty managing regulatory compliance across states and countries",
+      "Limited integration of OSS/BSS (Operations/Business Support Systems)"
+    ]
+  },
+  "Cybersecurity Firms": {
+    "frictions": [
+      "Difficulty scaling managed security services efficiently",
+      "Fragmented threat intelligence and SIEM integration",
+      "Client onboarding bottlenecks delaying project kickoffs",
+      "Resource constraints for continuous threat monitoring",
+      "Lack of standardized incident response documentation",
+      "Manual vulnerability assessments increasing delivery time",
+      "Difficulty demonstrating ROI to non-technical stakeholders",
+      "Compliance reporting gaps for frameworks like ISO 27001 and SOC 2",
+      "Talent retention challenges due to industry competition",
+      "Difficulty integrating MSSP services with client tech stacks",
+      "Manual alert triage overwhelming analyst teams",
+      "Limited automation in threat hunting and response",
+      "Poor visibility across client hybrid environments",
+      "Inconsistent escalation workflows across clients",
+      "Slow deployment of detection and response tools"
+    ]
+  },
+  "Aerospace & Defense": {
+    "frictions": [
+      "Difficulty managing ITAR and export compliance across partners",
+      "Fragmented engineering documentation and project tracking",
+      "Manual security clearance onboarding delaying staffing",
+      "Challenges coordinating multi-tier supply chains securely",
+      "Slow project milestone reporting to prime contractors",
+      "Limited adoption of predictive maintenance on aging fleets",
+      "Difficulty forecasting program cost overruns",
+      "Poor integration between design, manufacturing, and testing teams",
+      "Challenges managing subcontractor certifications and compliance",
+      "Difficulty maintaining cybersecurity across classified environments"
+    ]
+  },
+  "Agriculture & AgTech": {
+    "frictions": [
+      "Manual tracking of crop yields and input usage",
+      "Limited predictive analytics for weather and pest risks",
+      "Fragmented farm management software adoption",
+      "Difficulty integrating IoT sensor data into decision making",
+      "Challenges scaling sustainable farming practices across regions",
+      "Difficulty forecasting equipment maintenance needs",
+      "Poor coordination between agronomists, suppliers, and producers",
+      "Limited supply chain visibility for farm-to-table initiatives",
+      "Challenges securing financing for AgTech adoption",
+      "Inconsistent mobile access to operational dashboards in rural areas"
+    ]
+  },
+  "Media & Broadcasting": {
+    "frictions": [
+      "Difficulty managing rights and royalties tracking",
+      "Fragmented content production and distribution workflows",
+      "Manual scheduling of ad inventory",
+      "Limited personalization capabilities for OTT platforms",
+      "Poor cross-platform content performance analytics",
+      "Challenges monetizing new distribution channels",
+      "Difficulty scaling production workflows across regions",
+      "Slow adoption of AI for metadata tagging and search optimization",
+      "Difficulty integrating ad tech and martech platforms",
+      "Compliance challenges with digital content regulations (GDPR, COPPA)"
+    ]
+  },
+  "Creative Agencies": {
+    "frictions": [
+      "Difficulty managing creative asset libraries across campaigns",
+      "Manual client approval workflows slowing down delivery",
+      "Limited predictive analytics for campaign performance",
+      "Fragmented collaboration across in-house and freelance teams",
+      "Difficulty standardizing project scopes and SOWs",
+      "Poor tracking of billable vs. non-billable creative hours",
+      "Challenges integrating project management and billing systems",
+      "Difficulty scaling personalized creative output",
+      "Slow adoption of AI-assisted design and copywriting tools",
+      "Difficulty forecasting creative project timelines accurately"
+    ]
+  },
+  "Venture Capital / Private Equity": {
+    "frictions": [
+      "Difficulty managing inbound deal flow efficiently",
+      "Fragmented tracking of portfolio company performance",
+      "Manual LP (Limited Partner) reporting processes",
+      "Challenges forecasting fundraising timelines",
+      "Limited integration of CRM with financial analysis tools",
+      "Difficulty tracking exit scenarios across portfolio",
+      "Manual compliance documentation for SEC reporting",
+      "Inconsistent knowledge sharing between deal teams",
+      "Difficulty onboarding operating partners and advisors",
+      "Challenges managing co-investment opportunities dynamically"
+    ]
+  },
+  "Human Resources Outsourcing (PEO, Staffing)": {
+    "frictions": [
+      "Manual employee onboarding slowing client activation",
+      "Difficulty tracking time and attendance data accurately",
+      "Poor integration between payroll, benefits, and HRIS systems",
+      "Fragmented client and employee communication portals",
+      "Difficulty scaling background checks and credentialing processes",
+      "Limited predictive analytics for employee retention risk",
+      "Compliance reporting gaps (ACA, EEO-1, OSHA)",
+      "Challenges integrating contractor management workflows",
+      "Difficulty forecasting client staffing needs seasonally",
+      "Manual processing of unemployment claims and disputes"
+    ]
+  },
+  "Sports Organizations": {
+    "frictions": [
+      "Difficulty managing ticket sales, concessions, and merchandising data",
+      "Fragmented CRM systems for fan engagement",
+      "Manual scheduling of facilities and staffing",
+      "Challenges monetizing digital content and streaming rights",
+      "Poor integration of player performance analytics platforms",
+      "Difficulty forecasting sponsorship revenue pipelines",
+      "Limited automation in event operations management",
+      "Difficulty managing compliance with league regulations",
+      "Manual tracking of community outreach program impact",
+      "Challenges scaling mobile-first fan engagement initiatives"
+    ]
+  },
+  "Fitness & Wellness": {
+    "frictions": [
+      "Difficulty tracking client engagement across in-person and virtual classes",
+      "Fragmented scheduling and membership platforms",
+      "Manual billing processes increasing churn risk",
+      "Limited predictive analytics on member retention",
+      "Challenges scaling personal training and nutrition services online",
+      "Difficulty managing class capacity and waitlists",
+      "Poor integration of wearable device data into client programs",
+      "Manual tracking of liability waivers and compliance documents",
+      "Difficulty coordinating marketing automation for new programs",
+      "Inconsistent reporting across franchise locations"
+    ]
+  },
+  "Personal Services (Spas, Salons, Studios)": {
+    "frictions": [
+      "Manual booking and appointment management",
+      "Fragmented point-of-sale and CRM integrations",
+      "Difficulty scaling loyalty and referral programs",
+      "Limited personalization of client experience",
+      "High no-show and late cancellation rates",
+      "Manual inventory tracking for retail products",
+      "Challenges managing staff scheduling across shifts",
+      "Difficulty marketing new services to existing clients",
+      "Outdated mobile experiences for booking and promotions",
+      "Difficulty forecasting seasonal demand trends"
+    ]
+  },
+  "Automotive (Sales, Rentals, Maintenance)": {
+    "frictions": [
+      "Manual tracking of sales leads and service appointments",
+      "Poor integration between CRM and DMS (Dealer Management Systems)",
+      "Difficulty managing inventory turnover efficiently",
+      "Fragmented customer communication channels",
+      "Limited predictive analytics for vehicle maintenance needs",
+      "Challenges scaling personalized marketing across client segments",
+      "Slow digital transformation in rental management systems",
+      "Difficulty coordinating multi-location operations",
+      "Compliance tracking issues (FTC Safeguards, Lemon Laws)",
+      "Inconsistent experience across in-person and online platforms"
+    ]
+  },
+  "Insurance Adjusters & TPAs": {
+    "frictions": [
+      "Manual intake of claims leading to processing delays",
+      "Fragmented documentation collection across adjusters",
+      "Difficulty forecasting claim closure timelines",
+      "Limited integration between claim management and legal case systems",
+      "Challenges managing surge capacity during catastrophic events",
+      "Manual compliance checks slowing down settlements",
+      "Inconsistent communication with policyholders during claims",
+      "Difficulty onboarding independent adjusters quickly",
+      "Outdated field tools for onsite inspections and reporting",
+      "Limited adoption of AI-powered claim triage systems"
+    ]
+  },
+  "Home Services (Plumbing, Electrical, HVAC)": {
+    "frictions": [
+      "Manual scheduling of service appointments",
+      "Difficulty tracking technician availability and certifications",
+      "Fragmented CRM and billing systems",
+      "Poor integration between dispatch and invoicing tools",
+      "Limited predictive maintenance marketing to customers",
+      "Challenges coordinating emergency service response",
+      "Difficulty managing multi-technician job sites",
+      "Inconsistent customer feedback collection and analysis",
+      "Manual tracking of warranties and service agreements",
+      "Difficulty forecasting seasonal demand fluctuations"
+    ]
+  },
+  "Environmental Services (Waste Management, Recycling)": {
+    "frictions": [
+      "Manual route optimization causing inefficiencies",
+      "Difficulty forecasting waste volume trends",
+      "Fragmented compliance reporting across jurisdictions",
+      "Limited real-time tracking of fleet and container assets",
+      "Manual invoicing and billing reconciliation",
+      "Challenges scaling recycling initiatives across municipalities",
+      "Difficulty managing hazardous material tracking and reporting",
+      "Poor integration of IoT sensors for smart bins",
+      "Limited analytics on diversion rates and sustainability metrics",
+      "Difficulty onboarding new municipal contracts efficiently"
+    ]
+  },
+  "Event Management Companies": {
+    "frictions": [
+      "Manual attendee registration processes",
+      "Fragmented communication with vendors and sponsors",
+      "Difficulty scaling virtual and hybrid event platforms",
+      "Inconsistent brand experiences across event touchpoints",
+      "Limited predictive analytics for attendee engagement",
+      "Manual tracking of event logistics and deliverables",
+      "Poor integration of CRM and event management software",
+      "Difficulty forecasting event profitability",
+      "Challenges coordinating multi-location event operations",
+      "Slow adoption of AI-driven event personalization tools"
+    ]
+  },
+  "IT Managed Service Providers (MSPs)": {
+    "frictions": [
+      "Difficulty scaling ticket resolution workflows",
+      "Fragmented client communication and SLA tracking",
+      "Manual billing reconciliation for recurring services",
+      "Limited visibility into client infrastructure health",
+      "Challenges coordinating escalation between L1/L2/L3 support teams",
+      "Difficulty onboarding new clients and deploying agents quickly",
+      "Slow adoption of cybersecurity frameworks for clients",
+      "Poor integration of PSA (Professional Services Automation) tools",
+      "Inconsistent patch management processes across environments",
+      "Difficulty forecasting hardware refresh and upgrade needs"
+    ]
+  },
+  "Research & Development Firms": {
+    "frictions": [
+      "Manual project portfolio tracking across teams",
+      "Difficulty forecasting R&D investment returns",
+      "Fragmented documentation for IP and patent filings",
+      "Poor visibility into project milestones and risk factors",
+      "Challenges managing external research partner collaboration",
+      "Manual reporting for grant and funding compliance",
+      "Limited predictive modeling for experiment success rates",
+      "Difficulty scaling cross-functional research initiatives",
+      "Outdated lab and equipment booking systems",
+      "Challenges integrating lab automation platforms into workflow"
+    ]
+  },
+  "Publishing": {
+    "frictions": [
+      "Manual tracking of manuscript and editorial progress",
+      "Fragmented royalty management systems",
+      "Difficulty forecasting print and digital sales trends",
+      "Poor coordination between editorial, design, and marketing",
+      "Limited predictive analytics for title success forecasting",
+      "Challenges scaling personalized reader engagement strategies",
+      "Difficulty securing timely author approvals and revisions",
+      "Manual processing of rights and permissions documentation",
+      "Limited integration between CRM and content management systems",
+      "Inconsistent cross-platform publishing workflows"
+    ]
+  },
+  "Arts & Cultural Institutions": {
+    "frictions": [
+      "Difficulty managing visitor ticketing and membership data",
+      "Manual scheduling of exhibits and programming",
+      "Fragmented donor and grant management systems",
+      "Limited predictive analytics for attendance trends",
+      "Challenges managing conservation and artifact preservation records",
+      "Manual tracking of volunteer participation and hours",
+      "Difficulty scaling virtual exhibit and digital programming initiatives",
+      "Poor integration of CRM with fundraising and marketing automation",
+      "Compliance challenges related to cultural repatriation regulations",
+      "Difficulty forecasting operational budgets based on seasonal trends"
+    ]
+  },
+  "Disaster Recovery & Restoration Services": {
+    "frictions": [
+      "Difficulty scaling workforce during catastrophic events",
+      "Manual claim intake slowing down dispatch times",
+      "Poor integration between field assessment and back-office systems",
+      "Fragmented communication with insurance carriers",
+      "Limited visibility into project milestones and payout timelines",
+      "Challenges coordinating subcontractors and specialized vendors",
+      "Manual compliance tracking for OSHA and environmental standards",
+      "Difficulty forecasting resource needs during surge events",
+      "Outdated client self-service portals for status updates",
+      "Difficulty tracking equipment availability and readiness"
+    ]
+  },
+  "Process Management Companies": {
+    "frictions": [
+      "Difficulty standardizing business workflows across clients",
+      "Fragmented documentation for process mapping projects",
+      "Manual process audit and compliance tracking",
+      "Challenges scaling automation solutions across departments",
+      "Poor client handoff processes from analysis to implementation",
+      "Difficulty demonstrating ROI of process improvements",
+      "Limited predictive analytics for workflow bottleneck identification",
+      "Slow adoption of BPM (Business Process Management) platforms",
+      "Manual tracking of continuous improvement initiatives",
+      "Difficulty managing cross-functional process governance committees"
+    ]
+  },
+  "Insurance (Retail P&C)": [
+    "Manual onboarding processes",
+    "Disjointed communication tools",
+    "Inconsistent client follow-up",
+    "Compliance tracking issues",
+    "Limited AMS integrations",
+    "Low lead-to-quote conversion"
+  ],
+  "Healthcare (Provider Side)": [
+    "EHR interoperability issues",
+    "Scheduling inefficiencies",
+    "Manual billing and coding",
+    "Data silos across departments",
+    "Delayed patient communications",
+    "Poor patient intake workflows"
+  ],
+  "Healthcare Insurance (Payer Side)": [
+    "Claims processing delays",
+    "Member engagement challenges",
+    "Authorization bottlenecks",
+    "Compliance with CMS rules",
+    "Disconnected care management tools"
+  ],
+  "Manufacturing (General)": [
+    "Disconnected inventory systems",
+    "Lack of real-time production visibility",
+    "Manual quality assurance logging",
+    "Siloed ERP and MES platforms",
+    "Delayed order fulfillment",
+    "Supplier communication breakdowns"
+  ],
+  "Logistics & Transportation": [
+    "Route optimization inefficiencies",
+    "Manual freight tracking",
+    "Warehouse inventory mismatches",
+    "Driver communication gaps",
+    "Delayed invoicing and settlements",
+    "Limited visibility into real-time status"
+  ],
+  "Financial Services (Banking, Wealth Management)": [],
+  "Real Estate (Brokerage, Management)": [],
+  "Property Management (Commercial/Residential)": [],
+  "Education (K-12 and Higher Ed)": [],
+  "Startups - Emerging Industries": []
+}

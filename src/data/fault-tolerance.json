@@ -1,0 +1,1418 @@
+{
+  "RingCentral": {
+    "variants": ["Ring Central", "Ringcentral", "Ring Central Inc.", "ringcentral", "RC phone"]
+  },
+  "Salesforce": {
+    "variants": ["Sales Force", "salesforce.com", "SFDC", "sales force crm", "salesforcecloud"]
+  },
+  "Microsoft Teams": {
+    "variants": ["MS Teams", "Teams", "Microsoft Team", "microsoftteams", "microsoft team app"]
+  },
+  "Zoom": {
+    "variants": ["Zoom Meetings", "Zoom.us", "zoom video", "zoom app", "zoommeet"]
+  },
+  "Slack": {
+    "variants": ["Slack App", "slack.com", "slackchat", "slack app", "Slack IM"]
+  },
+  "Google Workspace": {
+    "variants": ["G Suite", "Google Suite", "googleworkspace", "workspace google", "gsuite"]
+  },
+  "Dropbox": {
+    "variants": ["Drop Box", "dropbox.com", "drop box storage", "dropbox cloud", "dropbx"]
+  },
+  "Box": {
+    "variants": ["Box.com", "box cloud", "box drive", "Box Storage", "boxcloud"]
+  },
+  "Asana": {
+    "variants": ["Asana App", "asana.com", "asana project", "asana tasks", "Asana PM"]
+  },
+  "Trello": {
+    "variants": ["Trello App", "trello.com", "trello board", "trelloboard", "trello project"]
+  },
+  "HubSpot": {
+    "variants": ["Hub Spot", "hubspot.com", "Hub CRM", "Hubspot CRM", "hubspotmarketing"]
+  },
+  "Zendesk": {
+    "variants": ["Zen Desk", "zendesk.com", "zendesk support", "zendeskhelp", "zendesks"]
+  },
+  "ServiceNow": {
+    "variants": ["Service Now", "servicenow.com", "servicenow ITSM", "Service-Now", "servicenowplatform"]
+  },
+  "Tableau": {
+    "variants": ["Tableu", "tableau.com", "Tableau Software", "tableausoftware", "tablue"]
+  },
+  "Power BI": {
+    "variants": ["PowerBI", "power bi microsoft", "power bi app", "ms power bi", "pwr bi"]
+  },
+  "AWS": {
+    "variants": ["Amazon Web Services", "aws.amazon.com", "Amazon Cloud", "aws cloud", "a w s"]
+  },
+  "Azure": {
+    "variants": ["Microsoft Azure", "azure cloud", "azure.microsoft.com", "ms azure", "azur"]
+  },
+  "OneDrive": {
+    "variants": ["One Drive", "onedrive.com", "Microsoft OneDrive", "onedrve", "1drive"]
+  },
+  "DocuSign": {
+    "variants": ["Docu Sign", "docusign.com", "DocuSign eSign", "docusignapp", "docsign"]
+  },
+  "Okta": {
+    "variants": ["Okta.com", "okta login", "okta cloud", "octa", "okta identity"]
+  },
+  "Workday": {
+    "variants": ["Work Day", "workday.com", "workday hr", "wrkday", "workdaycloud"]
+  },
+  "ADP": {
+    "variants": ["ADP.com", "adp payroll", "Automatic Data Processing", "adp workforce", "adppayroll"]
+  },
+  "Paychex": {
+    "variants": ["Pay Chex", "paychex.com", "paychexflex", "paychex payroll", "paychk"]
+  },
+  "QuickBooks": {
+    "variants": ["Quick Books", "quickbooks.com", "QB Online", "quickbooks online", "qbo"]
+  },
+  "FreshBooks": {
+    "variants": ["Fresh Books", "freshbooks.com", "Freshbooks Accounting", "freshbook", "fbooks"]
+  },
+  "NetSuite": {
+    "variants": ["Net Suite", "netsuite.com", "Oracle NetSuite", "netsuit", "netsuites"]
+  },
+  "SAP S/4HANA": {
+    "variants": ["SAP S4HANA", "SAP S/4 HANA", "saps4hana", "sap hana", "sap s4"]
+  },
+  "Oracle ERP Cloud": {
+    "variants": ["Oracle Cloud ERP", "oracleerp", "oracle erp", "oracle erp cloud", "oracleclouderp"]
+  },
+  "Jira": {
+    "variants": ["Jira Software", "jira.com", "jira cloud", "atlassian jira", "jiraapp"]
+  },
+  "Confluence": {
+    "variants": ["Confluence Wiki", "atlassian confluence", "confluence.com", "confluence cloud", "confluance"]
+  },
+  "Monday.com": {
+    "variants": ["Monday", "monday project management", "mondayapp", "mondaydotcom", "monday.com app"]
+  },
+  "Smartsheet": {
+    "variants": ["Smart Sheet", "smartsheet.com", "smartsheet app", "smart sheets", "smartsheettask"]
+  },
+  "ClickUp": {
+    "variants": ["Click Up", "clickup.com", "clickupapp", "click up tasks", "clickup cloud"]
+  },
+  "Notion": {
+    "variants": ["Notion.so", "notion app", "notionso", "notion workspace", "notionspace"]
+  },
+  "Atlassian": {
+    "variants": ["Atlassian.com", "Atlassian Jira", "Atlassian Confluence", "atlasian", "atlassian cloud"]
+  },
+  "8x8": {
+    "variants": ["8x8.com", "8x8 phone", "8x8 cloud", "8by8", "eight by eight"]
+  },
+  "GoTo Connect": {
+    "variants": ["Go To Connect", "goto connect", "goto phone", "gotoconnect.com", "go2connect"]
+  },
+  "Vonage": {
+    "variants": ["Vonage Business", "vonage.com", "vonage phone", "vonagecloud", "vonge"]
+  },
+  "Nextiva": {
+    "variants": ["Nextiva VoIP", "nextiva.com", "nextivaphone", "nxtiva", "nextiva cloud"]
+  },
+  "Five9": {
+    "variants": ["Five 9", "five9.com", "five9 cloud", "five nine", "5nine"]
+  },
+  "Genesys Cloud": {
+    "variants": ["GenesysCloud", "genesys cloud cx", "genesyscloud.com", "genesys cloud contact center", "genesis cloud"]
+  },
+  "Aircall": {
+    "variants": ["Air Call", "aircall.io", "aircall phone", "aircall cloud", "air cal"]
+  },
+  "Talkdesk": {
+    "variants": ["Talk Desk", "talkdesk.com", "talkdesk cx cloud", "talkdesk contact center", "talk desk app"]
+  },
+  "Intercom": {
+    "variants": ["Intercom App", "intercom.com", "intercom messenger", "intercomm", "intercom chat"]
+  },
+  "Twilio": {
+    "variants": ["Twilio.com", "twilio cloud", "twilio communications", "twilio sms", "twillo"]
+  },
+  "Ringover": {
+    "variants": ["Ring Over", "ringover.com", "ringover cloud", "ring over app", "ringovr"]
+  },
+  "8x8 Contact Center": {
+    "variants": ["8x8 CC", "8x8 contact", "8x8 contact center cloud", "8x8cc", "8x8callcenter"]
+  },
+  "Dialpad": {
+    "variants": ["Dial Pad", "dialpad.com", "dialpad voice", "dialpad talk", "dialpadcloud"]
+  },
+  "Mitel": {
+    "variants": ["Mitel Networks", "mitel.com", "mitel cloud", "mitel phone", "mittel"]
+  },
+  "Avaya Cloud Office": {
+    "variants": ["Avaya Office Cloud", "avaya cloud", "avaya office", "avayacloud", "avaya cloud communications"]
+  },
+  "Microsoft 365": {
+    "variants": ["Office 365", "Microsoft Office 365", "microsoft365", "ms 365", "office365"]
+  },
+  "Google Meet": {
+    "variants": ["GoogleMeet", "google meet video", "gmeet", "googlemeet.com", "google meeting"]
+  },
+  "Webex": {
+    "variants": ["Cisco Webex", "webex meetings", "webex.com", "web ex", "cisco webex meetings"]
+  },
+  "BlueJeans": {
+    "variants": ["Blue Jeans", "bluejeans.com", "bluejeans video", "blue jeans network", "bluejeans meeting"]
+  },
+  "Zoom Phone": {
+    "variants": ["ZoomPhone", "zoom phone system", "zoomphone cloud", "zoomphonemeetings", "zoom phone app"]
+  },
+  "Cisco UCM Cloud": {
+    "variants": ["Cisco Unified Communications", "cisco ucm", "cisco ucm cloud", "ciscoucm", "ucm cloud"]
+  },
+  "Ooma Office": {
+    "variants": ["Ooma", "ooma.com", "ooma office phone", "ooma business", "oomaphone"]
+  },
+  "Grasshopper": {
+    "variants": ["Grass Hopper", "grasshopper.com", "grasshopper phone", "grasshoper", "grasshopper cloud"]
+  },
+  "3CX": {
+    "variants": ["3CX Phone System", "3cx.com", "3cx cloud", "3cx pbx", "threecx"]
+  },
+  "Broadvoice": {
+    "variants": ["Broad Voice", "broadvoice.com", "broadvoice cloud", "broad voice phone", "broadvoice pbx"]
+  },
+  "RingByName": {
+    "variants": ["Ring By Name", "ringbyname.com", "ring byname", "ringbyname cloud", "ringby name"]
+  },
+  "CallTower": {
+    "variants": ["Call Tower", "calltower.com", "call tower cloud", "calltower voice", "calltwr"]
+  },
+  "Vonix": {
+    "variants": ["Vonix.io", "vonix cloud", "vonix voip", "vonix communications", "vonixcom"]
+  },
+  "Broadsoft": {
+    "variants": ["Broad Soft", "broadsoft.com", "broadsoft cloud", "broad soft communications", "broadsoft pbx"]
+  },
+  "Fuze": {
+    "variants": ["Fuze Communications", "fuze.com", "fuze cloud", "fuzemeet", "fuzeapp"]
+  },
+  "LogMeIn": {
+    "variants": ["Log Me In", "logmein.com", "logmein cloud", "logme in app", "loginmein"]
+  },
+  "Vonage Contact Center": {
+    "variants": ["Vonage CC", "vonage contact", "vonage contact cloud", "vonage contactcenter", "vonage cc cloud"]
+  },
+  "Windstream OfficeSuite UC": {
+    "variants": ["Windstream Office Suite", "officesuite uc", "windstream officesuite", "windstream uc", "office suite uc"]
+  },
+  "SpectrumVoIP": {
+    "variants": ["Spectrum VoIP", "spectrumvoip.com", "spectrum voip cloud", "spectrum voice", "spectrum voip phone"]
+  },
+  "MegaPath": {
+    "variants": ["Mega Path", "megapath.com", "megapath cloud", "mega path voice", "megapath voip"]
+  },
+  "Digerati": {
+    "variants": ["Digerati Technologies", "digerati.com", "digerati voip", "digerati cloud", "digeratti"]
+  },
+  "Intermedia Unite": {
+    "variants": ["Intermedia", "intermedia unite cloud", "unite intermedia", "intermedia.com", "intermediaunite"]
+  },
+  "NetFortris": {
+    "variants": ["Net Fortris", "netfortris.com", "netfortris cloud", "netfortris voip", "net fortris communications"]
+  },
+  "Momentum Telecom": {
+    "variants": ["Momentum Telecom Cloud", "momentum telecom", "momentum cloud", "momentumtelecom.com", "momentumtelecomcloud"]
+  },
+  "Jive Communications": {
+    "variants": ["Jive", "jive.com", "jive cloud", "jive communications cloud", "jivevoice"]
+  },
+  "PanTerra Networks": {
+    "variants": ["Pan Terra", "panterra networks", "panterranetworks.com", "pan terra networks cloud", "panterra cloud"]
+  },
+  "Revation LinkLive": {
+    "variants": ["Revation", "linklive", "revation link live", "revation linklive cloud", "revation.com"]
+  },
+  "Sherweb": {
+    "variants": ["Sher Web", "sherweb.com", "sherweb cloud", "sher web cloud", "sherweb communications"]
+  },
+  "NextOS by Nextiva": {
+    "variants": ["NextOS", "nextos nextiva", "nextiva nextos", "next os", "nextiva os"]
+  },
+  "Yeastar": {
+    "variants": ["Yeastar PBX", "yeastar.com", "yeastar cloud", "yeastar voip", "yeastar pbx system"]
+  },
+  "Zultys": {
+    "variants": ["Zultys Cloud", "zultys.com", "zultys pbx", "zultys voip", "zultis"]
+  },
+  "Wildix": {
+    "variants": ["Wildix Cloud", "wildix.com", "wildix voip", "wildix communications", "wildicks"]
+  },
+  "Alcatel-Lucent Enterprise": {
+    "variants": ["Alcatel Lucent", "alcatel-lucent.com", "alcatel lucent cloud", "alcatel enterprise", "ale"]
+  },
+  "Ericsson-LG": {
+    "variants": ["Ericsson LG", "ericssonlg.com", "lg ericsson", "ericsson lg cloud", "ericson lg"]
+  },
+  "NEC UNIVERGE": {
+    "variants": ["NEC Univerge Blue", "nec univerge cloud", "nec univerge blue connect", "nec cloud communications", "necuniverge"]
+  },
+  "ShoreTel": {
+    "variants": ["Shore Tel", "shoretel.com", "shoretel cloud", "shoretel voice", "shore tel communications"]
+  },
+  "Avaya IP Office": {
+    "variants": ["Avaya IPO", "avaya ip office cloud", "avaya ipo cloud", "avaya ipoffice", "avaya ipoffice"]
+  },
+  "Cisco Webex Calling": {
+    "variants": ["Webex Calling", "cisco webex calling", "webex calling cloud", "cisco calling", "webexcalling"]
+  },
+  "MetTel": {
+    "variants": ["Met Tel", "mettel.com", "mettel cloud", "mettel communications", "met tel cloud"]
+  },
+  "Dialpad Contact Center": {
+    "variants": ["Dialpad CC", "dialpad contact", "dialpad contact center cloud", "dialpad contactcenter", "dialpadcc"]
+  },
+  "NICE CXone": {
+    "variants": ["NICE InContact", "nice cxone cloud", "nice cxone contact center", "cxone", "nice cloud"]
+  },
+  "UJET": {
+    "variants": ["Ujet App", "ujet contact center", "ujet cloud", "ujet.com", "u jet"]
+  },
+  "Avaya Aura": {
+    "variants": ["Avaya Aura Platform", "avaya aura cloud", "avayaaura", "aura avaya", "avaya aura communications"]
+  },
+  "Twilio Flex": {
+    "variants": ["TwilioFlex", "twilio flex cloud", "twilio contact center", "twilioflex contact center", "twilioflexcloud"]
+  },
+  "CloudTalk": {
+    "variants": ["Cloud Talk", "cloudtalk.io", "cloudtalk voip", "cloud talk app", "cloudtalkcloud"]
+  },
+  "OpenPhone": {
+    "variants": ["Open Phone", "openphone.co", "open phone app", "openphone voip", "openphone cloud"]
+  },
+  "JustCall": {
+    "variants": ["Just Call", "justcall.io", "justcall cloud", "just call app", "justcallphone"]
+  },
+  "Kixie": {
+    "variants": ["Kixie Cloud", "kixie.com", "kixie powercall", "kixie app", "kixie sales dialer"]
+  },
+  "Ozonetel": {
+    "variants": ["Ozone Tel", "ozonetel cloud", "ozonetel.com", "ozone tel communications", "ozonetl"]
+  },
+  "Voximplant": {
+    "variants": ["Vox Implant", "voximplant.com", "vox implant cloud", "voximplnt", "voximplant communications"]
+  },
+  "InsuredMine": {
+    "variants": ["Insured Mine", "insuredmine.com", "insured mine crm", "insuredmine cloud", "insuredmine platform"]
+  },
+  "Vertafore AMS360": {
+    "variants": ["Vertafore AMS 360", "ams360", "ams 360", "vertaforeams360", "vertafore ams"]
+  },
+  "Applied Epic": {
+    "variants": ["AppliedEpic", "applied epic", "applied systems epic", "applied epic cloud", "appliedepic"]
+  },
+  "HawkSoft": {
+    "variants": ["Hawk Soft", "hawksoft.com", "hawksoft cloud", "hawksoftams", "hawk soft ams"]
+  },
+  "NowCerts": {
+    "variants": ["Now Certs", "nowcerts.com", "now certs ams", "nowcerts cloud", "now cert system"]
+  },
+  "EZLynx": {
+    "variants": ["EZ Lynx", "ezlynx.com", "ez lynx cloud", "ezlynx rater", "ezlynxrater"]
+  },
+  "QQCatalyst": {
+    "variants": ["QQ Catalyst", "qqcatalyst.com", "qq catalyst cloud", "qq catalyst ams", "qqcatalyst ams"]
+  },
+  "AgencyZoom": {
+    "variants": ["Agency Zoom", "agencyzoom.com", "agency zoom crm", "agencyzoomcloud", "agency zoom sales"]
+  },
+  "Better Agency": {
+    "variants": ["BetterAgency", "betteragency.io", "better agency crm", "betteragency cloud", "betteragency sales"]
+  },
+  "Redtail CRM": {
+    "variants": ["Redtail", "redtailcrm.com", "red tail crm", "redtail cloud", "redtail crm software"]
+  },
+  "Zoho CRM": {
+    "variants": ["ZohoCRM", "zoho crm cloud", "zoho.com crm", "zoho customer relationship management", "zohocrm cloud"]
+  },
+  "Pipedrive": {
+    "variants": ["Pipe Drive", "pipedrive.com", "pipedrive crm", "pipedrive cloud", "pipe drive crm"]
+  },
+  "Keap": {
+    "variants": ["Keap CRM", "keap.com", "keap cloud", "infusionsoft keap", "keap crm system"]
+  },
+  "Freshsales": {
+    "variants": ["Fresh Sales", "freshsales.com", "freshsales crm", "freshsales cloud", "freshsalesapp"]
+  },
+  "Copper CRM": {
+    "variants": ["Copper", "coppercrm.com", "copper crm cloud", "copper crm google", "copperapp"]
+  },
+  "Close CRM": {
+    "variants": ["Close", "closecrm.com", "close crm cloud", "close sales crm", "closedeals crm"]
+  },
+  "AgencyBloc": {
+    "variants": ["Agency Bloc", "agencybloc.com", "agency bloc crm", "agencybloc cloud", "agency block"]
+  },
+  "AMS360": {
+    "variants": ["AMS 360", "ams360.com", "ams 360 cloud", "ams360 cloud", "vertafore ams 360"]
+  },
+  "Jenesis Software": {
+    "variants": ["Jenesis", "jenesissoftware.com", "jenesis cloud", "jenesis ams", "jenesis insurance software"]
+  },
+  "Netsuite CRM": {
+    "variants": ["NetSuite CRM", "netsuitecrm", "netsuite crm cloud", "oracle netsuite crm", "netsuite customer management"]
+  },
+  "CrowdStrike": {
+    "variants": ["Crowd Strike", "crowdstrike.com", "crowdstrike falcon", "crowdstrike cloud", "crowdstrik"]
+  },
+  "Okta Identity Cloud": {
+    "variants": ["Okta Identity", "okta identity cloud", "oktaidcloud", "okta ic", "okta identity mgmt"]
+  },
+  "Duo Security": {
+    "variants": ["Duo", "duosecurity.com", "duo security cloud", "cisco duo", "duosec"]
+  },
+  "SentinelOne": {
+    "variants": ["Sentinel One", "sentinelone.com", "sentinel one cloud", "sentinelone security", "sentinalone"]
+  },
+  "Fortinet": {
+    "variants": ["FortiNet", "fortinet.com", "fortinet firewall", "fortinet security", "fort net"]
+  },
+  "Palo Alto Networks": {
+    "variants": ["Palo Alto", "paloaltonetworks.com", "palo alto firewall", "paloaltocloud", "paltoalto"]
+  },
+  "Proofpoint": {
+    "variants": ["Proof Point", "proofpoint.com", "proofpoint security", "proofpoint cloud", "prooffpoint"]
+  },
+  "Mimecast": {
+    "variants": ["Mime Cast", "mimecast.com", "mimecast email security", "mime cast cloud", "mimecst"]
+  },
+  "KnowBe4": {
+    "variants": ["Know Be 4", "knowbe4.com", "knowbe4 security", "knowbefore", "knwbe4"]
+  },
+  "Arctic Wolf": {
+    "variants": ["ArcticWolf", "arcticwolf.com", "arctic wolf security", "arctic wolf cloud", "arcticwolfcloud"]
+  },
+  "QuickBooks Online": {
+    "variants": ["Quick Books Online", "qbo", "quickbooks.com online", "quickbooks cloud", "qb online"]
+  },
+  "Xero": {
+    "variants": ["Xero Accounting", "xero.com", "xero cloud", "xero online accounting", "xeroaccounting"]
+  },
+  "Sage Intacct": {
+    "variants": ["Sage Intact", "sageintacct.com", "sage intacct cloud", "sage intacct accounting", "sageintactcloud"]
+  },
+  "Wave Accounting": {
+    "variants": ["Wave Apps", "wave accounting", "waveapp", "wave.com", "wavefinancial"]
+  },
+  "FreshBooks Accounting": {
+    "variants": ["Fresh Books", "freshbooks.com", "freshbooks accounting cloud", "fresh books online", "freshbooks cloud"]
+  },
+  "Bill.com": {
+    "variants": ["Bill Dot Com", "bill.com cloud", "billcom", "bill dot com payments", "billcomcloud"]
+  },
+  "Expensify": {
+    "variants": ["Expenseify", "expensify.com", "expensify app", "expensify cloud", "expencify"]
+  },
+  "Gusto": {
+    "variants": ["Gusto Payroll", "gusto.com", "gusto hr", "gusto cloud", "gustoapp"]
+  },
+  "ADP Workforce Now": {
+    "variants": ["ADP WFN", "adp workforce now", "workforce now adp", "wfn adp", "adp wforce"]
+  },
+  "Zenefits": {
+    "variants": ["Zenefits HR", "zenefits.com", "zenefits cloud", "zenefits hr platform", "zenifits"]
+  },
+  "Epic Systems": {
+    "variants": ["Epic EHR", "epic systems corp", "epic ehr software", "epic healthcare", "epicsystems"]
+  },
+  "Athenahealth": {
+    "variants": ["Athena Health", "athenahealth.com", "athenahealth ehr", "athena health systems", "athena cloud"]
+  },
+  "Cerner": {
+    "variants": ["Cerner EHR", "cerner.com", "cerner health", "cerner healthcare", "cernerehr"]
+  },
+  "NextGen Healthcare": {
+    "variants": ["Next Gen Healthcare", "nextgen healthcare", "nextgen ehr", "nextgenhealthcare.com", "nextgenhealth"]
+  },
+  "Allscripts": {
+    "variants": ["All Scripts", "allscripts.com", "allscripts cloud", "allscripts ehr", "all scripts healthcare"]
+  },
+  "eClinicalWorks": {
+    "variants": ["e Clinical Works", "eclinicalworks.com", "eclinicalworks ehr", "eclinical cloud", "e clinicalworks"]
+  },
+  "Plex Systems": {
+    "variants": ["Plex MES", "plexsystems.com", "plex cloud", "plex erp", "plex manufacturing"]
+  },
+  "Epicor ERP": {
+    "variants": ["Epicor", "epicor erp cloud", "epicorerp", "epicor.com", "epicor manufacturing"]
+  },
+  "Infor M3": {
+    "variants": ["InforM3", "infor m3 cloud", "infor erp m3", "infor.com m3", "infor manufacturing"]
+  },
+  "IQMS": {
+    "variants": ["IQMS ERP", "iqms manufacturing", "iqms cloud", "iqms.com", "iq ms"]
+  },
+  "Netsmart": {
+    "variants": ["Netsmart Technologies", "netsmart cloud", "netsmart healthcare", "netsmart.com", "netsmart ehr"]
+  },
+  "Greenway Health": {
+    "variants": ["Greenway", "greenwayhealth.com", "greenway health ehr", "greenway ehr", "greenway health systems"]
+  },
+  "Meditech": {
+    "variants": ["Medi Tech", "meditech ehr", "meditech.com", "meditech health", "medtech ehr"]
+  },
+  "Kareo": {
+    "variants": ["Kareo EHR", "kareo.com", "kareo cloud", "kareo practice management", "kareocloud"]
+  },
+  "TechCanary": {
+    "variants": ["Tech Canary", "techcanary.com", "tech canary crm", "techcanary salesforce", "techcanry"]
+  },
+  "Nexsure": {
+    "variants": ["Nex Sure", "nexsure.com", "nexsure ams", "nexsure cloud", "nexsur"]
+  },
+  "Applied TAM": {
+    "variants": ["Applied TAM System", "applied tam", "applied systems tam", "applied tam cloud", "tamapplied"]
+  },
+  "QQ Evolution": {
+    "variants": ["QQEvolution", "qq evolution ams", "qqevolution.com", "qq evolution insurance", "qqevolutioncloud"]
+  },
+  "Xanatek": {
+    "variants": ["Xanatek IMS", "xanatek ims cloud", "xanatek.com", "xanatek management", "xanateck"]
+  },
+  "BriteCore": {
+    "variants": ["Brite Core", "britecore.com", "brite core insurance", "britecore cloud", "brightcore"]
+  },
+  "Basecamp": {
+    "variants": ["Base Camp", "basecamp.com", "basecamp project management", "basecampapp", "base camp app"]
+  },
+  "Wrike": {
+    "variants": ["Wrike Project", "wrike.com", "wrike cloud", "wrike project management", "wrikeapp"]
+  },
+  "Smartsheet": {
+    "variants": ["Smart Sheet", "smartsheet.com", "smartsheet project management", "smart sheet app", "smartsheetcloud"]
+  },
+  "Trello": {
+    "variants": ["Trello Board", "trello.com", "trello cloud", "trelloboard", "trello app"]
+  },
+  "ClickUp": {
+    "variants": ["Click Up", "clickup.com", "clickup project management", "clickup cloud", "clickupapp"]
+  },
+  "Miro": {
+    "variants": ["Miro Board", "miro.com", "miro app", "miro cloud", "miro whiteboard"]
+  },
+  "Lucidchart": {
+    "variants": ["Lucid Chart", "lucidchart.com", "lucid chart app", "lucidchart diagrams", "lucidchart cloud"]
+  },
+  "Slack": {
+    "variants": ["Slack App", "slack.com", "slack workspace", "slack cloud", "slackchat"]
+  },
+  "Microsoft OneDrive": {
+    "variants": ["One Drive", "onedrive.com", "microsoft onedrive", "one drive cloud", "onedrve"]
+  },
+  "Dropbox Business": {
+    "variants": ["Dropbox", "dropbox business cloud", "dropbox.com business", "dropbox biz", "dropboxbusiness"]
+  },
+  "Box Business": {
+    "variants": ["Box.com", "box business cloud", "box storage business", "box biz", "boxbusiness"]
+  },
+  "Google Drive": {
+    "variants": ["GoogleDrive", "google drive cloud", "drive.google.com", "google drive business", "gdrive"]
+  },
+  "Zoom Meetings": {
+    "variants": ["Zoom", "zoom meetings app", "zoom.us", "zoom cloud meetings", "zoommeetings"]
+  },
+  "Google Meet": {
+    "variants": ["GoogleMeet", "google meet app", "google meet meetings", "gmeet", "google meeting app"]
+  },
+  "Microsoft Outlook": {
+    "variants": ["Outlook", "outlook.com", "microsoft outlook mail", "outlook365", "ms outlook"]
+  },
+  "Gmail for Business": {
+    "variants": ["Gmail", "gmail for work", "google workspace mail", "gmail business account", "g business mail"]
+  },
+  "BambooHR": {
+    "variants": ["Bamboo HR", "bamboohr.com", "bamboo hr cloud", "bamboo hr software", "bamboohr app"]
+  },
+  "Paylocity": {
+    "variants": ["Paylocity Payroll", "paylocity.com", "paylocity hr", "paylocity cloud", "paylocityapp"]
+  },
+  "Workforce Software": {
+    "variants": ["Work Force Software", "workforce.com", "workforce software cloud", "workforce management", "workforce app"]
+  },
+  "Namely": {
+    "variants": ["Namely HR", "namely.com", "namely hr cloud", "namely hr software", "namelyapp"]
+  },
+  "Power BI": {
+    "variants": ["PowerBI", "powerbi.com", "microsoft power bi", "power bi cloud", "pwrbi"]
+  },
+  "Tableau Software": {
+    "variants": ["Tableau", "tableau.com", "tableau software cloud", "tableausoftware", "tablue software"]
+  },
+  "Looker": {
+    "variants": ["Looker Data", "looker.com", "looker cloud", "google looker", "looker analytics"]
+  },
+  "Qlik Sense": {
+    "variants": ["Qlik", "qlik sense", "qliksense.com", "qlik cloud", "qliksns"]
+  },
+  "Domo": {
+    "variants": ["Domo Analytics", "domo.com", "domo cloud", "domo bi", "domoanlytics"]
+  },
+  "AWS Cloud": {
+    "variants": ["Amazon Web Services", "aws.amazon.com", "amazon aws", "aws cloud platform", "amazoncloud"]
+  },
+  "Microsoft Azure": {
+    "variants": ["Azure", "azure.com", "microsoft azure cloud", "azure cloud services", "msazure"]
+  },
+  "Google Cloud Platform": {
+    "variants": ["GCP", "google cloud", "gcloud", "cloud.google.com", "google cloud platform services"]
+  },
+  "IBM Cloud": {
+    "variants": ["IBMCloud", "ibm.com/cloud", "ibm cloud services", "ibm cloud platform", "ibmcloudcomputing"]
+  },
+  "Oracle Cloud Infrastructure": {
+    "variants": ["OCI", "oracle cloud", "oraclecloud.com", "oracle infrastructure cloud", "oci cloud"]
+  },
+  "Veeva Systems": {
+    "variants": ["Veeva", "veeva.com", "veeva crm", "veeva vault", "veevacloud"]
+  },
+  "ServiceNow GRC": {
+    "variants": ["ServiceNow Governance", "servicenow grc cloud", "servicenow grc", "now platform grc", "servicenowcompliance"]
+  },
+  "OneTrust": {
+    "variants": ["One Trust", "onetrust.com", "onetrust privacy", "onetrust cloud", "onetrust compliance"]
+  },
+  "LogicManager": {
+    "variants": ["Logic Manager", "logicmanager.com", "logicmanager grc", "logicmanager cloud", "logic manager grc cloud"]
+  },
+  "NAVEX Global": {
+    "variants": ["NAVEX", "navexglobal.com", "navex compliance", "navex cloud", "navex platform"]
+  },
+  "RSA Archer": {
+    "variants": ["RSA Archer GRC", "rsa archer platform", "rsaarcher", "rsa archer cloud", "rsaarchergrc"]
+  },
+  "Tugboat Logic": {
+    "variants": ["Tugboat", "tugboatlogic.com", "tugboat logic cloud", "tugboat compliance", "tugboatlogicplatform"]
+  },
+  "Drata": {
+    "variants": ["Drata Compliance", "drata.com", "drata cloud", "drata security", "dratacloud"]
+  },
+  "Vanta": {
+    "variants": ["Vanta Compliance", "vanta.com", "vanta cloud", "vanta security platform", "vantacloud"]
+  },
+  "TrustArc": {
+    "variants": ["Trust Arc", "trustarc.com", "trustarc privacy", "trustarc compliance cloud", "trustarc platform"]
+  },
+  "Shopify": {
+    "variants": ["Shopify.com", "shopify ecommerce", "shopify cloud", "shopify store", "shopifyplatform"]
+  },
+  "BigCommerce": {
+    "variants": ["Big Commerce", "bigcommerce.com", "big commerce cloud", "bigcommerce platform", "bigcom"]
+  },
+  "Magento Commerce": {
+    "variants": ["Magento", "adobe commerce", "magento cloud", "magento commerce cloud", "magentocommerce"]
+  },
+  "Wix eCommerce": {
+    "variants": ["Wix Stores", "wix ecommerce", "wix commerce", "wix.com ecommerce", "wixstore"]
+  },
+  "Squarespace Commerce": {
+    "variants": ["Squarespace", "squarespace ecommerce", "squarespace stores", "squarespace shop", "squarespacecommerce"]
+  },
+  "WooCommerce": {
+    "variants": ["Woo Commerce", "woocommerce.com", "wordpress woocommerce", "woo commerce plugin", "woocmmerce"]
+  },
+  "Oracle NetSuite": {
+    "variants": ["NetSuite ERP", "netsuite cloud", "oracle netsuite", "netsuite.com", "netsuitecloud"]
+  },
+  "SAP Business One": {
+    "variants": ["SAP B1", "sap businessone", "sap business 1", "sapb1", "sap business one cloud"]
+  },
+  "Infor CloudSuite Industrial": {
+    "variants": ["Infor CSI", "infor cloudsuite", "infor cloudsuite industrial", "infor erp csi", "cloudsuite industrial"]
+  },
+  "Epicor Prophet 21": {
+    "variants": ["Epicor P21", "epicor prophet21", "prophet 21 erp", "epicor p21 cloud", "prophet21"]
+  },
+  "Blue Yonder": {
+    "variants": ["BlueYonder", "blue yonder logistics", "blue yonder cloud", "blue yonder scm", "blueyondercloud"]
+  },
+  "Manhattan Associates": {
+    "variants": ["Manhattan", "manhattan associates logistics", "manhattan associates cloud", "manhattansoftware", "manhattan scm"]
+  },
+  "Projectmates": {
+    "variants": ["Project Mates", "projectmates.com", "projectmates cloud", "project mates construction", "projectmatesprojectmanagement"]
+  },
+  "Procore": {
+    "variants": ["Pro Core", "procore.com", "procore construction", "procore cloud", "procoreprojectmanagement"]
+  },
+  "PlanGrid": {
+    "variants": ["Plan Grid", "plangrid.com", "plangrid construction", "plan grid app", "plangridcloud"]
+  },
+  "Trimble": {
+    "variants": ["Trimble Construction", "trimble.com", "trimble cloud", "trimble gps", "trimble construction cloud"]
+  },
+  "OpenGov": {
+    "variants": ["Open Gov", "opengov.com", "opengov cloud", "opengov budgeting", "opengovplatform"]
+  },
+  "Blackbaud": {
+    "variants": ["Black Baud", "blackbaud.com", "blackbaud nonprofit", "blackbaud cloud", "blackbaud fundraising"]
+  },
+  "Bloomerang": {
+    "variants": ["Bloomerang CRM", "bloomerang.co", "bloomerang nonprofit", "bloomerang cloud", "bloomerang fundraising"]
+  },
+  "Salesforce Nonprofit Cloud": {
+    "variants": ["Salesforce NPSP", "salesforce nonprofit success pack", "salesforce nonprofit", "npsp cloud", "salesforce np cloud"]
+  },
+  "Stripe": {
+    "variants": ["Stripe Payments", "stripe.com", "stripe payment gateway", "stripe pay", "stripe cloud"]
+  },
+  "Square Payments": {
+    "variants": ["Square", "squareup.com", "square payments", "square pos", "squarecloud"]
+  },
+  "PayPal Business": {
+    "variants": ["PayPal", "paypal business account", "paypal.com business", "paypal merchant", "paypalbiz"]
+  },
+  "Authorize.Net": {
+    "variants": ["AuthorizeNet", "authorize.net payment gateway", "authorize net", "authorize.net cloud", "authnet"]
+  },
+  "Chargebee": {
+    "variants": ["Charge Bee", "chargebee.com", "chargebee billing", "chargebee cloud", "chargebeepayments"]
+  },
+  "Zuora": {
+    "variants": ["Zuora Billing", "zuora.com", "zuora cloud", "zuora payments", "zuorabilling"]
+  },
+  "Salesforce Marketing Cloud": {
+    "variants": ["Salesforce MC", "salesforce marketing", "marketing cloud salesforce", "sfmc", "salesforcemc"]
+  },
+  "HubSpot Marketing Hub": {
+    "variants": ["HubSpot Marketing", "hubspot marketing hub", "hubspot.com marketing", "hubspot mhub", "hubspotmarket"]
+  },
+  "Marketo": {
+    "variants": ["Adobe Marketo", "marketo.com", "marketo engage", "marketo cloud", "adobemarketo"]
+  },
+  "ActiveCampaign": {
+    "variants": ["Active Campaign", "activecampaign.com", "active campaign cloud", "activecampaign email", "activecampaigncrm"]
+  },
+  "Mailchimp": {
+    "variants": ["Mail Chimp", "mailchimp.com", "mailchimp marketing", "mailchimp cloud", "mailchimpemail"]
+  },
+  "Constant Contact": {
+    "variants": ["ConstantContact", "constantcontact.com", "constant contact marketing", "constant contact cloud", "constantcontactemail"]
+  },
+  "Zendesk Support": {
+    "variants": ["Zendesk", "zendesk support cloud", "zendesk.com support", "zendesk help desk", "zendeskservice"]
+  },
+  "Intercom Messenger": {
+    "variants": ["Intercom", "intercom chat", "intercom messenger cloud", "intercom.com", "intercommessenger"]
+  },
+  "Freshdesk": {
+    "variants": ["Fresh Desk", "freshdesk.com", "freshdesk support", "freshdesk cloud", "freshdeskhelpdesk"]
+  },
+  "Help Scout": {
+    "variants": ["HelpScout", "helpscout.com", "help scout cloud", "help scout support", "helpscouthelpdesk"]
+  },
+  "Zoho Desk": {
+    "variants": ["ZohoDesk", "zoho desk cloud", "zoho.com desk", "zoho help desk", "zohodesk"]
+  },
+  "Kayako": {
+    "variants": ["Kayako Helpdesk", "kayako.com", "kayako support", "kayako cloud", "kayakohelp"]
+  },
+  "Pipefy": {
+    "variants": ["Pipe Fy", "pipefy.com", "pipefy workflow", "pipefy cloud", "pipefycloud"]
+  },
+  "Workato": {
+    "variants": ["Work Ato", "workato.com", "workato integrations", "workato cloud", "workatocloud"]
+  },
+  "Rockwell Automation": {
+    "variants": ["Rockwell", "rockwellautomation.com", "rockwell automation cloud", "rockwell factorytalk", "rockwellautomationplatform"]
+  },
+  "Honeywell Process Solutions": {
+    "variants": ["Honeywell Process", "honeywell process cloud", "honeywellprocess.com", "honeywell pks", "honeywellautomation"]
+  },
+  "Emerson DeltaV": {
+    "variants": ["DeltaV", "emerson deltav", "emerson deltav cloud", "emersonautomation.com", "deltavprocesscontrol"]
+  },
+  "ABB Ability": {
+    "variants": ["ABB", "abb ability platform", "abb.com", "abb cloud", "abbabilitycloud"]
+  },
+  "OSIsoft PI System": {
+    "variants": ["OSIsoft PI", "pi system", "osisoft.com", "osisoft pi cloud", "pi system cloud"]
+  },
+  "AVEVA": {
+    "variants": ["AVEVA Software", "aveva.com", "aveva cloud", "aveva scada", "aveva platform"]
+  },
+  "Toast POS": {
+    "variants": ["Toast", "toasttab.com", "toast pos cloud", "toast restaurant pos", "toasttab"]
+  },
+  "Square for Restaurants": {
+    "variants": ["Square Restaurants", "squareup.com restaurants", "square for restaurants", "square restaurant pos", "squarepos"]
+  },
+  "Lightspeed POS": {
+    "variants": ["Lightspeed", "lightspeedhq.com", "lightspeed restaurant pos", "lightspeed cloud", "lightspeedhq"]
+  },
+  "TouchBistro": {
+    "variants": ["Touch Bistro", "touchbistro.com", "touchbistro pos", "touchbistro cloud", "touchbistro restaurant"]
+  },
+  "Revel Systems": {
+    "variants": ["Revel POS", "revelsystems.com", "revel systems cloud", "revel restaurant pos", "revelsystems"]
+  },
+  "Canvas LMS": {
+    "variants": ["Canvas", "instructure.com", "canvas lms", "canvas cloud", "instructure canvas"]
+  },
+  "Blackboard Learn": {
+    "variants": ["Blackboard", "blackboard.com", "blackboard learn cloud", "blackboard lms", "blackboardlearning"]
+  },
+  "Google Classroom": {
+    "variants": ["GoogleClassroom", "classroom.google.com", "google classroom app", "googleclassroomcloud", "googleeducation"]
+  },
+  "Schoology": {
+    "variants": ["School Ogy", "schoology.com", "schoology lms", "schoology cloud", "schoologyplatform"]
+  },
+  "Brightspace D2L": {
+    "variants": ["Brightspace", "brightspace d2l", "brightspace.com", "brightspace cloud", "d2lbrightspace"]
+  },
+  "AppFolio Property Manager": {
+    "variants": ["AppFolio", "appfolio.com", "appfolio property cloud", "appfolio management", "appfolio property manager cloud"]
+  },
+  "Buildium": {
+    "variants": ["Buildium Property", "buildium.com", "buildium cloud", "buildium property management", "buildium platform"]
+  },
+  "Yardi Breeze": {
+    "variants": ["Yardi", "yardibreeze.com", "yardi breeze property management", "yardi cloud", "yardibreeze"]
+  },
+  "Entrata": {
+    "variants": ["Entrata Property", "entrata.com", "entrata cloud", "entrata platform", "entrata property cloud"]
+  },
+  "BoomTown CRM": {
+    "variants": ["BoomTown", "boomtownroi.com", "boomtown crm cloud", "boomtown real estate", "boomtownplatform"]
+  },
+  "kvCORE": {
+    "variants": ["KV Core", "kvcore.com", "kvcore real estate", "kv core crm", "kvcorecloud"]
+  },
+  "Chime CRM": {
+    "variants": ["Chime", "chime.me", "chime crm cloud", "chime real estate crm", "chimecrmplatform"]
+  },
+  "Follow Up Boss": {
+    "variants": ["Followup Boss", "followupboss.com", "follow up boss crm", "follow up boss cloud", "fubcrm"]
+  },
+  "CINC CRM": {
+    "variants": ["CINC", "cincpro.com", "cinc crm cloud", "cinc real estate crm", "cincplatform"]
+  },
+  "Clio Manage": {
+    "variants": ["Clio", "clio.com", "clio manage cloud", "clio legal software", "cliomanage"]
+  },
+  "PracticePanther": {
+    "variants": ["Practice Panther", "practicepanther.com", "practicepanther cloud", "practice panther crm", "practicepantherlegal"]
+  },
+  "Smokeball": {
+    "variants": ["Smoke Ball", "smokeball.com", "smokeball cloud", "smokeball crm", "smokeballlegal"]
+  },
+  "MyCase": {
+    "variants": ["My Case", "mycase.com", "mycase legal software", "mycase cloud", "mycasecrm"]
+  },
+  "NetDocuments": {
+    "variants": ["Net Documents", "netdocuments.com", "net documents cloud", "netdocuments platform", "netdocumentslegal"]
+  },
+  "DocuWare": {
+    "variants": ["Docu Ware", "docuware.com", "docuware cloud", "docuware document management", "docuwareplatform"]
+  },
+  "iManage Work": {
+    "variants": ["iManage", "imanage.com", "imanage work cloud", "imanage documents", "imanagelegal"]
+  },
+  "Litify": {
+    "variants": ["Litify Legal", "litify.com", "litify cloud", "litify crm", "litifyplatform"]
+  },
+  "RelativityOne": {
+    "variants": ["Relativity", "relativityone.com", "relativity cloud", "relativity ediscovery", "relativity platform"]
+  },
+  "Everlaw": {
+    "variants": ["Ever Law", "everlaw.com", "everlaw cloud", "everlaw ediscovery", "everlawplatform"]
+  },
+  "DISCO": {
+    "variants": ["CS Disco", "csdisco.com", "disco cloud", "disco ediscovery", "csdisco platform"]
+  },
+  "Onna": {
+    "variants": ["Onna Data", "onna.com", "onna cloud", "onna ediscovery", "onnadataplatform"]
+  },
+  "Casepoint": {
+    "variants": ["Case Point", "casepoint.com", "casepoint cloud", "casepoint ediscovery", "casepointplatform"]
+  },
+  "Logikcull": {
+    "variants": ["Logik Cull", "logikcull.com", "logikcull cloud", "logikcull ediscovery", "logikcullplatform"]
+  },
+  "Zapproved": {
+    "variants": ["Z Approved", "zapproved.com", "zapproved cloud", "zapproved ediscovery", "zapprovedplatform"]
+  },
+  "Kareo Billing": {
+    "variants": ["Kareo", "kareo billing cloud", "kareo billing software", "kareo.com billing", "kareobilling"]
+  },
+  "AdvancedMD": {
+    "variants": ["Advanced MD", "advancedmd.com", "advanced md billing", "advancedmd cloud", "advancedmdbilling"]
+  },
+  "AthenaCollector": {
+    "variants": ["Athena Collector", "athenahealth billing", "athenacollector", "athenahealth collector", "athenahealthrcm"]
+  },
+  "eClinicalWorks RCM": {
+    "variants": ["eClinicalWorks Billing", "eclinicalworks rcm", "eclinicalworks.com billing", "eclinicalworks revenue cycle", "ecwrcm"]
+  },
+  "NextGen RCM": {
+    "variants": ["NextGen Billing", "nextgen rcm", "nextgen healthcare billing", "nextgen revenue cycle", "nextgenrcm"]
+  },
+  "FIS Global": {
+    "variants": ["FIS", "fisglobal.com", "fis banking", "fis financial cloud", "fisglobalbanking"]
+  },
+  "Finastra": {
+    "variants": ["Finastra Banking", "finastra.com", "finastra financial cloud", "finastra banktech", "finastrabanking"]
+  },
+  "Temenos": {
+    "variants": ["Temenos Banking", "temenos.com", "temenos cloud", "temenos core banking", "temenosbanktech"]
+  },
+  "nCino": {
+    "variants": ["NCino", "ncino.com", "ncino banking cloud", "ncino banktech", "ncino platform"]
+  },
+  "Mambu": {
+    "variants": ["Mambu Cloud", "mambu.com", "mambu core banking", "mambu financial services", "mambuplatform"]
+  },
+  "Blackbaud Raiser’s Edge NXT": {
+    "variants": ["Blackbaud Raiser Edge", "raisers edge nxt", "blackbaud raiser's edge", "blackbaud fundraising", "raisersedgecloud"]
+  },
+  "Bloomerang Donor CRM": {
+    "variants": ["Bloomerang CRM", "bloomerang.co", "bloomerang nonprofit crm", "bloomerang fundraising cloud", "bloomerangdonorcrm"]
+  },
+  "DonorPerfect": {
+    "variants": ["Donor Perfect", "donorperfect.net", "donor perfect crm", "donorperfect fundraising", "donorperfectcloud"]
+  },
+  "NeonCRM": {
+    "variants": ["Neon CRM", "neoncrm.com", "neon crm cloud", "neonfundraise", "neoncrmplatform"]
+  },
+  "Kindful": {
+    "variants": ["Kindful CRM", "kindful.com", "kindful fundraising", "kindful donor management", "kindfulplatform"]
+  },
+  "Buildertrend": {
+    "variants": ["Builder Trend", "buildertrend.com", "buildertrend construction management", "buildertrend cloud", "buildertrendplatform"]
+  },
+  "ProEst": {
+    "variants": ["Pro Est", "proest.com", "proest construction", "proest estimating cloud", "proestcloud"]
+  },
+  "PlanSwift": {
+    "variants": ["Plan Swift", "planswift.com", "planswift construction", "planswift estimating", "planswiftcloud"]
+  },
+  "RedTeam Software": {
+    "variants": ["Red Team", "redteam.com", "redteam construction", "redteam project management", "redteamcloud"]
+  },
+  "CoConstruct": {
+    "variants": ["Co Construct", "coconstruct.com", "coconstruct cloud", "coconstruct construction management", "coconstructplatform"]
+  },
+  "PandaDoc": {
+    "variants": ["Panda Doc", "pandadoc.com", "pandadoc crm integration", "pandadoc cloud", "pandadocdocument"]
+  },
+  "Conga Composer": {
+    "variants": ["Conga", "conga.com", "conga composer cloud", "conga salesforce", "congacomposer"]
+  },
+  "Formstack Documents": {
+    "variants": ["Formstack", "formstack documents cloud", "formstack.com", "formstack doc automation", "formstackdocs"]
+  },
+  "HelloSign": {
+    "variants": ["Hello Sign", "hellosign.com", "hellosign cloud", "dropboxsign", "hellosign e-sign"]
+  },
+  "SignNow": {
+    "variants": ["Sign Now", "signnow.com", "signnow cloud", "airslate signnow", "signnow e-sign"]
+  },
+  "RightSignature": {
+    "variants": ["Right Signature", "rightsignature.com", "right signature cloud", "rightsignelectronic", "rightsig"]
+  },
+  "Backblaze B2": {
+    "variants": ["Backblaze", "backblaze.com", "backblaze b2 cloud", "backblaze backup", "b2cloud"]
+  },
+  "Wasabi Hot Cloud Storage": {
+    "variants": ["Wasabi", "wasabi.com", "wasabi cloud", "wasabi hot storage", "wasabicloud"]
+  },
+  "Carbonite": {
+    "variants": ["Carbonite Backup", "carbonite.com", "carbonite cloud", "carbonite recovery", "carboniteplatform"]
+  },
+  "Acronis Cyber Protect": {
+    "variants": ["Acronis", "acronis.com", "acronis cloud", "acronis backup", "cyberprotect"]
+  },
+  "IDrive": {
+    "variants": ["I Drive", "idrive.com", "idrive backup", "idrive cloud", "idriveplatform"]
+  },
+  "Nerdio": {
+    "variants": ["Nerdio Manager", "getnerdio.com", "nerdio cloud", "nerdio virtual desktop", "nerdioplatform"]
+  },
+  "Workspot": {
+    "variants": ["Work Spot", "workspot.com", "workspot cloud desktop", "workspot vdi", "workspotplatform"]
+  },
+  "Citrix DaaS": {
+    "variants": ["Citrix", "citrix daas cloud", "citrix.com", "citrix virtual desktop", "citrixdaas"]
+  },
+  "Cameyo": {
+    "variants": ["Came Yo", "cameyo.com", "cameyo cloud apps", "cameyo virtualization", "cameyoplatform"]
+  },
+  "Parallels RAS": {
+    "variants": ["Parallels", "parallels remote application server", "parallels ras", "parallels cloud desktop", "parallelsras"]
+  },
+  "Skilljar": {
+    "variants": ["Skill Jar", "skilljar.com", "skilljar lms", "skilljar training", "skilljarcloud"]
+  },
+  "LearnUpon": {
+    "variants": ["Learn Upon", "learnupon.com", "learnupon lms", "learnupon training cloud", "learnuponplatform"]
+  },
+  "Docebo": {
+    "variants": ["Do Cebo", "docebo.com", "docebo lms", "docebo training", "docebocloud"]
+  },
+  "TalentLMS": {
+    "variants": ["Talent LMS", "talentlms.com", "talent lms cloud", "talent learning", "talentlmsplatform"]
+  },
+  "Thinkific": {
+    "variants": ["Think Ific", "thinkific.com", "thinkific courses", "thinkific training", "thinkificcloud"]
+  },
+  "Teachable": {
+    "variants": ["Teach Able", "teachable.com", "teachable courses", "teachable cloud", "teachablelms"]
+  },
+  "Kajabi": {
+    "variants": ["Kajabi LMS", "kajabi.com", "kajabi training", "kajabi courses", "kajabiplatform"]
+  },
+  "Podia": {
+    "variants": ["Po Dia", "podia.com", "podia cloud", "podia training", "podiaplatform"]
+  },
+  "Absorb LMS": {
+    "variants": ["Absorb", "absorb.com", "absorb lms cloud", "absorb platform", "absorblms"]
+  },
+  "360Learning": {
+    "variants": ["360 Learning", "360learning.com", "360 learning lms", "360learning cloud", "360lms"]
+  },
+  "Bridge LMS": {
+    "variants": ["Bridge", "bridgeapp.com", "bridge lms", "bridge learning cloud", "bridgelms"]
+  },
+  "Litmos": {
+    "variants": ["SAP Litmos", "litmos.com", "saplitmos", "litmos lms cloud", "litmosplatform"]
+  },
+  "iSpring Learn": {
+    "variants": ["iSpring", "ispringlearn.com", "ispring learn cloud", "ispring lms", "ispringlearning"]
+  },
+  "Zoho Learn": {
+    "variants": ["ZohoLearning", "zoho learn", "zoho.com learn", "zoholearn cloud", "zoholms"]
+  },
+  "Trainual": {
+    "variants": ["Train Ual", "trainual.com", "trainual lms", "trainual training platform", "trainualcloud"]
+  },
+  "Lessonly": {
+    "variants": ["Less Only", "lessonly.com", "lessonly lms", "lessonly training", "lessonlyplatform"]
+  },
+  "Northpass": {
+    "variants": ["North Pass", "northpass.com", "northpass lms", "northpass training cloud", "northpassplatform"]
+  },
+  "Tovuti LMS": {
+    "variants": ["Tovuti", "tovutilms.com", "tovuti cloud", "tovuti platform", "tovutilms"]
+  },
+  "Ruzuku": {
+    "variants": ["Ruzuku LMS", "ruzuku.com", "ruzuku training", "ruzuku course platform", "ruzukucloud"]
+  },
+  "Graphy": {
+    "variants": ["Graphy LMS", "graphy.com", "graphy training", "graphy courses", "graphycloud"]
+  },
+  "TalentCards": {
+    "variants": ["Talent Cards", "talentcards.com", "talentcards microlearning", "talentcards app", "talentcardslms"]
+  },
+  "Coassemble": {
+    "variants": ["Co Assemble", "coassemble.com", "coassemble lms", "coassemble cloud", "coassembleplatform"]
+  },
+  "Hopin": {
+    "variants": ["Hop In", "hopin.com", "hopin events", "hopin virtual events", "hopinplatform"]
+  },
+  "Webex Events": {
+    "variants": ["Webex Events", "cisco webex events", "webexevents.com", "webexevents", "webexeventscloud"]
+  },
+  "ON24": {
+    "variants": ["ON 24", "on24.com", "on24 virtual events", "on24 webinars", "on24cloud"]
+  },
+  "BigMarker": {
+    "variants": ["Big Marker", "bigmarker.com", "big marker webinars", "bigmarker events", "bigmarkerplatform"]
+  },
+  "Airmeet": {
+    "variants": ["Air Meet", "airmeet.com", "airmeet virtual", "airmeet events", "airmeetcloud"]
+  },
+  "Calendly": {
+    "variants": ["Calen Dly", "calendly.com", "calendly scheduling", "calendly calendar", "calendlyapp"]
+  },
+  "Acuity Scheduling": {
+    "variants": ["Acuity", "acuityscheduling.com", "acuity scheduling cloud", "acuity calendar", "acuityschedule"]
+  },
+  "YouCanBook.me": {
+    "variants": ["You Can Book Me", "youcanbook.me", "you can book.me", "ycbookme", "youcanbookplatform"]
+  },
+  "ScheduleOnce": {
+    "variants": ["Schedule Once", "scheduleonce.com", "schedule once platform", "scheduleonce cloud", "schedonce"]
+  },
+  "Setmore": {
+    "variants": ["Set More", "setmore.com", "setmore scheduling", "setmore calendar", "setmoreapp"]
+  },
+  "TidyCal": {
+    "variants": ["Tidy Cal", "tidycal.com", "tidycal scheduling", "tidycal booking", "tidycalplatform"]
+  },
+  "Reclaim.ai": {
+    "variants": ["Reclaim AI", "reclaim.ai", "reclaim calendar", "reclaim scheduling", "reclaimautomation"]
+  },
+  "Motion": {
+    "variants": ["Use Motion", "usemotion.com", "motion scheduler", "motion ai planner", "motioncalendar"]
+  },
+  "x.ai": {
+    "variants": ["XAI", "x.ai scheduling", "x.ai assistant", "xai calendar", "xai platform"]
+  },
+  "Zapier": {
+    "variants": ["Zap Ier", "zapier.com", "zapier automation", "zapier integrations", "zapierplatform"]
+  },
+  "Make": {
+    "variants": ["Integromat", "make.com", "make automation", "make workflows", "integromatautomation"]
+  },
+  "n8n": {
+    "variants": ["N8N.io", "n8n automation", "n8n cloud", "n8n workflow", "n8nplatform"]
+  },
+  "Tray.io": {
+    "variants": ["Tray IO", "tray.io", "tray automation", "tray workflow cloud", "traysaas"]
+  },
+  "Parabola": {
+    "variants": ["Parabola.io", "parabola cloud", "parabola automation", "parabola workflows", "parabolaplatform"]
+  },
+  "Whalesync": {
+    "variants": ["Whale Sync", "whalesync.com", "whalesync automation", "whalesync integrations", "whalesynccloud"]
+  },
+  "Retool": {
+    "variants": ["Re Tool", "retool.com", "retool app builder", "retool low code", "retoolplatform"]
+  },
+  "Outsystems": {
+    "variants": ["Out Systems", "outsystems.com", "outsystems low code", "outsystems cloud", "outsystemsplatform"]
+  },
+  "Appgyver": {
+    "variants": ["App Gyver", "appgyver.com", "appgyver nocode", "appgyver studio", "appgyverplatform"]
+  },
+  "Bubble.io": {
+    "variants": ["Bubble", "bubble.io", "bubble app builder", "bubble nocode", "bubbleplatform"]
+  },
+  "Webflow": {
+    "variants": ["Web Flow", "webflow.com", "webflow designer", "webflow builder", "webflowplatform"]
+  },
+  "Framer": {
+    "variants": ["Framer App", "framer.com", "framer site builder", "framer design", "framerplatform"]
+  },
+  "Trello": {
+    "variants": ["Trello App", "trello.com", "trello boards", "trello project manager", "trelloboards"]
+  },
+  "Miro": {
+    "variants": ["Miro Board", "miro.com", "miro whiteboard", "miro collaboration", "miroapp"]
+  },
+  "FigJam": {
+    "variants": ["Figma Jam", "figjam.com", "figjam board", "figjam figma", "figjamcloud"]
+  },
+  "Notion": {
+    "variants": ["Notion.so", "notion.com", "notion workspace", "notion app", "notionplatform"]
+  },
+  "Coda": {
+    "variants": ["Coda.io", "coda.com", "coda docs", "coda platform", "codadocs"]
+  },
+  "ClickUp Whiteboards": {
+    "variants": ["ClickUp", "clickup whiteboard", "clickup whiteboards", "clickup app", "clickupplatform"]
+  },
+  "Slite": {
+    "variants": ["Slite App", "slite.com", "slite docs", "slite collaboration", "slitedocs"]
+  },
+  "Loom": {
+    "variants": ["Loom Video", "loom.com", "loom recording", "loom async", "loomcloud"]
+  },
+  "Tango": {
+    "variants": ["Tango App", "tango.us", "tango documentation", "tango workflow", "tangoplatform"]
+  },
+  "Scribe": {
+    "variants": ["Scribe How", "scribehow.com", "scribe documentation", "scribe cloud", "scribeplatform"]
+  },
+  "Marker.io": {
+    "variants": ["Marker IO", "marker.io", "marker feedback", "marker bug tracker", "markerplatform"]
+  },
+  "BugHerd": {
+    "variants": ["Bug Herd", "bugherd.com", "bugherd feedback", "bugherd tracking", "bugherdplatform"]
+  },
+  "Clari": {
+    "variants": ["Clari Forecasting", "clari.com", "clari revenue", "clari sales", "claricloud"]
+  },
+  "Gong.io": {
+    "variants": ["Gong", "gong.io", "gong sales", "gong conversation intelligence", "gongplatform"]
+  },
+  "Outreach.io": {
+    "variants": ["Outreach", "outreach.io", "outreach sales engagement", "outreach platform", "outreachcloud"]
+  },
+  "Salesloft": {
+    "variants": ["Sales Loft", "salesloft.com", "sales engagement salesloft", "salesloft cloud", "salesloftplatform"]
+  },
+  "Apollo.io": {
+    "variants": ["Apollo", "apollo.io", "apollo sales", "apollo data platform", "apollocloud"]
+  },
+  "ZoomInfo": {
+    "variants": ["Zoom Info", "zoominfo.com", "zoominfo sales", "zoominfo data cloud", "zoominfoplatform"]
+  },
+  "LeadIQ": {
+    "variants": ["Lead IQ", "leadiq.com", "leadiq sales prospecting", "leadiq cloud", "leadiqplatform"]
+  },
+  "Clearbit": {
+    "variants": ["Clear Bit", "clearbit.com", "clearbit enrichment", "clearbit sales", "clearbitplatform"]
+  },
+  "6sense": {
+    "variants": ["6 Sense", "6sense.com", "6sense abm", "6sense cloud", "6senseplatform"]
+  },
+  "Demandbase": {
+    "variants": ["Demand Base", "demandbase.com", "demandbase abm", "demandbase platform", "demandbasecloud"]
+  },
+  "Mode Analytics": {
+    "variants": ["Mode", "modeanalytics.com", "mode analytics cloud", "mode data platform", "modeanalytics"]
+  },
+  "Metabase": {
+    "variants": ["Meta Base", "metabase.com", "metabase analytics", "metabase cloud", "metabaseplatform"]
+  },
+  "Redash": {
+    "variants": ["Re Dash", "redash.io", "redash analytics", "redash data", "redashcloud"]
+  },
+  "Holistics": {
+    "variants": ["Holistics Analytics", "holistics.io", "holistics cloud", "holistics data", "holisticsplatform"]
+  },
+  "Sigma Computing": {
+    "variants": ["Sigma", "sigmacomputing.com", "sigma analytics", "sigma cloud", "sigmacomputingplatform"]
+  },
+  "Domo Analytics": {
+    "variants": ["Domo", "domo.com", "domo analytics cloud", "domo data", "domoplatform"]
+  },
+  "GoodData": {
+    "variants": ["Good Data", "gooddata.com", "gooddata analytics", "gooddata cloud", "gooddataplatform"]
+  },
+  "ThoughtSpot": {
+    "variants": ["Thought Spot", "thoughtspot.com", "thoughtspot analytics", "thoughtspot cloud", "thoughtspotplatform"]
+  },
+  "Sisense": {
+    "variants": ["Si Sense", "sisense.com", "sisense analytics", "sisense data", "sisenseplatform"]
+  },
+  "Yellowfin BI": {
+    "variants": ["Yellowfin", "yellowfinbi.com", "yellowfin analytics", "yellowfin bi cloud", "yellowfinplatform"]
+  },
+  "Adverity": {
+    "variants": ["Ad Verity", "adverity.com", "adverity analytics", "adverity marketing data", "adverityplatform"]
+  },
+  "Heap Analytics": {
+    "variants": ["Heap", "heapanalytics.com", "heap product analytics", "heap cloud", "heapplatform"]
+  },
+  "Mixpanel": {
+    "variants": ["Mix Panel", "mixpanel.com", "mixpanel analytics", "mixpanel cloud", "mixpanelplatform"]
+  },
+  "Amplitude Analytics": {
+    "variants": ["Amplitude", "amplitude.com", "amplitude product analytics", "amplitude cloud", "amplitudeplatform"]
+  },
+  "Pendo": {
+    "variants": ["Pendo.io", "pendo.io", "pendo product experience", "pendo analytics", "pendoplatform"]
+  },
+  "WalkMe": {
+    "variants": ["Walk Me", "walkme.com", "walkme digital adoption", "walkme cloud", "walkmeplatform"]
+  },
+  "Whatfix": {
+    "variants": ["What Fix", "whatfix.com", "whatfix digital adoption", "whatfix platform", "whatfixcloud"]
+  },
+  "Userlane": {
+    "variants": ["User Lane", "userlane.com", "userlane digital adoption", "userlane cloud", "userlaneplatform"]
+  },
+  "Appcues": {
+    "variants": ["App Cues", "appcues.com", "appcues onboarding", "appcues platform", "appcuescloud"]
+  },
+  "ChurnZero": {
+    "variants": ["Churn Zero", "churnzero.com", "churnzero customer success", "churnzero cloud", "churnzeroplatform"]
+  },
+  "Gainsight": {
+    "variants": ["Gain Sight", "gainsight.com", "gainsight customer success", "gainsight cloud", "gainsightplatform"]
+  },
+  "Totango": {
+    "variants": ["To Tango", "totango.com", "totango customer success", "totango platform", "totangocloud"]
+  },
+  "ClientSuccess": {
+    "variants": ["Client Success CRM", "clientsuccess.com", "clientsuccess platform", "clientsuccesscloud", "client success platform"]
+  },
+  "Freshsuccess": {
+    "variants": ["Fresh Success", "freshsuccess.com", "freshworks success", "freshsuccess platform", "freshsuccesscloud"]
+  },
+  "Vivantio": {
+    "variants": ["Vivantio Service", "vivantio.com", "vivantio platform", "vivantio cloud", "vivantioservice"]
+  },
+  "Kustomer": {
+    "variants": ["Kustomer CRM", "kustomer.com", "kustomer platform", "kustomer cloud", "kustomercrm"]
+  },
+  "Gladly": {
+    "variants": ["Gladly CRM", "gladly.com", "gladly platform", "gladly service cloud", "gladlycustomer"]
+  },
+  "Front": {
+    "variants": ["Front App", "frontapp.com", "front communication", "front inbox", "frontcloud"]
+  },
+  "Help Scout Beacon": {
+    "variants": ["HelpScout Beacon", "helpscout.com beacon", "helpscout beacon cloud", "helpscout help", "helpscoutbeacon"]
+  },
+  "athenahealth EHR": {
+    "variants": ["Athena Health", "athenahealth.com", "athena ehr", "athenahealth ehr cloud", "athenahealthehr"]
+  },
+  "DrChrono": {
+    "variants": ["Dr Chrono", "drchrono.com", "drchrono ehr", "drchrono billing", "drchrono cloud"]
+  },
+  "Kareo Clinical": {
+    "variants": ["Kareo Clinical EHR", "kareo.com clinical", "kareo ehr", "kareo clinical cloud", "kareoclinical"]
+  },
+  "Practice Fusion": {
+    "variants": ["PracticeFusion", "practicefusion.com", "practice fusion ehr", "practice fusion cloud", "practicefusionehr"]
+  },
+  "NextGen Healthcare": {
+    "variants": ["Next Gen", "nextgen.com", "nextgen ehr", "nextgen healthcare cloud", "nextgenhealth"]
+  },
+  "eClinicalWorks": {
+    "variants": ["eClinical Works", "eclinicalworks.com", "eclinicalworks ehr cloud", "ecwcloud", "eclinicalcloud"]
+  },
+  "Greenway PrimeSuite": {
+    "variants": ["Greenway", "greenwayhealth.com", "greensuite ehr", "greenway primesuite cloud", "primesuite"]
+  },
+  "AdvancedMD EHR": {
+    "variants": ["Advanced MD", "advancedmd.com", "advanced md ehr", "advancedmd health cloud", "advancedmdehr"]
+  },
+  "Cerner PowerChart": {
+    "variants": ["Cerner", "cerner.com", "cerner ehr", "powerchart cerner", "cernerpowerchart"]
+  },
+  "EpicCare": {
+    "variants": ["Epic Care", "epic.com", "epiccare ehr", "epiccare cloud", "epiccareplatform"]
+  },
+  "Canvas Medical": {
+    "variants": ["CanvasMedical", "canvasmedical.com", "canvas ehr", "canvas medical platform", "canvasmedicalehr"]
+  },
+  "SimplePractice": {
+    "variants": ["Simple Practice", "simplepractice.com", "simplepractice ehr", "simplepractice cloud", "simplepracticeplatform"]
+  },
+  "TheraNest": {
+    "variants": ["Thera Nest", "theranest.com", "theranest ehr", "theranest therapy cloud", "theranestplatform"]
+  },
+  "Schoology LMS": {
+    "variants": ["School Ogy LMS", "schoology.com", "schoology lms", "schoology cloud", "schoologylms"]
+  },
+  "Canvas LMS (Instructure)": {
+    "variants": ["Canvas LMS", "instructure.com", "canvas learning platform", "canvas cloud lms", "canvaslms"]
+  },
+  "Blackbaud Education Management": {
+    "variants": ["Blackbaud Education", "blackbaud.com", "blackbaud school cloud", "blackbaud edtech", "blackbaudedtech"]
+  },
+  "Google Workspace for Education": {
+    "variants": ["Google Education", "edu.google.com", "google classroom cloud", "gworkspaceeducation", "googleworkspaceschools"]
+  },
+  "Moodle": {
+    "variants": ["Moodle LMS", "moodle.org", "moodle learning platform", "moodle cloud", "moodlelms"]
+  },
+  "D2L Brightspace": {
+    "variants": ["Brightspace D2L", "d2l.com", "brightspace learning", "brightspace cloud", "brightspaced2l"]
+  },
+  "Nearpod": {
+    "variants": ["Near Pod", "nearpod.com", "nearpod learning", "nearpod cloud", "nearpodplatform"]
+  },
+  "Kahoot!": {
+    "variants": ["Kahoot", "kahoot.com", "kahoot education", "kahoot cloud", "kahootplatform"]
+  },
+  "Remind": {
+    "variants": ["Remind App", "remind.com", "remind education", "remind cloud", "remindplatform"]
+  },
+  "Seesaw": {
+    "variants": ["Seesaw App", "seesaw.me", "seesaw learning cloud", "seesaw classroom", "seesawplatform"]
+  },
+  "Edmodo": {
+    "variants": ["Ed Modo", "edmodo.com", "edmodo learning", "edmodo cloud", "edmodoplatform"]
+  },
+  "Prodigy Education": {
+    "variants": ["Prodigy Math", "prodigygame.com", "prodigy education cloud", "prodigy game", "prodigyeducation"]
+  },
+  "Zearn": {
+    "variants": ["Zearn Math", "zearn.org", "zearn education", "zearn math cloud", "zearnedtech"]
+  },
+  "MasteryConnect": {
+    "variants": ["Mastery Connect", "masteryconnect.com", "masteryconnect assessments", "masteryconnect cloud", "masteryconnectplatform"]
+  },
+  "Socrative": {
+    "variants": ["Socrative App", "socrative.com", "socrative quizzes", "socrative cloud", "socrativeplatform"]
+  },
+  "Flipgrid (Flip)": {
+    "variants": ["Flip Grid", "flipgrid.com", "flipgrid education", "flipgrid cloud", "flipplatform"]
+  },
+  "Braintree": {
+    "variants": ["Brain Tree", "braintreepayments.com", "braintree payment cloud", "braintree gateway", "braintreeplatform"]
+  },
+  "Adyen": {
+    "variants": ["Ad Yen", "adyen.com", "adyen payments", "adyen cloud", "adyenplatform"]
+  },
+  "Checkout.com": {
+    "variants": ["Checkout", "checkout.com", "checkout payment gateway", "checkout cloud", "checkoutplatform"]
+  },
+  "Stripe Payments": {
+    "variants": ["Stripe", "stripe.com", "stripe payments", "stripe gateway", "stripeplatform"]
+  },
+  "Payoneer": {
+    "variants": ["Pay Oneer", "payoneer.com", "payoneer payments", "payoneer platform", "payoneercloud"]
+  },
+  "Plaid": {
+    "variants": ["Plaid API", "plaid.com", "plaid banking", "plaid data cloud", "plaidplatform"]
+  },
+  "Bill.com": {
+    "variants": ["Bill Dot Com", "bill.com", "bill.com payments", "billcom", "billcloud"]
+  },
+  "Tipalti": {
+    "variants": ["Tip Alti", "tipalti.com", "tipalti payments", "tipalti cloud", "tipaltiplatform"]
+  },
+  "Melio Payments": {
+    "variants": ["Melio", "meliopayments.com", "melio payments cloud", "melio b2b payments", "melioplatform"]
+  },
+  "Square Banking": {
+    "variants": ["Square Bank", "squareup banking", "squareup bank", "square banking cloud", "squarebank"]
+  },
+  "Brex": {
+    "variants": ["Brex Card", "brex.com", "brex banking", "brex corporate card", "brexplatform"]
+  },
+  "Ramp": {
+    "variants": ["Ramp Card", "ramp.com", "ramp corporate card", "ramp banking", "rampplatform"]
+  },
+  "Divvy": {
+    "variants": ["Divvy Card", "getdivvy.com", "divvy payments", "divvy corporate card", "divvyplatform"]
+  },
+  "Billtrust": {
+    "variants": ["Bill Trust", "billtrust.com", "billtrust payments", "billtrust cloud", "billtrustplatform"]
+  },
+  "Tipalti Approve": {
+    "variants": ["Tipalti Approve", "tipalti.com approve", "tipalti procurement", "tipalti approve cloud", "tipaltiapprove"]
+  },
+  "Zip Intake-to-Procure": {
+    "variants": ["Zip Procurement", "ziphq.com", "zip intake to procure", "zip procurement cloud", "zipplatform"]
+  },
+  "Coupa Software": {
+    "variants": ["Coupa", "coupa.com", "coupa procurement", "coupa cloud", "coupasoftware"]
+  },
+  "Procurify": {
+    "variants": ["Procure Ify", "procurify.com", "procurify procurement", "procurify platform", "procurifycloud"]
+  },
+  "SAP Ariba": {
+    "variants": ["SAP Ariba Procurement", "sap ariba", "ariba cloud", "sapariba.com", "sap aribacloud"]
+  },
+  "Workday Financial Management": {
+    "variants": ["Workday Finance", "workday.com financial", "workday financial cloud", "workday finance cloud", "workdayfinancial"]
+  },
+  "Oracle NetSuite Financials": {
+    "variants": ["NetSuite Financials", "netsuite.com financial", "netsuite erp financials", "oracle netsuite finance", "netsuitefinance"]
+  },
+  "Sage Intacct Financials": {
+    "variants": ["Sage Intacct", "sageintacct.com", "sage intacct financial cloud", "intacct financials", "sageintacctfinance"]
+  },
+  "FreshBooks Payments": {
+    "variants": ["Fresh Books Payments", "freshbooks.com payments", "freshbooks payments cloud", "freshbooks invoices", "freshbookspayments"]
+  },
+  "Wave Financial": {
+    "variants": ["Wave Finance", "waveapps.com", "wave financial cloud", "wave invoicing", "wavefinancialplatform"]
+  },
+  "Zoho Books": {
+    "variants": ["ZohoBooks", "zohobooks.com", "zoho books cloud", "zoho books accounting", "zohobooksplatform"]
+  },
+  "QuickBooks Payments": {
+    "variants": ["Quick Books Payments", "quickbooks payments", "quickbooks online payments", "quickbooks merchant", "quickbookspayments"]
+  },
+  "PaySimple": {
+    "variants": ["Pay Simple", "paysimple.com", "paysimple payments", "paysimple cloud", "paysimpleplatform"]
+  },
+  "Sage Business Cloud Accounting": {
+    "variants": ["Sage Accounting", "sage business cloud", "sage accounting cloud", "sage businesscloud", "sageaccountingplatform"]
+  }
+}

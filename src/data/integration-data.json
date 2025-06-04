@@ -1,0 +1,1291 @@
+{
+  "AMS360": {
+    "integrates_with": ["Vertafore", "EZLynx", "BenefitMall", "QQCatalyst", "IVANS"],
+    "main_functions": ["Agency Management", "Client Records", "Policy Tracking", "Carrier Download"],
+    "best_used_for_industries": ["Insurance (Retail P&C)", "Commercial Insurance"],
+    "verified": true
+  },
+  "Applied Epic": {
+    "integrates_with": ["Indio", "IVANS", "DocuSign", "Vertafore", "Salesforce"],
+    "main_functions": ["Agency Management", "Renewal Management", "Policy Submission", "CRM"],
+    "best_used_for_industries": ["Insurance (Retail P&C)", "Employee Benefits"],
+    "verified": true
+  },
+  "EZLynx": {
+    "integrates_with": ["AMS360", "Vertafore", "Canopy Connect", "PL Rating", "Indio"],
+    "main_functions": ["Comparative Rater", "Client Portal", "Agency Automation", "Renewal Notices"],
+    "best_used_for_industries": ["Insurance (Retail P&C)", "Small Agencies"],
+    "verified": true
+  },
+  "Indio": {
+    "integrates_with": ["Applied Epic", "DocuSign", "Salesforce", "Vertafore"],
+    "main_functions": ["Smart Forms", "Submission Workflow", "Client Data Collection"],
+    "best_used_for_industries": ["Insurance (Commercial)", "Employee Benefits"],
+    "verified": true
+},
+  "HawkSoft": {
+    "integrates_with": [
+      "Adapt API",
+      "Agency Revolution",
+      "AgencyBuzz",
+      "AgencyZoom",
+      "Agave",
+      "Anthem Software",
+      "Ascend",
+      "BackNine",
+      "Bold Penguin",
+      "Bridge",
+      "Canopy Connect",
+      "Certificial",
+      "ClaimSetter",
+      "ClientCircle (Rocket Referrals)",
+      "Cover Desk",
+      "DONNA.ai",
+      "ePaymints",
+      "ePayPolicy",
+      "Eventual Treasury",
+      "Formstack Sign",
+      "GloveBox",
+      "Input 1",
+      "Insurance Agent App",
+      "InsuranceGIG",
+      "Insurance Zone",
+      "Jump Suit Group",
+      "LeO",
+      "Levitate",
+      "Lightspeed Voice",
+      "Marble Box",
+      "Milly Books",
+      "Mivation",
+      "mPowered IT",
+      "Neon",
+      "Pathway",
+      "PFS Global",
+      "Podium",
+      "QuickBooks Online",
+      "ReFocus AI",
+      "Renew King",
+      "RingCentral",
+      "Rhodian Group",
+      "RPost",
+      "Semsee",
+      "Sembly",
+      "ValChoice",
+      "vipHomeLink"
+    ],
+    "main_functions": [
+      "Policy Management",
+      "Client/Contact Management",
+      "ACORD & Custom Forms",
+      "Commission & Accounting",
+      "Reporting & Analytics",
+      "Document & Activity Logging"
+    ],
+    "best_used_for_industries": [
+      "Independent Property & Casualty Agencies",
+      "Life & Health Insurance Agencies",
+      "Small MGAs/Wholesalers"
+    ],
+    "verified": true
+  },
+  "QQCatalyst": {
+    "integrates_with": ["Vertafore", "AMS360", "RingCentral", "Zapier"],
+    "main_functions": ["CRM", "Pipeline Management", "Commission Tracking"],
+    "best_used_for_industries": ["Insurance (Retail P&C)", "Independent Agencies"],
+    "verified": true
+  },
+  "NowCerts": {
+    "integrates_with": ["Twilio", "IVANS", "AMS360", "RingCentral", "Slack"],
+    "main_functions": ["Agency Management", "Certificate Issuance", "Carrier Upload", "CRM"],
+    "best_used_for_industries": ["Insurance (Retail P&C)", "Commercial Insurance"],
+    "verified": true
+  },
+  "One Inc": {
+    "integrates_with": ["Salesforce", "Guidewire", "Duck Creek", "Applied Epic", "SAP"],
+    "main_functions": ["Digital Payments", "Claims Payout", "Premium Collection"],
+    "best_used_for_industries": ["Insurance (Property & Casualty)", "Claims Operations"],
+    "verified": true
+  },
+  "IVANS": {
+    "integrates_with": ["AMS360", "Applied Epic", "NowCerts", "QQCatalyst", "Vertafore"],
+    "main_functions": ["Carrier Download", "Policy Sync", "Data Exchange", "Billing Interfaces"],
+    "best_used_for_industries": ["Insurance", "Agency-Carrier Connectivity"],
+    "verified": true
+  },
+  "BenefitMall": {
+    "integrates_with": ["Applied Epic", "Ease", "IVANS", "AMS360"],
+    "main_functions": ["Employee Benefits Quoting", "Group Enrollment", "Payroll Services"],
+    "best_used_for_industries": ["Employee Benefits", "Insurance Agencies", "HR Services"],
+    "verified": true
+  },
+  "Autodesk BIM 360": {
+    "integrates_with": ["Procore", "PlanGrid", "Autodesk Construction Cloud", "Box", "Microsoft Teams"],
+    "main_functions": ["Document Management", "Field Collaboration", "Issue Tracking", "Project Coordination"],
+    "best_used_for_industries": ["Construction", "Architecture", "Engineering"],
+    "verified": true
+  },
+  "Autodesk Construction Cloud": {
+    "integrates_with": ["BIM 360", "Procore", "Box", "Revit", "AutoCAD"],
+    "main_functions": ["Construction Management", "Design Collaboration", "Cost Management", "RFI Management"],
+    "best_used_for_industries": ["Construction", "Architecture", "Engineering"],
+    "verified": true
+  },
+  "Bluebeam Revu": {
+    "integrates_with": ["Procore", "SharePoint", "Box", "Dropbox", "Autodesk"],
+    "main_functions": ["PDF Markup", "Document Collaboration", "Takeoffs", "Drawing Comparison"],
+    "best_used_for_industries": ["Construction", "Architecture", "Engineering", "Government"],
+    "verified": true
+  },
+  "Buildertrend": {
+    "integrates_with": ["QuickBooks Online", "Xero", "Gmail", "Google Calendar", "Zapier"],
+    "main_functions": ["Construction Project Management", "Scheduling", "Client Portal", "Budget Tracking"],
+    "best_used_for_industries": ["Residential Construction", "Remodeling", "Custom Homes"],
+    "verified": true
+  },
+  "CMiC": {
+    "integrates_with": ["Procore", "Viewpoint", "Oracle Primavera", "Microsoft Excel"],
+    "main_functions": ["ERP", "Project Controls", "Financials", "Field Reporting"],
+    "best_used_for_industries": ["Construction", "Engineering", "Heavy Civil"],
+    "verified": true
+  },
+  "CoConstruct": {
+    "integrates_with": ["QuickBooks Online", "Xero", "Zapier", "Gmail"],
+    "main_functions": ["Custom Home Builder Software", "Project Scheduling", "Client Selections", "Estimating"],
+    "best_used_for_industries": ["Residential Construction", "Remodeling"],
+    "verified": true
+  },
+  "Fieldwire": {
+    "integrates_with": ["Procore", "Box", "Dropbox", "Google Drive", "OneDrive"],
+    "main_functions": ["Field Task Management", "Punch Lists", "Drawing Management", "Scheduling"],
+    "best_used_for_industries": ["Construction", "Electrical", "Mechanical", "General Contracting"],
+    "verified": true
+  },
+  "Jonas Construction Software": {
+    "integrates_with": ["Sage 300 CRE", "Procore", "Viewpoint", "Excel"],
+    "main_functions": ["Construction Accounting", "Job Costing", "Service Management", "Payroll"],
+    "best_used_for_industries": ["Construction", "HVAC", "Plumbing", "Electrical"],
+    "verified": true
+  },
+  "PlanGrid": {
+    "integrates_with": ["Procore", "Box", "Dropbox", "Autodesk BIM 360", "Microsoft Teams"],
+    "main_functions": ["Drawing Management", "Field Collaboration", "Issue Tracking", "RFIs"],
+    "best_used_for_industries": ["Construction", "Architecture", "Engineering"],
+    "verified": true
+  },
+  "Procore": {
+    "integrates_with": ["Autodesk", "Microsoft Teams", "DocuSign", "Box", "QuickBooks Online"],
+    "main_functions": ["Project Management", "Document Control", "Field Collaboration", "Financials"],
+    "best_used_for_industries": ["Construction", "General Contracting", "Specialty Contracting"],
+    "verified": true
+  },
+  "Rhumbix": {
+    "integrates_with": ["Procore", "CMiC", "Oracle", "Power BI", "Excel"],
+    "main_functions": ["Field Reporting", "Timekeeping", "Labor Tracking", "Productivity Insights"],
+    "best_used_for_industries": ["Construction", "Field Ops", "Heavy Civil"],
+    "verified": true
+  },
+  "STACK Estimating": {
+    "integrates_with": ["Procore", "PlanGrid", "Buildertrend", "Excel", "Bluebeam"],
+    "main_functions": ["Digital Takeoffs", "Cost Estimating", "Bid Management"],
+    "best_used_for_industries": ["Construction", "Preconstruction", "Estimating"],
+    "verified": true
+  },
+  "Sage 300 Construction and Real Estate": {
+    "integrates_with": ["Procore", "Jonas Construction", "Viewpoint", "Microsoft Excel"],
+    "main_functions": ["Construction Accounting", "Job Costing", "Payroll", "Real Estate Management"],
+    "best_used_for_industries": ["Construction", "Real Estate", "Property Management"],
+    "verified": true
+  },
+  "Viewpoint Vista": {
+    "integrates_with": ["Procore", "Sage 300", "CMiC", "Microsoft Teams", "Excel"],
+    "main_functions": ["ERP", "Construction Accounting", "Job Costing", "Project Controls"],
+    "best_used_for_industries": ["Construction", "Heavy Civil", "Contracting"],
+    "verified": true
+  },
+  "e-Builder": {
+    "integrates_with": ["Procore", "Primavera", "Microsoft Project", "Autodesk BIM 360", "SharePoint"],
+    "main_functions": ["Capital Program Management", "Project Controls", "Document Management"],
+    "best_used_for_industries": ["Construction", "Government", "Education", "Healthcare"],
+    "verified": true
+  },
+  "AWS HealthLake": {
+    "integrates_with": ["FHIR APIs", "Cerner", "Epic Systems", "Amazon SageMaker", "Redshift"],
+    "main_functions": ["Healthcare Data Lake", "FHIR Data Standardization", "Analytics", "Machine Learning Pipelines"],
+    "best_used_for_industries": ["Healthcare Providers", "Hospitals", "Health IT"],
+    "verified": true
+  },
+  "AdvancedMD": {
+    "integrates_with": ["LabCorp", "Quest Diagnostics", "Waystar", "Kareo", "DrChrono"],
+    "main_functions": ["Practice Management", "EHR", "Telehealth", "Billing"],
+    "best_used_for_industries": ["Private Practices", "Behavioral Health", "Medical Clinics"],
+    "verified": true
+  },
+  "Allscripts": {
+    "integrates_with": ["Microsoft Azure", "Cerner", "Salesforce Health Cloud", "Epic Systems", "Meditech"],
+    "main_functions": ["EHR", "Population Health", "Care Coordination", "Patient Engagement"],
+    "best_used_for_industries": ["Hospitals", "Outpatient Clinics", "Health Systems"],
+    "verified": true
+  },
+  "Amwell": {
+    "integrates_with": ["Epic Systems", "Cerner", "Salesforce Health Cloud", "Google Meet", "Zoom"],
+    "main_functions": ["Telehealth Platform", "Virtual Visits", "Remote Patient Monitoring"],
+    "best_used_for_industries": ["Healthcare Providers", "Health Systems", "Urgent Care"],
+    "verified": true
+  },
+  "Athenahealth": {
+    "integrates_with": ["Salesforce Health Cloud", "Epic Systems", "Kareo", "Elation", "Zoom"],
+    "main_functions": ["EHR", "RCM", "Patient Portal", "Telehealth"],
+    "best_used_for_industries": ["Ambulatory Care", "Health Networks", "Specialty Practices"],
+    "verified": true
+  },
+  "Cerner": {
+    "integrates_with": ["Salesforce Health Cloud", "AWS HealthLake", "Epic Systems", "Amwell", "Philips"],
+    "main_functions": ["Electronic Health Records", "Population Health", "Revenue Cycle", "Clinical Systems"],
+    "best_used_for_industries": ["Hospitals", "Health Networks", "Long-Term Care"],
+    "verified": true
+  },
+  "Epic Systems": {
+    "integrates_with": ["Salesforce Health Cloud", "Cerner", "AWS HealthLake", "Amwell", "Redox"],
+    "main_functions": ["EHR", "Patient Portal", "Clinical Workflow", "Billing"],
+    "best_used_for_industries": ["Hospitals", "Health Systems", "Primary Care"],
+    "verified": true
+  },
+  "GE Centricity": {
+    "integrates_with": ["Allscripts", "NextGen Healthcare", "Meditech", "eClinicalWorks", "Redox"],
+    "main_functions": ["Practice Management", "EHR", "Imaging Integration", "Scheduling"],
+    "best_used_for_industries": ["Hospitals", "Radiology", "Specialty Clinics"],
+    "verified": true
+  },
+  "Kareo": {
+    "integrates_with": ["AdvancedMD", "Athenahealth", "eClinicalWorks", "DrChrono", "Zapier"],
+    "main_functions": ["Medical Billing", "EHR", "Practice Management", "Telehealth"],
+    "best_used_for_industries": ["Independent Practices", "Chiropractors", "Mental Health"],
+    "verified": true
+  },
+  "Meditech": {
+    "integrates_with": ["Cerner", "Allscripts", "Redox", "eClinicalWorks", "Philips IntelliSpace"],
+    "main_functions": ["EHR", "Patient Engagement", "Interoperability", "Order Management"],
+    "best_used_for_industries": ["Hospitals", "Health Systems", "Emergency Services"],
+    "verified": true
+  },
+  "NextGen Healthcare": {
+    "integrates_with": ["GE Centricity", "Redox", "eClinicalWorks", "Allscripts", "Kareo"],
+    "main_functions": ["EHR", "Population Health", "Practice Management", "Billing"],
+    "best_used_for_industries": ["Primary Care", "Specialty Care", "FQHCs"],
+    "verified": true
+  },
+  "Philips IntelliSpace": {
+    "integrates_with": ["Cerner", "Meditech", "GE Centricity", "Microsoft Azure", "FHIR API"],
+    "main_functions": ["Imaging Informatics", "Clinical Decision Support", "EHR Integration"],
+    "best_used_for_industries": ["Radiology", "Critical Care", "Hospitals"],
+    "verified": true
+  },
+  "Salesforce Health Cloud": {
+    "integrates_with": ["Epic Systems", "Cerner", "Allscripts", "Amwell", "Athenahealth"],
+    "main_functions": ["Patient CRM", "Care Management", "EHR Integration", "Patient Journeys"],
+    "best_used_for_industries": ["Payers", "Providers", "Specialty Clinics", "Telehealth"],
+    "verified": true
+  },
+  "Teladoc Health": {
+    "integrates_with": ["Salesforce Health Cloud", "Amwell", "Microsoft Teams", "Cerner", "Epic Systems"],
+    "main_functions": ["Telehealth", "Mental Health Services", "Chronic Condition Management"],
+    "best_used_for_industries": ["Telemedicine", "Health Networks", "Employers"],
+    "verified": true
+  },
+  "eClinicalWorks": {
+    "integrates_with": ["Kareo", "NextGen Healthcare", "GE Centricity", "Meditech", "Redox"],
+    "main_functions": ["EHR", "Patient Portal", "Practice Management", "Telehealth"],
+    "best_used_for_industries": ["Primary Care", "Pediatrics", "Urgent Care"],
+    "verified": true
+  },
+  "Change Healthcare": {
+    "integrates_with": ["Epic Tapestry", "TriZetto Facets", "HealthEdge", "Oracle Health Insurance", "AWS HealthLake"],
+    "main_functions": ["Claims Clearinghouse", "Revenue Cycle Management", "Payment Accuracy", "Interoperability"],
+    "best_used_for_industries": ["Healthcare Insurance", "Payers", "Health Systems"],
+    "verified": true
+  },
+  "Cognizant Health TranZform": {
+    "integrates_with": ["TriZetto Facets", "Salesforce Health Cloud", "Pegasystems", "Inovalon"],
+    "main_functions": ["Member Engagement", "Claims Management", "Plan Configuration", "Digital Self-Service"],
+    "best_used_for_industries": ["Healthcare Payers", "TPAs", "Medicare Advantage"],
+    "verified": true
+  },
+  "Cotiviti": {
+    "integrates_with": ["HealthEdge", "Oracle", "Salesforce", "TriZetto", "Redox"],
+    "main_functions": ["Payment Integrity", "Risk Adjustment", "Utilization Analytics", "Claims Audit"],
+    "best_used_for_industries": ["Health Insurance", "Medicaid Plans", "Payers"],
+    "verified": true
+  },
+  "Edifecs": {
+    "integrates_with": ["Epic Tapestry", "Oracle", "HealthEdge", "TriZetto", "IBM Watson Health"],
+    "main_functions": ["Prior Authorization", "EDI Exchange", "Payment Automation", "Compliance"],
+    "best_used_for_industries": ["Health Insurance", "TPAs", "Value-Based Care"],
+    "verified": true
+  },
+  "Epic Tapestry": {
+    "integrates_with": ["Change Healthcare", "Edifecs", "TriZetto Facets", "Salesforce Health Cloud", "AWS HealthLake"],
+    "main_functions": ["Managed Care Administration", "Claims Processing", "Membership Management"],
+    "best_used_for_industries": ["Health Insurance", "Provider-Sponsored Plans"],
+    "verified": true
+  },
+  "HealthEdge": {
+    "integrates_with": ["Edifecs", "Cotiviti", "Change Healthcare", "Oracle", "Redox"],
+    "main_functions": ["Core Claims Admin", "Benefit Configuration", "Billing", "Utilization Review"],
+    "best_used_for_industries": ["Health Insurance", "Medicare Advantage", "Medicaid"],
+    "verified": true
+  },
+  "IBM Watson Health": {
+    "integrates_with": ["Redox", "Salesforce", "Epic Tapestry", "Oracle", "AWS"],
+    "main_functions": ["Population Health", "Analytics", "Clinical Decision Support", "AI Insights"],
+    "best_used_for_industries": ["Health Payers", "Health Systems", "Government Health"],
+    "verified": true
+  },
+  "Inovalon": {
+    "integrates_with": ["Cognizant", "Change Healthcare", "Salesforce", "TriZetto", "HealthEdge"],
+    "main_functions": ["Data Aggregation", "Risk Adjustment", "Quality Improvement", "EHR Interoperability"],
+    "best_used_for_industries": ["Payers", "Medicare Advantage", "Value-Based Care"],
+    "verified": true
+  },
+  "Medecision": {
+    "integrates_with": ["Epic Tapestry", "Salesforce", "HealthEdge", "Redox", "AWS"],
+    "main_functions": ["Care Management", "Utilization Review", "Member Engagement", "Analytics"],
+    "best_used_for_industries": ["Health Plans", "Case Management", "Population Health"],
+    "verified": true
+  },
+  "Oracle Health Insurance": {
+    "integrates_with": ["Change Healthcare", "Edifecs", "HealthEdge", "Salesforce", "IBM Watson Health"],
+    "main_functions": ["Claims Adjudication", "Policy Administration", "Billing", "Enrollment"],
+    "best_used_for_industries": ["Healthcare Insurance", "Global Health Systems"],
+    "verified": true
+  },
+  "Pegasystems Healthcare": {
+    "integrates_with": ["Salesforce", "TriZetto", "Cognizant", "Change Healthcare", "AWS"],
+    "main_functions": ["Claims Automation", "Member Service", "CRM Workflows", "Appeals & Grievances"],
+    "best_used_for_industries": ["Healthcare Insurance", "TPAs", "Customer Experience"],
+    "verified": true
+  },
+  "TriZetto Facets": {
+    "integrates_with": ["Epic Tapestry", "Cognizant", "Edifecs", "Change Healthcare", "HealthEdge"],
+    "main_functions": ["Claims Processing", "Member Management", "Billing", "Plan Admin"],
+    "best_used_for_industries": ["Healthcare Insurance", "Third-Party Administrators"],
+    "verified": true
+  },
+  "VBA Software": {
+    "integrates_with": ["Salesforce", "Inovalon", "AWS", "Microsoft Power BI", "Redox"],
+    "main_functions": ["Benefits Administration", "Eligibility", "Medical Claims", "Data Exchange"],
+    "best_used_for_industries": ["Health Insurance", "Benefit Admin Firms", "TPAs"],
+    "verified": true
+  },
+  "AWS IoT": {
+    "integrates_with": ["Siemens Teamcenter", "OSIsoft PI System", "Azure IoT", "Amazon SageMaker", "PTC Windchill"],
+    "main_functions": ["Device Management", "Real-Time Monitoring", "Predictive Maintenance", "Industrial Analytics"],
+    "best_used_for_industries": ["Manufacturing", "Energy", "Smart Factories"],
+    "verified": true
+  },
+  "Azure IoT": {
+    "integrates_with": ["SAP S/4HANA", "Rockwell Automation FactoryTalk", "OSIsoft PI System", "Microsoft Dynamics 365", "AWS IoT"],
+    "main_functions": ["Industrial Data Collection", "Remote Monitoring", "IoT Edge Analytics", "Asset Tracking"],
+    "best_used_for_industries": ["Manufacturing", "Supply Chain", "Utilities", "Automotive"],
+    "verified": true
+  },
+  "Dassault Systèmes DELMIA": {
+    "integrates_with": ["PTC Windchill", "SAP S/4HANA", "Oracle NetSuite", "Siemens Teamcenter", "Microsoft Dynamics 365"],
+    "main_functions": ["Manufacturing Execution", "3D Process Simulation", "Production Planning", "Supply Chain Optimization"],
+    "best_used_for_industries": ["Automotive", "Aerospace", "Discrete Manufacturing"],
+    "verified": true
+  },
+  "Epicor Kinetic": {
+    "integrates_with": ["Microsoft Dynamics 365", "Salesforce", "Avalara", "QuickBooks Online", "SAP Business One"],
+    "main_functions": ["ERP", "MES", "Inventory Management", "Production Scheduling", "Finance"],
+    "best_used_for_industries": ["Manufacturing", "Distribution", "Industrial Fabrication"],
+    "verified": true
+  },
+  "Infor CloudSuite Industrial": {
+    "integrates_with": ["Microsoft Power BI", "Salesforce", "Shopify", "Avalara", "QuickBooks Online"],
+    "main_functions": ["ERP", "MES", "Inventory Planning", "Customer Orders", "Shop Floor Control"],
+    "best_used_for_industries": ["Discrete Manufacturing", "Aerospace", "Industrial Equipment"],
+    "verified": true
+  },
+  "Microsoft Dynamics 365 Supply Chain": {
+    "integrates_with": ["Azure IoT", "SAP", "Oracle", "Power BI", "Salesforce"],
+    "main_functions": ["Supply Chain Management", "Inventory Optimization", "Order Fulfillment", "Manufacturing Planning"],
+    "best_used_for_industries": ["Manufacturing", "Retail", "Wholesale", "Logistics"],
+    "verified": true
+  },
+  "OSIsoft PI System": {
+    "integrates_with": ["Azure IoT", "Rockwell Automation", "AWS IoT", "SAP S/4HANA", "Power BI"],
+    "main_functions": ["Real-Time Data Infrastructure", "Industrial Operations", "Sensor Monitoring", "Data Historian"],
+    "best_used_for_industries": ["Manufacturing", "Oil & Gas", "Utilities", "Pharma"],
+    "verified": true
+  },
+  "Oracle NetSuite": {
+    "integrates_with": ["Salesforce", "Shopify", "HubSpot", "Avalara", "DELMIA"],
+    "main_functions": ["ERP", "Financials", "Manufacturing Management", "Supply Chain", "Inventory"],
+    "best_used_for_industries": ["Manufacturing", "E-commerce", "Wholesale Distribution"],
+    "verified": true
+  },
+  "PTC Windchill": {
+    "integrates_with": ["Siemens Teamcenter", "AWS IoT", "DELMIA", "SAP", "Microsoft Azure"],
+    "main_functions": ["Product Lifecycle Management", "CAD Data Management", "BOM Management", "Collaboration"],
+    "best_used_for_industries": ["Discrete Manufacturing", "Automotive", "Electronics"],
+    "verified": true
+  },
+  "Plex Smart Manufacturing Platform": {
+    "integrates_with": ["SAP", "Oracle NetSuite", "Salesforce", "Power BI", "QuickBooks"],
+    "main_functions": ["MES", "ERP", "Production Tracking", "Quality Management"],
+    "best_used_for_industries": ["Automotive", "Food & Beverage", "Metal Fabrication"],
+    "verified": true
+  },
+  "Rockwell Automation FactoryTalk": {
+    "integrates_with": ["Azure IoT", "OSIsoft PI System", "SAP S/4HANA", "PTC ThingWorx", "MES systems"],
+    "main_functions": ["Automation Control", "Production Visibility", "HMI/SCADA", "Analytics"],
+    "best_used_for_industries": ["Manufacturing", "Industrial Automation", "Process Control"],
+    "verified": true
+  },
+  "SAP S/4HANA": {
+    "integrates_with": ["Azure IoT", "Oracle", "Salesforce", "Rockwell Automation", "SAP Business Network"],
+    "main_functions": ["ERP", "Manufacturing Operations", "Finance", "Procurement", "Asset Management"],
+    "best_used_for_industries": ["Manufacturing", "Supply Chain", "Energy", "Retail"],
+    "verified": true
+  },
+  "Siemens Teamcenter": {
+    "integrates_with": ["AWS IoT", "DELMIA", "PTC Windchill", "SAP S/4HANA", "Oracle"],
+    "main_functions": ["PLM", "Engineering Change Management", "Digital Twin", "Collaboration"],
+    "best_used_for_industries": ["Manufacturing", "Aerospace", "Automotive", "Electronics"],
+    "verified": true
+  },
+  "UiPath": {
+    "integrates_with": ["SAP", "Salesforce", "Oracle NetSuite", "Microsoft Excel", "ServiceNow"],
+    "main_functions": ["RPA", "Manufacturing Process Automation", "Invoice Matching", "Data Entry"],
+    "best_used_for_industries": ["Manufacturing", "Finance", "Logistics", "IT"],
+    "verified": true
+  },
+  "AWS Retail Solutions": {
+    "integrates_with": ["Salesforce Commerce Cloud", "Adobe Commerce", "BigCommerce", "Redshift", "Amazon Personalize"],
+    "main_functions": ["Omnichannel Personalization", "Retail Data Lakes", "AI Forecasting", "Order Optimization"],
+    "best_used_for_industries": ["Retail", "E-commerce", "CPG", "Grocery"],
+    "verified": true
+  },
+  "Adobe Commerce": {
+    "integrates_with": ["Salesforce", "Avalara", "BigCommerce", "Klaviyo", "Stripe", "ShipStation"],
+    "main_functions": ["Headless Commerce", "Catalog Management", "Promotions", "PWA Support"],
+    "best_used_for_industries": ["E-commerce", "Retail", "Fashion", "Automotive"],
+    "verified": true
+  },
+  "Avalara": {
+    "integrates_with": ["Shopify", "Magento", "BigCommerce", "WooCommerce", "NetSuite", "Salesforce"],
+    "main_functions": ["Sales Tax Automation", "Nexus Tracking", "Tax Exempt Certificates"],
+    "best_used_for_industries": ["Retail", "SaaS", "B2B", "Wholesale"],
+    "verified": true
+  },
+  "BigCommerce": {
+    "integrates_with": ["Stripe", "Avalara", "HubSpot", "Salesforce Commerce Cloud", "Klaviyo", "ShipStation"],
+    "main_functions": ["B2C/B2B Storefront", "SEO", "Checkout API", "Headless Commerce"],
+    "best_used_for_industries": ["E-commerce", "Fashion", "Consumer Electronics"],
+    "verified": true
+  },
+  "Gorgias": {
+    "integrates_with": ["Shopify", "BigCommerce", "Magento", "Klaviyo", "Stripe", "Recharge Payments"],
+    "main_functions": ["Customer Support", "Ticket Automation", "Macros", "Live Chat"],
+    "best_used_for_industries": ["DTC", "Subscription E-commerce", "Retail Brands"],
+    "verified": true
+  },
+  "Magento Commerce": {
+    "integrates_with": ["Adobe Analytics", "Salesforce", "Stripe", "Avalara", "Oracle ERP"],
+    "main_functions": ["Product Catalog", "CMS", "Payments", "Promotions", "Order Workflow"],
+    "best_used_for_industries": ["Retail", "Wholesale", "DIY E-commerce"],
+    "verified": true
+  },
+  "Recharge Payments": {
+    "integrates_with": ["Shopify", "Klaviyo", "Gorgias", "Stripe", "BigCommerce"],
+    "main_functions": ["Subscription Billing", "Customer Portal", "Dunning", "Analytics"],
+    "best_used_for_industries": ["Subscription E-commerce", "Health & Wellness", "Retail"],
+    "verified": true
+  },
+  "Salesforce Commerce Cloud": {
+    "integrates_with": ["AWS", "Shopify", "Avalara", "Adobe Commerce", "Stripe", "Gorgias"],
+    "main_functions": ["Unified Commerce", "Personalization", "Catalog", "Mobile Storefront"],
+    "best_used_for_industries": ["Retail", "Apparel", "Global Brands"],
+    "verified": true
+  },
+  "Salesforce Financial Services Cloud": {
+    "integrates_with": ["Avalara", "Stripe", "AWS", "Plaid", "MuleSoft", "ServiceNow"],
+    "main_functions": ["Wealth CRM", "Insurance Tracking", "Financial Goals Dashboards"],
+    "best_used_for_industries": ["Finance", "Insurance", "Lending", "Wealth Management"],
+    "verified": true
+  },
+  "ShipStation": {
+    "integrates_with": ["Shopify", "BigCommerce", "WooCommerce", "Magento", "UPS", "Amazon"],
+    "main_functions": ["Shipping Automation", "Labels", "Tracking", "Carrier Management"],
+    "best_used_for_industries": ["E-commerce", "Fulfillment", "Retail"],
+    "verified": true
+  },
+  "Shopify Plus": {
+    "integrates_with": ["Klaviyo", "Gorgias", "Avalara", "Salesforce", "Stripe", "Recharge Payments"],
+    "main_functions": ["High-Volume E-commerce", "Checkout Customization", "Automation", "Multi-Currency"],
+    "best_used_for_industries": ["Enterprise E-commerce", "DTC", "Consumer Goods"],
+    "verified": true
+  },
+  "Squarespace Commerce": {
+    "integrates_with": ["Stripe", "PayPal", "ShipStation", "Zapier", "QuickBooks"],
+    "main_functions": ["Website + Storefront", "Digital Products", "Inventory", "Services"],
+    "best_used_for_industries": ["Small Business", "Creators", "Solo Entrepreneurs"],
+    "verified": true
+  },
+  "WooCommerce": {
+    "integrates_with": ["Stripe", "Avalara", "ShipStation", "Klaviyo", "QuickBooks"],
+    "main_functions": ["WordPress E-commerce", "Custom Plugins", "Cart Checkout"],
+    "best_used_for_industries": ["Small-to-Mid E-commerce", "Content Creators", "Entrepreneurs"],
+    "verified": true
+  },
+  "Zendesk": {
+    "integrates_with": ["Shopify", "Salesforce", "Slack", "Gorgias", "HubSpot"],
+    "main_functions": ["Omnichannel Support", "Tickets", "Live Chat", "Help Center"],
+    "best_used_for_industries": ["E-commerce", "SaaS", "Retail", "Travel"],
+    "verified": true
+  },
+  "RingCentral": {
+    "integrates_with": ["Salesforce", "Microsoft Teams", "Google Workspace", "Slack", "HubSpot"],
+    "main_functions": ["Business Phone", "Video Meetings", "Team Messaging", "SMS", "Voicemail Transcription"],
+    "best_used_for_industries": ["Insurance", "Healthcare", "SaaS", "Retail", "Contact Centers"],
+    "verified": true
+  },
+  "Zoom Phone": {
+    "integrates_with": ["Zoom Meetings", "Microsoft Teams", "Salesforce", "Slack", "Google Calendar"],
+    "main_functions": ["Cloud VoIP", "Call Routing", "Voicemail", "Call Transfer", "E911 Support"],
+    "best_used_for_industries": ["Professional Services", "Remote Teams", "Insurance", "Education"],
+    "verified": true
+  },
+  "Microsoft Teams Voice": {
+    "integrates_with": ["Microsoft 365", "Salesforce", "Dynamics 365", "ServiceNow", "Cisco SBC"],
+    "main_functions": ["Enterprise VoIP", "Direct Routing", "Call Queues", "Auto Attendants", "Collaboration Voice"],
+    "best_used_for_industries": ["Enterprise", "Insurance", "Healthcare", "Consulting"],
+    "verified": true
+  },
+  "8x8": {
+    "integrates_with": ["Salesforce", "Microsoft Teams", "HubSpot", "Zendesk", "ServiceNow"],
+    "main_functions": ["Unified VoIP", "SMS/MMS", "Video Conferencing", "Call Center Analytics"],
+    "best_used_for_industries": ["Call Centers", "Insurance", "Education", "B2B"],
+    "verified": true
+  },
+  "Vonage Business Cloud": {
+    "integrates_with": ["Salesforce", "Microsoft Teams", "Zoho", "Zapier", "Slack"],
+    "main_functions": ["VoIP", "SMS", "Mobile App", "Auto Attendant", "Click-to-Dial"],
+    "best_used_for_industries": ["Insurance", "Real Estate", "Retail", "Finance"],
+    "verified": true
+  },
+  "Nextiva": {
+    "integrates_with": ["Salesforce", "Zoho", "Google Workspace", "Microsoft Teams", "Zapier"],
+    "main_functions": ["Business VoIP", "CRM Integration", "Auto Attendant", "Call Pop", "Call Analytics"],
+    "best_used_for_industries": ["Insurance", "Healthcare", "SMBs", "Remote Teams"],
+    "verified": true
+  },
+  "Dialpad": {
+    "integrates_with": ["Google Workspace", "Microsoft 365", "Salesforce", "HubSpot", "Zendesk"],
+    "main_functions": ["AI Voice", "Call Transcription", "Real-Time Coaching", "Voicemail to Text", "SMS"],
+    "best_used_for_industries": ["Startups", "Insurance", "Support Teams", "Legal"],
+    "verified": true
+  },
+  "Intermedia Unite": {
+    "integrates_with": ["Microsoft Teams", "Outlook", "Salesforce", "Slack", "Google Workspace"],
+    "main_functions": ["VoIP", "Video Conferencing", "Team Chat", "Fax over IP", "Softphone App"],
+    "best_used_for_industries": ["Insurance", "SMB", "Construction", "Legal"],
+    "verified": true
+  },
+  "GoTo Connect": {
+    "integrates_with": ["Salesforce", "Slack", "Microsoft Outlook", "Google Workspace", "HubSpot"],
+    "main_functions": ["Cloud Phone", "Call Routing", "Voicemail", "SMS", "Web App Calling"],
+    "best_used_for_industries": ["Education", "Insurance", "Retail", "Service Businesses"],
+    "verified": true
+  },
+  "Ooma Office": {
+    "integrates_with": ["Google Workspace", "Microsoft Outlook", "Salesforce", "RingCentral (SIP)", "Zapier"],
+    "main_functions": ["VoIP", "Virtual Receptionist", "Call Parking", "Mobile Extension"],
+    "best_used_for_industries": ["Insurance", "Home Services", "Startups", "Real Estate"],
+    "verified": true
+  },
+  "SpectrumVoIP": {
+    "integrates_with": ["Microsoft Teams", "Salesforce", "Google Workspace", "Zapier"],
+    "main_functions": ["Cloud VoIP", "Auto Attendant", "E-Fax", "Mobile & Desktop Apps"],
+    "best_used_for_industries": ["Insurance", "Education", "Legal", "SMBs"],
+    "verified": true
+  },
+  "Sangoma": {
+    "integrates_with": ["Microsoft Teams", "Salesforce", "Zoho", "Slack", "Outlook"],
+    "main_functions": ["PBXact Cloud", "Switchvox", "Contact Center", "Video Conferencing"],
+    "best_used_for_industries": ["Healthcare", "Education", "Government", "Telecom VARs"],
+    "verified": true
+  },
+  "Broadvoice": {
+    "integrates_with": ["Salesforce", "Microsoft 365", "Zapier", "HubSpot"],
+    "main_functions": ["Cloud PBX", "SMS", "Video Meetings", "Virtual Fax", "Softphone App"],
+    "best_used_for_industries": ["Insurance", "Healthcare", "Retail", "SMBs"],
+    "verified": true
+  },
+  "NetFortris": {
+    "integrates_with": ["Microsoft Teams", "Salesforce", "Zoho", "ServiceNow"],
+    "main_functions": ["UCaaS", "SD-WAN", "Call Recording", "Multi-Office VoIP"],
+    "best_used_for_industries": ["Franchise Retail", "Insurance", "Healthcare"],
+    "verified": true
+  },
+  "PanTerra Networks": {
+    "integrates_with": ["Salesforce", "Google Workspace", "Outlook", "Zapier"],
+    "main_functions": ["Streams UCaaS", "Secure Messaging", "File Sync & Share", "Mobile Collaboration"],
+    "best_used_for_industries": ["Professional Services", "Healthcare", "Logistics"],
+    "verified": true
+  },
+  "Blueface": {
+    "integrates_with": ["Microsoft Teams", "Salesforce", "Google Workspace", "HubSpot"],
+    "main_functions": ["Hosted VoIP", "Global SIP Trunking", "Device Provisioning", "Number Portability"],
+    "best_used_for_industries": ["Telecom", "Enterprise", "Multi-national SMBs"],
+    "verified": true
+  },
+  "FluentStream": {
+    "integrates_with": ["Salesforce", "Microsoft Teams", "Outlook", "Slack"],
+    "main_functions": ["VoIP", "Auto Attendant", "Call Center Routing", "Call Recording"],
+    "best_used_for_industries": ["Startups", "Small Agencies", "Law Firms", "Consulting"],
+    "verified": true
+  },
+  "Aircall": {
+    "integrates_with": ["HubSpot", "Salesforce", "Zendesk", "Intercom", "Slack"],
+    "main_functions": ["Call Center VoIP", "Click-to-Call", "CRM Sync", "SMS"],
+    "best_used_for_industries": ["Sales Teams", "SaaS", "Insurance", "Startups"],
+    "verified": true
+  },
+  "UniVoIP": {
+    "integrates_with": ["Microsoft Teams", "Salesforce", "Outlook", "Zendesk"],
+    "main_functions": ["Cloud PBX", "E911 Compliance", "Nonprofit Calling Plans", "Secure Fax"],
+    "best_used_for_industries": ["Nonprofits", "Healthcare", "Education"],
+    "verified": true
+  },
+  "Fuze": {
+    "integrates_with": ["Microsoft Teams", "Salesforce", "Google Workspace", "Slack"],
+    "main_functions": ["Unified Communications", "Team Messaging", "Global VoIP", "Analytics"],
+    "best_used_for_industries": ["Enterprise", "Remote Work", "Tech Sector"],
+    "verified": true
+  },
+  "Twilio Voice": {
+    "integrates_with": ["Salesforce", "Zendesk", "HubSpot", "Programmable APIs", "AWS"],
+    "main_functions": ["Programmable Voice", "Call Recording", "SIP Trunking", "IVR", "Real-Time Call Control"],
+    "best_used_for_industries": ["SaaS", "Telehealth", "E-commerce", "Custom CRM Integrations"],
+    "verified": true
+  },
+  "BroadSoft (Cisco)": {
+    "integrates_with": ["Cisco Webex", "Microsoft Teams", "Salesforce", "Polycom", "Yealink"],
+    "main_functions": ["Hosted VoIP Core", "PBX Backbone", "Carrier UC", "Voice & Video Provisioning"],
+    "best_used_for_industries": ["Telecom Providers", "Wholesale VoIP", "ISPs"],
+    "verified": true
+  },
+  "Cisco BroadWorks": {
+    "integrates_with": ["Cisco Webex", "Microsoft Teams", "Poly", "Cisco CUBE", "Service Provider Networks"],
+    "main_functions": ["VoIP Core Switching", "Service Provider Hosting", "SIP Peering", "Call Routing"],
+    "best_used_for_industries": ["Telcos", "MSPs", "Enterprise Hosting"],
+    "verified": true
+  },
+  "Masergy": {
+    "integrates_with": ["Microsoft Teams", "Cisco", "RingCentral (SIP)", "Salesforce"],
+    "main_functions": ["UCaaS", "Managed SIP", "SD-WAN", "Cloud Contact Center"],
+    "best_used_for_industries": ["Global Enterprise", "Contact Centers", "Telecom"],
+    "verified": true
+  },
+  "Evolve IP": {
+    "integrates_with": ["Microsoft Teams", "Salesforce", "Cisco", "Zoom"],
+    "main_functions": ["UCaaS", "Contact Center", "Desktop as a Service", "Voice & Video Conferencing"],
+    "best_used_for_industries": ["Insurance", "Healthcare", "Finance", "Legal"],
+    "verified": true
+  },
+  "Alianza": {
+    "integrates_with": ["Microsoft Teams", "Cisco BroadWorks", "Salesforce", "Zoom", "SIP Providers"],
+    "main_functions": ["VoIP Platform as a Service", "Carrier Management", "Unified Communications"],
+    "best_used_for_industries": ["ISPs", "Fiber Providers", "White-Label VoIP"],
+    "verified": true
+  },
+  "CallTower": {
+    "integrates_with": ["Microsoft Teams", "Cisco", "Zoom Phone", "Salesforce", "Webex"],
+    "main_functions": ["Hosted VoIP", "Direct Routing for Teams", "Voice Enablement", "Enterprise UC"],
+    "best_used_for_industries": ["Mid-Market & Enterprise", "Legal", "Finance", "Insurance"],
+    "verified": true
+  },
+  "Momentum Telecom": {
+    "integrates_with": ["Microsoft Teams", "Salesforce", "Zoom", "Poly", "Cisco"],
+    "main_functions": ["VoIP", "Unified Communications", "Cloud PBX", "Managed Voice"],
+    "best_used_for_industries": ["Healthcare", "Retail", "Telecom Resellers"],
+    "verified": true
+  },
+  "Plivo": {
+    "integrates_with": ["Zapier", "AWS Lambda", "Programmable APIs", "Salesforce", "Zendesk"],
+    "main_functions": ["Voice API", "Call Forwarding", "SMS", "Programmable SIP"],
+    "best_used_for_industries": ["Developers", "SaaS", "Startups", "Telephony Platforms"],
+    "verified": true
+  },
+  "CounterPath Bria": {
+    "integrates_with": ["BroadSoft", "Asterisk", "Cisco", "SIP Servers"],
+    "main_functions": ["Softphone", "SIP Calling", "Video Calls", "Call History Sync"],
+    "best_used_for_industries": ["Remote Workers", "Enterprise Mobility", "VoIP Providers"],
+    "verified": true
+  },
+  "AWS Educate": {
+    "integrates_with": ["Canvas LMS", "Blackboard Learn", "Moodle", "Zoom for Education"],
+    "main_functions": ["Cloud Learning Labs", "Free Credits", "Cloud Career Pathways", "AWS Academy Integration"],
+    "best_used_for_industries": ["Higher Education", "Vocational Training", "STEM Programs"],
+    "verified": true
+  },
+  "Blackboard Learn": {
+    "integrates_with": ["Zoom", "Microsoft Teams for Education", "AWS Educate", "Kaltura", "PowerSchool SIS"],
+    "main_functions": ["Learning Management", "Virtual Classrooms", "Gradebook", "Mobile App"],
+    "best_used_for_industries": ["Higher Education", "K-12", "Online Certification"],
+    "verified": true
+  },
+  "Canvas LMS": {
+    "integrates_with": ["Zoom", "AWS Educate", "Google Classroom", "Salesforce Education Cloud", "Kaltura"],
+    "main_functions": ["Course Management", "Assessment Tools", "Rubrics", "Discussion Boards"],
+    "best_used_for_industries": ["Higher Ed", "Continuing Ed", "K-12"],
+    "verified": true
+  },
+  "Clever": {
+    "integrates_with": ["Google Classroom", "Microsoft Teams for Education", "Canvas LMS", "PowerSchool SIS"],
+    "main_functions": ["Single Sign-On", "App Management", "Student Rostering"],
+    "best_used_for_industries": ["K-12", "EdTech", "Public School Systems"],
+    "verified": true
+  },
+  "Ellucian Banner": {
+    "integrates_with": ["Salesforce Education Cloud", "Canvas", "Zoom", "Microsoft Teams"],
+    "main_functions": ["Student Information System", "Registration", "Transcripts", "Financial Aid"],
+    "best_used_for_industries": ["Higher Education", "Universities", "Community Colleges"],
+    "verified": true
+  },
+  "Ellucian Colleague": {
+    "integrates_with": ["PowerSchool", "Canvas", "Salesforce", "Zoom for Education"],
+    "main_functions": ["Enrollment Management", "Course Scheduling", "Student Finance"],
+    "best_used_for_industries": ["Higher Education", "Colleges", "Registrar Offices"],
+    "verified": true
+  },
+  "Google Classroom": {
+    "integrates_with": ["Clever", "Zoom", "Google Workspace", "Canvas LMS", "Schoology"],
+    "main_functions": ["Assignment Distribution", "Classroom Communication", "Grading", "Docs Integration"],
+    "best_used_for_industries": ["K-12", "Homeschool", "Tutoring Programs"],
+    "verified": true
+  },
+  "Instructure": {
+    "integrates_with": ["Canvas LMS", "Salesforce", "Zoom", "AWS Educate", "Moodle"],
+    "main_functions": ["Learning Platform", "Instructional Design", "Content Delivery", "Analytics"],
+    "best_used_for_industries": ["Education Providers", "Universities", "Professional Development"],
+    "verified": true
+  },
+  "Kaltura": {
+    "integrates_with": ["Canvas LMS", "Blackboard Learn", "Zoom", "Microsoft Teams", "Moodle"],
+    "main_functions": ["Video Hosting", "Lecture Capture", "Interactive Video", "Captioning Tools"],
+    "best_used_for_industries": ["Higher Education", "K-12", "Corporate Training"],
+    "verified": true
+  },
+  "Microsoft Teams for Education": {
+    "integrates_with": ["Microsoft 365", "Clever", "Canvas LMS", "Zoom", "PowerSchool"],
+    "main_functions": ["Class Collaboration", "Live Lessons", "Assignments", "Chats"],
+    "best_used_for_industries": ["K-12", "Higher Education", "Remote Learning"],
+    "verified": true
+  },
+  "Moodle": {
+    "integrates_with": ["Zoom", "AWS Educate", "Kaltura", "Salesforce", "Microsoft Teams"],
+    "main_functions": ["Open Source LMS", "Course Builder", "Quizzes", "Forum Discussion"],
+    "best_used_for_industries": ["Universities", "Nonprofits", "Government Education"],
+    "verified": true
+  },
+  "PowerSchool SIS": {
+    "integrates_with": ["Canvas LMS", "Microsoft Teams", "Clever", "Blackboard Learn", "Zoom"],
+    "main_functions": ["Student Data Management", "Attendance", "Grades", "State Reporting"],
+    "best_used_for_industries": ["K-12", "School Districts", "EdTech"],
+    "verified": true
+  },
+  "Salesforce Education Cloud": {
+    "integrates_with": ["Canvas", "Ellucian", "Zoom", "Google Workspace", "Slack"],
+    "main_functions": ["Student CRM", "Admissions Pipeline", "Alumni Tracking", "Learning Analytics"],
+    "best_used_for_industries": ["Universities", "Admissions", "EdTech"],
+    "verified": true
+  },
+  "Schoology": {
+    "integrates_with": ["Google Classroom", "Zoom", "PowerSchool", "Microsoft Teams"],
+    "main_functions": ["LMS", "Assignment Sharing", "Communication", "Mobile Learning"],
+    "best_used_for_industries": ["K-12", "Blended Learning", "Districts"],
+    "verified": true
+  },
+  "Zoom for Education": {
+    "integrates_with": ["Canvas", "Blackboard", "Google Classroom", "Microsoft Teams", "Clever"],
+    "main_functions": ["Video Conferencing", "Breakout Rooms", "Virtual Whiteboard", "Attendance Tracking"],
+    "best_used_for_industries": ["All Education Levels", "Virtual Schools", "Tutoring"],
+    "verified": true
+  },
+  "AWS Finance Data Lake": {
+    "integrates_with": ["Snowflake", "Sage", "Salesforce", "Workiva", "Power BI"],
+    "main_functions": ["Financial Data Warehousing", "Secure Analytics", "Machine Learning Insights", "Risk Modeling"],
+    "best_used_for_industries": ["Finance", "Banking", "Wealth Management", "Fintech"],
+    "verified": true
+  },
+  "Addepar": {
+    "integrates_with": ["Salesforce", "eMoney Advisor", "Orion", "BlackRock Aladdin", "Snowflake"],
+    "main_functions": ["Wealth Portfolio Reporting", "Client Aggregation", "Performance Analytics"],
+    "best_used_for_industries": ["Wealth Management", "RIAs", "Family Offices"],
+    "verified": true
+  },
+  "BlackRock Aladdin": {
+    "integrates_with": ["Salesforce", "Addepar", "Snowflake", "Workiva", "SS&C Advent"],
+    "main_functions": ["Risk Analytics", "Portfolio Management", "Compliance Tracking", "Data Aggregation"],
+    "best_used_for_industries": ["Institutional Asset Management", "Banking", "Wealth Management"],
+    "verified": true
+  },
+  "Envestnet": {
+    "integrates_with": ["eMoney Advisor", "Salesforce", "Orion", "Redtail", "SS&C Advent"],
+    "main_functions": ["Financial Planning", "Investment Proposal Generation", "Fee Billing"],
+    "best_used_for_industries": ["Wealth Management", "Financial Advisors", "Insurance-Linked Advisors"],
+    "verified": true
+  },
+  "FIS": {
+    "integrates_with": ["Temenos", "nCino", "Oracle", "Workiva", "Salesforce"],
+    "main_functions": ["Core Banking", "Payments", "Card Processing", "Wealth & Trust Tech"],
+    "best_used_for_industries": ["Retail Banking", "Commercial Lending", "Payments"],
+    "verified": true
+  },
+  "Finastra": {
+    "integrates_with": ["Salesforce", "FIS", "Oracle", "nCino", "Temenos"],
+    "main_functions": ["Lending Platforms", "Digital Banking", "Treasury & Capital Markets"],
+    "best_used_for_industries": ["Banking", "Credit Unions", "Commercial Lending"],
+    "verified": true
+  },
+  "Orion Advisor Solutions": {
+    "integrates_with": ["Addepar", "eMoney Advisor", "Salesforce", "Envestnet", "BlackRock"],
+    "main_functions": ["Portfolio Management", "Billing", "Client Portal", "Performance Reporting"],
+    "best_used_for_industries": ["Wealth Management", "Financial Planners", "RIAs"],
+    "verified": true
+  },
+  "SS&C Advent": {
+    "integrates_with": ["BlackRock Aladdin", "Salesforce", "Envestnet", "Orion", "eMoney Advisor"],
+    "main_functions": ["Portfolio Accounting", "Client Reporting", "Billing", "Compliance"],
+    "best_used_for_industries": ["Asset Management", "RIAs", "Institutional Advisors"],
+    "verified": true
+  },
+  "ServiceNow GRC": {
+    "integrates_with": ["Salesforce", "Workiva", "Microsoft Azure", "AWS", "SAP"],
+    "main_functions": ["Governance", "Risk Management", "Compliance Automation", "Audit Management"],
+    "best_used_for_industries": ["Finance", "Banking", "Enterprise IT"],
+    "verified": true
+  },
+  "Snowflake": {
+    "integrates_with": ["AWS", "Azure", "Salesforce", "Power BI", "Workiva"],
+    "main_functions": ["Cloud Data Warehouse", "Real-Time Analytics", "Data Sharing", "Secure Collaboration"],
+    "best_used_for_industries": ["Banking", "Wealth", "Retail", "Healthcare", "Fintech"],
+    "verified": true
+  },
+  "Temenos": {
+    "integrates_with": ["FIS", "Finastra", "Salesforce", "Oracle", "Workiva"],
+    "main_functions": ["Core Banking", "Digital Onboarding", "Compliance", "Payments"],
+    "best_used_for_industries": ["Banking", "Credit Unions", "Challenger Banks"],
+    "verified": true
+  },
+  "Workiva": {
+    "integrates_with": ["Salesforce", "Snowflake", "AWS", "ServiceNow", "Oracle"],
+    "main_functions": ["SEC Reporting", "Internal Controls", "ESG Data", "Financial Consolidation"],
+    "best_used_for_industries": ["Finance", "Banking", "Public Companies", "Accounting Firms"],
+    "verified": true
+  },
+  "eMoney Advisor": {
+    "integrates_with": ["Salesforce", "Envestnet", "Addepar", "Orion", "SS&C Advent"],
+    "main_functions": ["Financial Planning", "Client Portal", "Cash Flow Modeling", "Account Aggregation"],
+    "best_used_for_industries": ["Advisory Firms", "Wealth Management", "Insurance"],
+    "verified": true
+  },
+  "nCino": {
+    "integrates_with": ["Salesforce", "FIS", "Finastra", "Temenos", "Workiva"],
+    "main_functions": ["Loan Origination", "Commercial Lending Automation", "Portfolio Management"],
+    "best_used_for_industries": ["Banking", "Lenders", "Credit Unions"],
+    "verified": true
+  },
+  "Clio Manage": {
+    "integrates_with": ["QuickBooks Online", "Dropbox", "Google Workspace", "Zapier", "DocuSign"],
+    "main_functions": ["Case Management", "Billing", "Time Tracking", "Client Intake", "Document Automation"],
+    "best_used_for_industries": ["Legal", "Solo & Small Firms", "Litigation"],
+    "verified": true
+  },
+  "PracticePanther": {
+    "integrates_with": ["QuickBooks Online", "Google Workspace", "Dropbox", "Zapier", "Stripe"],
+    "main_functions": ["Time Tracking", "Billing", "Calendar", "Client Portal", "Workflow Automation"],
+    "best_used_for_industries": ["Legal", "Small to Mid Law Firms", "Family Law"],
+    "verified": true
+  },
+  "MyCase": {
+    "integrates_with": ["QuickBooks", "Google Calendar", "Zapier", "DocuSign", "Dropbox"],
+    "main_functions": ["Practice Management", "E-signature", "Client Communication", "Billing", "Calendar"],
+    "best_used_for_industries": ["Legal", "Family Law", "Solo Practitioners"],
+    "verified": true
+  },
+  "Rocket Matter": {
+    "integrates_with": ["QuickBooks", "Dropbox", "Google Calendar", "LawPay", "Evernote"],
+    "main_functions": ["Time Tracking", "Billing", "Matter Management", "Client Portal", "Document Assembly"],
+    "best_used_for_industries": ["Legal", "Estate Planning", "Civil Litigation"],
+    "verified": true
+  },
+  "Smokeball": {
+    "integrates_with": ["Outlook", "Word", "QuickBooks Online", "LawPay", "Zapier"],
+    "main_functions": ["Automatic Time Tracking", "Document Automation", "Billing", "Practice Insights"],
+    "best_used_for_industries": ["Legal", "Real Estate Law", "Family Law"],
+    "verified": true
+  },
+  "iManage": {
+    "integrates_with": ["Microsoft 365", "NetDocuments", "Litera", "DocuSign", "Salesforce"],
+    "main_functions": ["Document Management", "Email Management", "Knowledge Management", "Governance"],
+    "best_used_for_industries": ["Legal", "Accounting", "Corporate Counsel"],
+    "verified": true
+  },
+  "NetDocuments": {
+    "integrates_with": ["iManage", "Microsoft 365", "Salesforce", "DocuSign", "Clio"],
+    "main_functions": ["Cloud Document Management", "Secure Collaboration", "Search & Tagging", "Compliance"],
+    "best_used_for_industries": ["Legal", "Compliance", "Corporate Law"],
+    "verified": true
+  },
+  "DocuSign CLM": {
+    "integrates_with": ["Salesforce", "Slack", "Google Workspace", "Microsoft 365", "SAP"],
+    "main_functions": ["Contract Lifecycle Management", "Redlining", "Workflows", "E-signature Integration"],
+    "best_used_for_industries": ["Legal", "Procurement", "Enterprise Sales"],
+    "verified": true
+  },
+  "Thomson Reuters HighQ": {
+    "integrates_with": ["iManage", "NetDocuments", "Microsoft 365", "DocuSign", "Salesforce"],
+    "main_functions": ["Document Collaboration", "Client Portal", "Project Management", "Legal Workflow Automation"],
+    "best_used_for_industries": ["Legal", "Corporate Counsel", "Law Firms"],
+    "verified": true
+  },
+  "Relativity": {
+    "integrates_with": ["iManage", "Microsoft 365", "Box", "Salesforce", "Everlaw"],
+    "main_functions": ["eDiscovery", "Legal Hold", "Review Platform", "AI Classification"],
+    "best_used_for_industries": ["Legal", "Litigation", "Compliance"],
+    "verified": true
+  },
+  "Everlaw": {
+    "integrates_with": ["Relativity", "iManage", "Microsoft 365", "Google Workspace", "Box"],
+    "main_functions": ["Cloud eDiscovery", "Legal Hold", "Collaboration", "Narrative Building"],
+    "best_used_for_industries": ["Legal", "Litigation", "Government", "Investigations"],
+    "verified": true
+  },
+  "ClickUp": {
+    "integrates_with": ["Slack", "Google Workspace", "Outlook", "Zoom", "HubSpot"],
+    "main_functions": ["Task Management", "Docs & Wikis", "Goal Tracking", "Automations"],
+    "best_used_for_industries": ["Legal Ops", "Consulting", "Agencies", "SaaS"],
+    "verified": true
+  },
+  "CaseText": {
+    "integrates_with": ["Microsoft Word", "Clio", "Westlaw (via extension)", "LexisNexis", "Google Workspace"],
+    "main_functions": ["Legal Research", "AI Brief Analysis", "Citation Review", "Search-by-Concept"],
+    "best_used_for_industries": ["Legal", "Solo Practitioners", "Litigation"],
+    "verified": true
+  },
+  "Salesforce Legal Services Cloud": {
+    "integrates_with": ["DocuSign", "Slack", "Google Workspace", "M365", "NetDocuments"],
+    "main_functions": ["Case Management", "Contract Routing", "Client Intake", "Legal Dashboards"],
+    "best_used_for_industries": ["Corporate Legal Departments", "Enterprise Legal Ops"],
+    "verified": true
+  },
+  "Microsoft Dynamics 365": {
+    "integrates_with": ["Outlook", "Power BI", "SharePoint", "DocuSign", "ClickUp"],
+    "main_functions": ["CRM", "Billing Automation", "Legal Case Mgmt (w/ extensions)", "Client Pipeline"],
+    "best_used_for_industries": ["Professional Services", "Legal Finance", "Consulting"],
+    "verified": true
+  },
+  "HubSpot CRM": {
+    "integrates_with": ["Clio", "DocuSign", "Slack", "Google Workspace", "Microsoft 365"],
+    "main_functions": ["Pipeline Management", "Client Intake Forms", "Email Sequences", "Appointments"],
+    "best_used_for_industries": ["Consulting", "Legal Marketing", "Small Firms"],
+    "verified": true
+  },
+  "Asana": {
+    "integrates_with": ["Slack", "Microsoft Teams", "Google Workspace", "Zapier", "Outlook"],
+    "main_functions": ["Task Management", "Project Planning", "Workflow Templates", "Team Collaboration"],
+    "best_used_for_industries": ["Consulting", "Legal Operations", "Agency Teams"],
+    "verified": true
+  },
+  "Monday.com": {
+    "integrates_with": ["Slack", "Google Workspace", "Dropbox", "Outlook", "DocuSign"],
+    "main_functions": ["Visual Workflows", "Legal Intake Pipelines", "Project Templates", "Time Tracking"],
+    "best_used_for_industries": ["Consulting", "Marketing Agencies", "Legal Ops"],
+    "verified": true
+  },
+  "Smartsheet": {
+    "integrates_with": ["DocuSign", "Google Workspace", "Microsoft Teams", "Salesforce", "Box"],
+    "main_functions": ["Project Tracking", "Contract Approvals", "Legal Request Forms", "Collaboration"],
+    "best_used_for_industries": ["Legal Ops", "Consulting", "Enterprise Teams"],
+    "verified": true
+  },
+  "Trello": {
+    "integrates_with": ["Slack", "Google Workspace", "Microsoft Teams", "Zapier", "ClickUp"],
+    "main_functions": ["Card-Based Task Management", "Workflow Tracking", "Checklists", "Boards"],
+    "best_used_for_industries": ["Legal Admin", "Small Firms", "Creative & Consulting Teams"],
+    "verified": true
+  },
+  "Power BI": {
+    "integrates_with": ["Microsoft 365", "Dynamics 365", "Smartsheet", "Salesforce", "Google Workspace"],
+    "main_functions": ["Data Visualization", "Dashboards", "Client KPIs", "Legal Performance Metrics"],
+    "best_used_for_industries": ["Legal Ops", "Consulting", "Corporate Counsel", "Finance"],
+    "verified": true
+  },
+  "Tableau": {
+    "integrates_with": ["Salesforce", "Google Workspace", "Microsoft Excel", "Smartsheet", "Dropbox"],
+    "main_functions": ["Visual Analytics", "Dashboarding", "Team Metrics", "Data Exploration"],
+    "best_used_for_industries": ["Professional Services", "Legal Analytics", "IT Consulting"],
+    "verified": true
+  },
+  "QuickBooks Online": {
+    "integrates_with": ["Clio", "PracticePanther", "Zapier", "LawPay", "HubSpot"],
+    "main_functions": ["Legal Billing", "Trust Accounting", "Invoicing", "Expense Tracking"],
+    "best_used_for_industries": ["Legal", "Consulting", "Small Firms"],
+    "verified": true
+  },
+  "Google Workspace": {
+    "integrates_with": ["Clio", "DocuSign", "Slack", "Trello", "Microsoft Teams"],
+    "main_functions": ["Email", "Calendar", "Docs", "Drive", "Collaboration Tools"],
+    "best_used_for_industries": ["Legal", "Consulting", "Agencies", "Tech Startups"],
+    "verified": true
+  },
+  "Microsoft 365 for Legal": {
+    "integrates_with": ["iManage", "NetDocuments", "DocuSign", "Clio", "Teams"],
+    "main_functions": ["Word, Excel, Outlook", "Document Redlining", "Compliance Tools"],
+    "best_used_for_industries": ["Legal", "Corporate Counsel", "Consulting"],
+    "verified": true
+  },
+  "Salesforce Sales Cloud": {
+    "integrates_with": ["DocuSign", "NetDocuments", "Slack", "HubSpot", "Google Workspace"],
+    "main_functions": ["Client Lifecycle", "Lead Mgmt", "Pipeline Reporting", "Account-Based Dashboards"],
+    "best_used_for_industries": ["Consulting", "Legal Sales Teams", "Professional Firms"],
+    "verified": true
+  },
+  "Slack": {
+    "integrates_with": ["Google Workspace", "Microsoft Teams", "ClickUp", "Salesforce", "DocuSign"],
+    "main_functions": ["Team Messaging", "Channels", "Workflow Builder", "Integrations Hub"],
+    "best_used_for_industries": ["Consulting", "Legal Teams", "Agencies"],
+    "verified": true
+  },
+  "DocuSign": {
+    "integrates_with": ["Clio", "Salesforce", "Microsoft 365", "Slack", "Google Workspace"],
+    "main_functions": ["E-signature", "Templates", "Legal Agreements", "Signature Routing"],
+    "best_used_for_industries": ["Legal", "Real Estate", "Consulting"],
+    "verified": true
+  },
+  "Microsoft Dynamics 365 (Legal Variant)": {
+    "integrates_with": ["Power BI", "Outlook", "SharePoint", "DocuSign", "ClickUp"],
+    "main_functions": ["CRM", "Client Matters", "Legal Intake", "Billing Integrations"],
+    "best_used_for_industries": ["Legal Operations", "Consulting", "Corporate Law"],
+    "verified": true
+  },
+  "AWS GovCloud": {
+    "integrates_with": ["Splunk", "Microsoft Azure Government", "Tableau", "Workday", "Oracle ERP Cloud for Government"],
+    "main_functions": ["Secure Cloud Hosting", "FedRAMP Compliant Compute", "Gov Data Lakes", "AI/ML for Public Sector"],
+    "best_used_for_industries": ["Government", "Defense Contractors", "Public Sector IT"],
+    "verified": true
+  },
+  "IBM Cloud for Government": {
+    "integrates_with": ["Tableau", "SAP NS2", "Microsoft 365", "Salesforce Government Cloud", "AWS"],
+    "main_functions": ["Secure Cloud", "AI Services", "Cybersecurity", "Data Sovereignty"],
+    "best_used_for_industries": ["Government", "Healthcare Compliance", "Federal Projects"],
+    "verified": true
+  },
+  "Microsoft Azure Government": {
+    "integrates_with": ["AWS GovCloud", "Power BI", "Microsoft 365", "Splunk", "Salesforce Government Cloud"],
+    "main_functions": ["Gov-Only Cloud", "Security & Compliance", "Data Analysis", "AI/ML for Government"],
+    "best_used_for_industries": ["Federal Agencies", "Military", "Smart Cities"],
+    "verified": true
+  },
+  "Microsoft 365 Nonprofit": {
+    "integrates_with": ["Power BI", "Azure AD", "Salesforce NPSP", "DocuSign", "Zoom"],
+    "main_functions": ["Word, Excel, Outlook", "Team Communication", "Document Collaboration", "Donor Mgmt Integration"],
+    "best_used_for_industries": ["Nonprofits", "Education", "Faith-Based Orgs"],
+    "verified": true
+  },
+  "Oracle ERP Cloud for Government": {
+    "integrates_with": ["AWS GovCloud", "SAP NS2", "Tableau", "Unanet", "Salesforce Government Cloud"],
+    "main_functions": ["Public Sector ERP", "Finance", "HR", "Grants Management"],
+    "best_used_for_industries": ["Government", "Contract Accounting", "Municipal Finance"],
+    "verified": true
+  },
+  "SAP NS2": {
+    "integrates_with": ["Oracle", "IBM", "AWS", "Salesforce Government Cloud", "Tableau"],
+    "main_functions": ["Secure ERP", "Defense Cloud", "SAP HANA Gov Edition", "Cyber-Enabled Analytics"],
+    "best_used_for_industries": ["Defense", "Intelligence", "Gov Contractors"],
+    "verified": true
+  },
+  "Workday Government Solutions": {
+    "integrates_with": ["Oracle", "Salesforce", "AWS GovCloud", "Power BI", "SAP NS2"],
+    "main_functions": ["Gov HRIS", "Payroll", "Planning & Budgeting", "Talent Mgmt"],
+    "best_used_for_industries": ["Government", "City & State", "Universities"],
+    "verified": true
+  },
+  "Unanet GovCon ERP": {
+    "integrates_with": ["Oracle ERP", "Deltek", "Salesforce", "SAP", "Microsoft 365"],
+    "main_functions": ["Project Accounting", "Gov Compliance Reporting", "Timekeeping", "DCAA Audit Trail"],
+    "best_used_for_industries": ["Gov Contractors", "Defense", "Architecture & Engineering"],
+    "verified": true
+  },
+  "Carahsoft Solutions": {
+    "integrates_with": ["Splunk", "Salesforce", "Zoom", "ServiceNow", "Tableau"],
+    "main_functions": ["Public Sector Software Distribution", "FedRAMP Licensing", "Gov Procurement Marketplace"],
+    "best_used_for_industries": ["Public Sector", "Federal Buyers", "Education"],
+    "verified": true
+  },
+  "Splunk": {
+    "integrates_with": ["AWS", "Azure", "Salesforce", "Oracle", "Tableau"],
+    "main_functions": ["Gov IT Monitoring", "Security Analytics", "Operational Intelligence"],
+    "best_used_for_industries": ["Government", "Defense", "IT Ops", "Cybersecurity"],
+    "verified": true
+  },
+  "Smartsheet Gov": {
+    "integrates_with": ["Microsoft 365", "Salesforce", "Tableau", "DocuSign", "Power BI"],
+    "main_functions": ["Gov Project Management", "Collaboration", "Forms & Automation"],
+    "best_used_for_industries": ["Government", "Public Health", "Grant Teams"],
+    "verified": true
+  },
+  "Tableau Government Analytics": {
+    "integrates_with": ["Snowflake", "Salesforce", "Microsoft Azure", "SAP", "Oracle"],
+    "main_functions": ["Gov Dashboards", "Open Data Portals", "Grant KPIs", "Security Compliant BI"],
+    "best_used_for_industries": ["City & State", "Nonprofits", "Gov Agencies"],
+    "verified": true
+  },
+  "Deltek Costpoint": {
+    "integrates_with": ["Unanet", "Microsoft 365", "Salesforce", "Oracle", "QuickBooks"],
+    "main_functions": ["Gov Contract ERP", "Job Costing", "Billing & Invoicing", "Time Collection"],
+    "best_used_for_industries": ["Gov Contractors", "DCAA Compliance", "A&E"],
+    "verified": true
+  },
+  "Salesforce Nonprofit Success Pack": {
+    "integrates_with": ["Classy", "FormAssembly", "QuickBooks for Nonprofits", "Google Workspace", "Mailchimp"],
+    "main_functions": ["Donor CRM", "Volunteer Management", "Program Tracking", "Grant Reporting"],
+    "best_used_for_industries": ["Nonprofits", "Foundations", "Faith-Based Orgs"],
+    "verified": true
+  },
+  "Bloomerang": {
+    "integrates_with": ["Zapier", "QuickBooks", "Mailchimp", "Kindful", "Google Workspace"],
+    "main_functions": ["Donor Management", "Engagement Tracking", "Fundraising Automation", "CRM"],
+    "best_used_for_industries": ["Nonprofits", "Environmental Causes", "Arts Orgs"],
+    "verified": true
+  },
+  "Neon CRM": {
+    "integrates_with": ["Salesforce", "Zapier", "QuickBooks", "Google Workspace", "EveryAction"],
+    "main_functions": ["CRM", "Fundraising", "Membership Management", "Email Campaigns"],
+    "best_used_for_industries": ["Nonprofits", "Member Orgs", "Charitable Foundations"],
+    "verified": true
+  },
+  "DonorPerfect": {
+    "integrates_with": ["Constant Contact", "QuickBooks", "Qgiv", "Kindful", "Zapier"],
+    "main_functions": ["Donor Database", "Recurring Gifts", "Online Donations", "Grant Tracking"],
+    "best_used_for_industries": ["Nonprofits", "Healthcare Foundations", "Religious Groups"],
+    "verified": true
+  },
+  "EveryAction": {
+    "integrates_with": ["ActBlue", "Google Workspace", "Mailchimp", "Zapier", "QuickBooks"],
+    "main_functions": ["Advocacy Tools", "Donor CRM", "Volunteer Coordination", "Text-to-Give"],
+    "best_used_for_industries": ["Campaigns", "Nonprofits", "Political Orgs"],
+    "verified": true
+  },
+  "Givebutter": {
+    "integrates_with": ["Zapier", "Salesforce", "Google Sheets", "Mailchimp", "QuickBooks"],
+    "main_functions": ["Donation Pages", "Peer-to-Peer", "Ticketing", "Livestream Giving"],
+    "best_used_for_industries": ["Nonprofits", "Youth Groups", "Community Projects"],
+    "verified": true
+  },
+  "Classy": {
+    "integrates_with": ["Salesforce", "QuickBooks", "Google Analytics", "Zapier", "Mailchimp"],
+    "main_functions": ["Online Giving", "Event Fundraising", "Recurring Donations", "Impact Reporting"],
+    "best_used_for_industries": ["Nonprofits", "Global NGOs", "Mission-Driven Startups"],
+    "verified": true
+  },
+  "CharityEngine": {
+    "integrates_with": ["Salesforce", "Mailchimp", "QuickBooks", "Google Workspace", "Zapier"],
+    "main_functions": ["All-in-One CRM", "Donor Engagement", "Email Marketing", "Payment Processing"],
+    "best_used_for_industries": ["Nonprofits", "Faith-Based", "Large Charities"],
+    "verified": true
+  },
+  "Kindful": {
+    "integrates_with": ["Bloomerang", "Mailchimp", "QuickBooks", "Zapier", "Classy"],
+    "main_functions": ["Donor CRM", "Email Marketing", "Peer-to-Peer Fundraising", "Reporting"],
+    "best_used_for_industries": ["Nonprofits", "Education", "Animal Welfare"],
+    "verified": true
+  },
+  "GrantHub": {
+    "integrates_with": ["QuickBooks", "Google Workspace", "Salesforce", "DocuSign"],
+    "main_functions": ["Grant Tracking", "Deadline Reminders", "Report Submissions", "Funder Management"],
+    "best_used_for_industries": ["Nonprofits", "Education", "Social Services"],
+    "verified": true
+  },
+  "Qgiv": {
+    "integrates_with": ["DonorPerfect", "QuickBooks", "Salesforce", "Zapier", "Kindful"],
+    "main_functions": ["Online Giving Forms", "Event Registration", "Text Fundraising", "Auction Tools"],
+    "best_used_for_industries": ["Nonprofits", "Fundraising Events", "Churches"],
+    "verified": true
+  },
+  "Mailchimp": {
+    "integrates_with": ["Salesforce", "Classy", "Bloomerang", "Givebutter", "Google Workspace"],
+    "main_functions": ["Email Campaigns", "Automation", "Newsletter Tracking", "Donor Re-Engagement"],
+    "best_used_for_industries": ["Nonprofits", "Fundraising Teams", "Marketing Orgs"],
+    "verified": true
+  },
+  "QuickBooks for Nonprofits": {
+    "integrates_with": ["Salesforce", "DonorPerfect", "Classy", "Kindful", "Mailchimp"],
+    "main_functions": ["Fund Accounting", "Donation Tracking", "Grant Budgeting", "Audit Reporting"],
+    "best_used_for_industries": ["Nonprofits", "Finance Teams", "Grant Managers"],
+    "verified": true
+  },
+  "Amadeus Selling Platform": {
+    "integrates_with": ["Salesforce Travel CRM", "Travefy", "TravelPerk", "Expedia TAAP", "Travelport"],
+    "main_functions": ["GDS Booking", "Airline & Hotel Inventory", "PNR Management", "Agent Desktop"],
+    "best_used_for_industries": ["Travel Agencies", "Tour Operators", "Corporate Travel"],
+    "verified": true
+  },
+  "Sabre Red 360": {
+    "integrates_with": ["Salesforce Travel CRM", "Travelport", "Travefy", "Expedia TAAP", "Lola.com"],
+    "main_functions": ["GDS Interface", "Flight & Hotel Search", "Fare Rules", "Client Profiles"],
+    "best_used_for_industries": ["Travel Advisors", "Airline Booking Teams", "Hospitality Groups"],
+    "verified": true
+  },
+  "Travelport Smartpoint": {
+    "integrates_with": ["Amadeus", "Sabre", "Salesforce", "Travefy", "Tourwriter"],
+    "main_functions": ["GDS Aggregator", "Multi-Carrier Search", "PNR Management", "Booking Widgets"],
+    "best_used_for_industries": ["Tourism", "Travel Agencies", "TMCs"],
+    "verified": true
+  },
+  "Travefy": {
+    "integrates_with": ["Sabre", "Amadeus", "TravelPerk", "Google Workspace", "Salesforce"],
+    "main_functions": ["Itinerary Builder", "Proposal Creation", "Client Portals", "Messaging"],
+    "best_used_for_industries": ["Travel Agents", "Event Planners", "Concierge Travel"],
+    "verified": true
+  },
+  "TravelPerk": {
+    "integrates_with": ["Expensify", "Slack", "Travefy", "Google Calendar", "Salesforce"],
+    "main_functions": ["Corporate Travel Booking", "Real-Time Expenses", "Policy Enforcement", "Approval Flows"],
+    "best_used_for_industries": ["Startups", "Corporate Travel", "Distributed Teams"],
+    "verified": true
+  },
+  "Expedia TAAP": {
+    "integrates_with": ["Amadeus", "Sabre", "Salesforce", "Google Workspace"],
+    "main_functions": ["Agent Booking", "Hotel + Air Inventory", "Commission Management", "Multi-Currency"],
+    "best_used_for_industries": ["Travel Agents", "Host Agencies", "Freelance Advisors"],
+    "verified": true
+  },
+  "Tourwriter": {
+    "integrates_with": ["Travelport", "Travefy", "Google Workspace", "Stripe", "Salesforce"],
+    "main_functions": ["Tour Builder", "Itinerary Management", "Proposal PDFs", "CRM for Travel"],
+    "best_used_for_industries": ["Tour Operators", "Adventure Travel", "Custom Trips"],
+    "verified": true
+  },
+  "TravelWorks": {
+    "integrates_with": ["Amadeus", "Sabre", "QuickBooks", "Expedia", "Salesforce"],
+    "main_functions": ["Back Office Accounting", "Commission Reconciliation", "PNR Import", "Client Invoicing"],
+    "best_used_for_industries": ["Agencies", "Host Networks", "Corporate Travel"],
+    "verified": true
+  },
+  "Trawex": {
+    "integrates_with": ["Amadeus", "Sabre", "Travelport", "Stripe", "Google Workspace"],
+    "main_functions": ["API Aggregation", "White Label Portals", "Flight Booking Engine", "Hotel & Car XML"],
+    "best_used_for_industries": ["OTA", "Tech-Powered Agencies", "Consolidators"],
+    "verified": true
+  },
+  "Lola.com": {
+    "integrates_with": ["Expensify", "TravelPerk", "Google Workspace", "Slack", "Salesforce"],
+    "main_functions": ["Corporate Travel Management", "Real-Time Support", "Booking Flow", "Expense Integration"],
+    "best_used_for_industries": ["Startups", "Consulting Firms", "Growth Teams"],
+    "verified": true
+  }
+}
