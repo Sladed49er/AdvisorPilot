@@ -383,8 +383,8 @@ export default function AdvisorPilotDashboard() {
                       <span>Current Software Stack Analysis</span>
                     </h4>
                     <div className="space-y-2">
-                      {analysis.current_stack.slice(0, 5).map((software, index) => (
-                        <div key={index} className="flex items-center justify-between bg-white/10 p-3 rounded-lg hover:bg-white/15 transition-colors">
+                      {analysis.current_stack.slice(0, 5).map((software) => (
+                        <div key={software.name} className="flex items-center justify-between bg-white/10 p-3 rounded-lg hover:bg-white/15 transition-colors">
                           <div>
                             <span className="text-white text-sm font-medium">{software.name}</span>
                             <p className="text-blue-300 text-xs">{software.main_functions.slice(0, 2).join(', ')}</p>

@@ -1,9 +1,5 @@
 // src/lib/dataEngine.ts
-// Smart data processing engine for AdvisorPilot 2.0
-
 import { IndustryDataMap, Software, AnalysisResult, Recommendation } from '@/types';
-
-// Import your JSON data
 import industryData from '@/data/industry-ui.json';
 
 // Type-safe data casting
@@ -79,19 +75,4 @@ function generateRecommendations(software: Software[]): Recommendation[] {
   });
 
   return recommendations;
-}
-
-export function buildAIPrompt(industry: string): string {
-  const software = getSoftwareByIndustry(industry);
-  const frictions = getFrictionsByIndustry(industry);
-  
-  return `Analyze this ${industry} company's technology stack and provide strategic recommendations:
-
-Current Software:
-${software.map(s => `- ${s.name}: ${s.main_functions.join(', ')}`).join('\n')}
-
-Pain Points:
-${frictions.map(f => `- ${f}`).join('\n')}
-
-Please provide specific, actionable recommendations with estimated ROI and implementation steps.`;
 }
