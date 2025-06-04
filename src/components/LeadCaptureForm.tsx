@@ -12,7 +12,8 @@ export interface LeadData {
   email: string;
   company: string;
   phone: string;
-  companySize: '1-50' | '51-200' | '200+' | '';
+  companySize: string; // Now stores exact number as string
+  employeeCount: number; // Actual number for calculations
 }
 
 export default function LeadCaptureForm({ onSubmit }: LeadCaptureFormProps) {
@@ -21,7 +22,8 @@ export default function LeadCaptureForm({ onSubmit }: LeadCaptureFormProps) {
     email: '',
     company: '',
     phone: '',
-    companySize: ''
+    companySize: '',
+    employeeCount: 0
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -33,9 +35,20 @@ export default function LeadCaptureForm({ onSubmit }: LeadCaptureFormProps) {
       return;
     }
     
+    // Convert employee count to number and determine size category
+    const employeeCount = parseInt(formData.companySize);
+    const sizeCategory = employeeCount <= 50 ? '1-50' : 
+                        employeeCount <= 200 ? '51-200' : '200+';
+    
+    const finalData = {
+      ...formData,
+      employeeCount,
+      companySize: sizeCategory
+    };
+    
     setIsSubmitting(true);
     setTimeout(() => {
-      onSubmit(formData);
+      onSubmit(finalData);
       setIsSubmitting(false);
     }, 1500);
   };
@@ -141,19 +154,19 @@ export default function LeadCaptureForm({ onSubmit }: LeadCaptureFormProps) {
 
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-2">
-                Company Size *
+                Number of Employees *
               </label>
-              <select
+              <input
+                type="number"
+                min="1"
+                max="50000"
                 value={formData.companySize}
-                onChange={(e) => setFormData(prev => ({ ...prev, companySize: e.target.value as any }))}
-                className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all bg-white text-gray-900"
+                onChange={(e) => setFormData(prev => ({ ...prev, companySize: e.target.value }))}
+                className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all placeholder-gray-400 bg-white"
+                placeholder="e.g. 25"
                 required
-              >
-                <option value="">Select company size...</option>
-                <option value="1-50">1-50 employees</option>
-                <option value="51-200">51-200 employees</option>
-                <option value="200+">200+ employees</option>
-              </select>
+              />
+              <p className="text-gray-500 text-xs mt-1">Enter the total number of employees at your company</p>
             </div>
 
             <button

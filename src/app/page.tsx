@@ -4,13 +4,12 @@ import { useState } from 'react';
 import { 
   getIndustries, 
   analyzeIndustry, 
-  getSoftwareByIndustry,
+  getSoftwareByIndustryWithIntegrations,
   getFrictionsByIndustry 
 } from '@/lib/dataEngine';
 import { AnalysisResult } from '@/types';
 import LeadCaptureForm, { LeadData } from '@/components/LeadCaptureForm';
 import { 
-  Compass, 
   TrendingUp, 
   Download, 
   FileText, 
@@ -41,22 +40,23 @@ export default function AdvisorPilotDashboard() {
   const [showDashboard, setShowDashboard] = useState(false);
 
   const industries = getIndustries();
-
-  const handleLeadSubmit = (data: LeadData) => {
+const handleLeadSubmit = (data: LeadData) => {
     setLeadData(data);
     setShowDashboard(true);
     console.log('New lead captured:', data);
   };
 
   const calculateROI = () => {
-    const hourlyRate = leadData?.companySize === '1-50' ? 35 : 
-                       leadData?.companySize === '51-200' ? 50 : 75;
+    // Use exact employee count for more precise calculations
+    const employeeCount = leadData?.employeeCount || 50;
+    const hourlyRate = employeeCount <= 50 ? 35 : 
+                       employeeCount <= 200 ? 50 : 75;
     
     const weeklyHours = roiData.manualHours + roiData.dataEntryHours + roiData.reportingHours;
     const annualHours = weeklyHours * 52;
     
-    const efficiencyGain = leadData?.companySize === '1-50' ? 0.6 : 
-                          leadData?.companySize === '51-200' ? 0.7 : 0.8;
+    const efficiencyGain = employeeCount <= 50 ? 0.6 : 
+                          employeeCount <= 200 ? 0.7 : 0.8;
     
     const potentialSavings = annualHours * hourlyRate * efficiencyGain;
     
@@ -66,8 +66,9 @@ export default function AdvisorPilotDashboard() {
     const automationScore = weeklyHours > 20 ? 20 : 40;
     const stackScore = integrationCount * 5;
     
-    const sizeBonus = leadData?.companySize === '1-50' ? 0 : 
-                     leadData?.companySize === '51-200' ? 10 : 20;
+    // Employee count bonus for tech maturity
+    const sizeBonus = employeeCount <= 50 ? 0 : 
+                     employeeCount <= 200 ? 10 : 20;
     
     const maturityScore = Math.min(100, automationScore + stackScore + sizeBonus + 10);
     
@@ -80,9 +81,15 @@ export default function AdvisorPilotDashboard() {
     setIsAnalyzing(true);
     
     try {
-      const result = analyzeIndustry(selectedIndustry, leadData?.companySize);
+      // Enhanced analysis with selected software and integration data
+      const result = analyzeIndustry(
+        selectedIndustry, 
+        leadData?.companySize, 
+        selectedSoftware
+      );
       setAnalysis(result);
       
+      // Simulate AI analysis time for better UX
       setTimeout(() => {
         setIsAnalyzing(false);
       }, 3000);
@@ -103,8 +110,7 @@ export default function AdvisorPilotDashboard() {
   if (!showDashboard) {
     return <LeadCaptureForm onSubmit={handleLeadSubmit} />;
   }
-
-  // Show main dashboard after lead capture
+// Show main dashboard after lead capture
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
@@ -133,7 +139,7 @@ export default function AdvisorPilotDashboard() {
               {leadData && (
                 <div className="text-right">
                   <p className="text-gray-900 text-sm font-medium">{leadData.name}</p>
-                  <p className="text-gray-500 text-xs">{leadData.company} • {leadData.companySize}</p>
+                  <p className="text-gray-500 text-xs">{leadData.company} • {leadData.employeeCount} employees</p>
                 </div>
               )}
               <div className="flex items-center space-x-2">
@@ -157,8 +163,7 @@ export default function AdvisorPilotDashboard() {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          
-          {/* Left Panel - Smart Discovery */}
+{/* Left Panel - Smart Discovery */}
           <div className="space-y-6">
             <div className="bg-white rounded-xl p-6 border border-gray-200 shadow-sm">
               <h2 className="text-xl font-semibold text-gray-900 mb-6">Smart Discovery</h2>
@@ -328,7 +333,7 @@ export default function AdvisorPilotDashboard() {
                       <span>Current Software (check all that apply)</span>
                     </label>
                     <div className="space-y-2 max-h-48 overflow-y-auto bg-gray-50 rounded-lg p-3 border border-gray-200">
-                      {getSoftwareByIndustry(selectedIndustry).slice(0, 15).map((software) => (
+                      {getSoftwareByIndustryWithIntegrations(selectedIndustry).slice(0, 15).map((software) => (
                         <label key={software.name} className="flex items-center space-x-3 text-sm text-gray-700 hover:bg-white p-2 rounded transition-colors cursor-pointer">
                           <input
                             type="checkbox"
@@ -345,7 +350,7 @@ export default function AdvisorPilotDashboard() {
                           />
                           <span className="flex-1 font-medium">{software.name}</span>
                           <span className="text-xs text-gray-500 bg-gray-200 px-2 py-1 rounded">
-                            {software.integrates_with.length} integrations
+                            {software.integration_count} integrations
                           </span>
                         </label>
                       ))}
@@ -408,8 +413,7 @@ export default function AdvisorPilotDashboard() {
               </div>
             </div>
           </div>
-
-          {/* Center Panel - Analysis Results */}
+{/* Center Panel - Analysis Results */}
           <div className="space-y-6">
             <div className="bg-white rounded-xl p-6 border border-gray-200 shadow-sm">
               <h2 className="text-xl font-semibold text-gray-900 mb-6">Analysis Results</h2>
@@ -488,8 +492,7 @@ export default function AdvisorPilotDashboard() {
               )}
             </div>
           </div>
-
-          {/* Right Panel - Recommendations */}
+{/* Right Panel - Recommendations */}
           <div className="space-y-6">
             <div className="bg-white rounded-xl p-6 border border-gray-200 shadow-sm">
               <h2 className="text-xl font-semibold text-gray-900 mb-6">Smart Recommendations</h2>
@@ -563,8 +566,8 @@ export default function AdvisorPilotDashboard() {
                     <span className="text-gray-900 font-medium">{leadData.company}</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-gray-600">Size:</span>
-                    <span className="text-gray-900 font-medium">{leadData.companySize} employees</span>
+                    <span className="text-gray-600">Employees:</span>
+                    <span className="text-gray-900 font-medium">{leadData.employeeCount}</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-gray-600">Contact:</span>
@@ -574,7 +577,7 @@ export default function AdvisorPilotDashboard() {
               </div>
             )}
           </div>
-        </div>
+</div>
       </div>
     </div>
   );
