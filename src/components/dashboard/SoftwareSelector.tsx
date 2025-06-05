@@ -41,19 +41,35 @@ export default function SoftwareSelector({
 
   // Get software relevant to the selected industry from your integration data
   const getIndustryRelevantSoftware = () => {
-    return Object.keys(typedIntegrationData)
-      .filter(softwareName => {
-        const software = typedIntegrationData[softwareName];
+  return Object.keys(typedIntegrationData)
+    .filter(softwareName => {
+      const software = typedIntegrationData[softwareName];
+      
+      if (!software.best_used_for_industries || software.best_used_for_industries.length === 0) {
+        return false;
+      }
+      
+      return software.best_used_for_industries.some(industry => {
+        const normalizedIndustry = industry.toLowerCase().replace(/[^a-z0-9]/g, '');
+        const normalizedSelected = selectedIndustry.toLowerCase().replace(/[^a-z0-9]/g, '');
         
-        // Only show software that's actually tagged for this industry
-        return software.best_used_for_industries.some(industry => {
-          const normalizedIndustry = industry.toLowerCase().replace(/[^a-z0-9]/g, '');
-          const normalizedSelected = selectedIndustry.toLowerCase().replace(/[^a-z0-9]/g, '');
-          
-          return normalizedIndustry.includes(normalizedSelected) || 
-                 normalizedSelected.includes(normalizedIndustry);
-        });
-      })
+        // Direct matching
+        if (normalizedIndustry.includes(normalizedSelected) || 
+            normalizedSelected.includes(normalizedIndustry)) {
+          return true;
+        }
+        
+        // Insurance-specific matching
+        if (normalizedSelected.includes('insurance') || normalizedSelected.includes('pc')) {
+          return industry.toLowerCase().includes('property') && 
+                 industry.toLowerCase().includes('casualty') ||
+                 industry.toLowerCase().includes('insurance') ||
+                 industry.toLowerCase().includes('agencies');
+        }
+        
+        return false;
+      });
+    })
       .map(softwareName => ({
         name: softwareName,
         main_functions: typedIntegrationData[softwareName].main_functions,

@@ -162,7 +162,13 @@ const handleLeadSubmit = (data: LeadData) => {
 </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className={`grid gap-8 transition-all duration-500 ${
+  !analysis && !selectedIndustry 
+    ? 'grid-cols-1 max-w-2xl mx-auto'
+    : !analysis && selectedIndustry
+    ? 'grid-cols-1 lg:grid-cols-2'
+    : 'grid-cols-1 lg:grid-cols-3'
+}`}>
 {/* Left Panel - Smart Discovery */}
           <div className="space-y-6">
             <div className="bg-white rounded-xl p-6 border border-gray-200 shadow-sm">
