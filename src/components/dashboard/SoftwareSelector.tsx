@@ -2,7 +2,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Users, CheckCircle, XCircle, Link, Plus, X, Edit3 } from 'lucide-react';
+import { Users, CheckCircle, XCircle, Link, Plus, X } from 'lucide-react';
 import Tooltip from '../ui/Tooltip';
 import integrationData from '@/data/integration-data.json';
 import faultToleranceData from '@/data/fault-tolerance.json';
@@ -69,7 +69,14 @@ export default function SoftwareSelector({
   // Enhanced industry-relevant software filtering using fault tolerance
   const getIndustryRelevantSoftware = () => {
     const foundSoftware = new Set<string>();
-    const softwareList: any[] = [];
+    const softwareList: {
+  name: string;
+  main_functions: string[];
+  integrates_with: string[];
+  integration_count: number;
+  verified: boolean;
+  isCustom: boolean;
+}[] = [];
 
     // Method 1: Check integration-data.json with improved matching
     Object.keys(typedIntegrationData).forEach(softwareName => {
