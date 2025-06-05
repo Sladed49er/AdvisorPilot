@@ -10,6 +10,7 @@ import {
 import { AnalysisResult } from '@/types';
 import LeadCaptureForm, { LeadData } from '@/components/LeadCaptureForm';
 import SoftwareSelector from '@/components/dashboard/SoftwareSelector';
+import AutomationDetector from '@/components/dashboard/AutomationDetector';
 import { 
   TrendingUp, 
   Download, 
@@ -186,6 +187,31 @@ const handleLeadSubmit = (data: LeadData) => {
                       </option>
                     ))}
                   </select>
+                </div>
+                {/* Center Panel - Analysis Results */}
+                <div className="space-y-6">
+                  <div className="bg-white rounded-xl p-6 border border-gray-200 shadow-sm">
+                    <h2 className="text-xl font-semibold text-gray-900 mb-6">Analysis Results</h2>
+                    
+                    {/* Your existing analysis results content stays here */}
+                    {!analysis ? (
+                      <div className="text-center py-12">
+                        {/* existing content */}
+                      </div>
+                    ) : (
+                      <div className="space-y-6">
+                        {/* existing analysis content */}
+                      </div>
+                    )}
+                  </div>
+
+                  {/* NEW: Automation Intelligence */}
+                  {selectedSoftware.length > 0 && (
+                    <AutomationDetector
+                      selectedSoftware={selectedSoftware}
+                      leadData={leadData}
+                    />
+                  )}
                 </div>
 
                 {/* ROI Calculator Section */}
