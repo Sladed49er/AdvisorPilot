@@ -163,11 +163,12 @@ export default function AdvisorPilotDashboard() {
         {/* Progressive Layout Grid */}
         <div className={`transition-all duration-700 ease-in-out ${
           !analysis 
-            ? 'max-w-2xl mx-auto' // Single centered column until analysis
-            : 'max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8' // Full dashboard after analysis
-        }`}>
-          {/* Left Panel - Smart Discovery */}
-          <div className="space-y-6">
+             ? 'max-w-2xl mx-auto' // Single centered column until analysis
+             : 'max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8' // Clean 2-column results
+            }`}>
+          {/* Left Panel - Only show BEFORE analysis */}
+              {!analysis && (
+            <div className="space-y-6">
             <div className="bg-white rounded-xl p-6 border border-gray-200 shadow-sm">
               <h2 className="text-xl font-semibold text-gray-900 mb-6">Smart Discovery</h2>
               
@@ -384,6 +385,7 @@ export default function AdvisorPilotDashboard() {
               </div>
             </div>
           </div>
+              )}
           {/* Center Panel - Only show AFTER analysis */}
           {analysis && (
             <div className="space-y-6">
