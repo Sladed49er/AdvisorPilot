@@ -1,5 +1,4 @@
 // src/lib/aiIntegrationEngine.ts
-import { AutomationOpportunity } from './automationEngine';
 
 interface AIIntegrationAnalysis {
   executive_summary: string;
@@ -40,14 +39,23 @@ interface CostBenefit {
   risk_assessment: string;
 }
 
+interface IntegrationData {
+  main_functions: string[];
+  integrates_with: string[];
+  best_used_for_industries: string[];
+  verified: boolean;
+}
+
+interface LeadData {
+  company: string;
+  employeeCount: number;
+  companySize: string;
+}
+
 export async function generateAIIntegrationAnalysis(
   selectedSoftware: string[],
-  integrationData: {[key: string]: any},
-  leadData: {
-    company: string;
-    employeeCount: number;
-    companySize: string;
-  }
+  integrationData: {[key: string]: IntegrationData},
+  leadData: LeadData
 ): Promise<AIIntegrationAnalysis> {
   
   // Build comprehensive prompt with real data
@@ -81,8 +89,8 @@ export async function generateAIIntegrationAnalysis(
 
 function buildAnalysisPrompt(
   selectedSoftware: string[],
-  integrationData: {[key: string]: any},
-  leadData: any
+  integrationData: {[key: string]: IntegrationData},
+  leadData: LeadData
 ): string {
   // Get detailed integration data for each selected software
   const softwareDetails = selectedSoftware.map(software => {
