@@ -40,7 +40,7 @@ export default function AdvisorPilotDashboard() {
   const [showDashboard, setShowDashboard] = useState(false);
 
   const industries = getIndustries();
-const handleLeadSubmit = (data: LeadData) => {
+  const handleLeadSubmit = (data: LeadData) => {
     setLeadData(data);
     setShowDashboard(true);
     console.log('New lead captured:', data);
@@ -101,8 +101,8 @@ const handleLeadSubmit = (data: LeadData) => {
   };
 
   const getBenchmarkText = () => {
-    if (techMaturityScore >= 80) return "You&apos;re ahead of 85% of companies in your industry! 🚀";
-    if (techMaturityScore >= 60) return "You&apos;re on par with 60% of industry leaders 📈";
+    if (techMaturityScore >= 80) return "You're ahead of 85% of companies in your industry! 🚀";
+    if (techMaturityScore >= 60) return "You're on par with 60% of industry leaders 📈";
     return "Significant opportunity to improve vs industry standards 💡";
   };
 
@@ -110,7 +110,7 @@ const handleLeadSubmit = (data: LeadData) => {
   if (!showDashboard) {
     return <LeadCaptureForm onSubmit={handleLeadSubmit} />;
   }
-// Show main dashboard after lead capture
+  // Show main dashboard after lead capture
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
@@ -158,18 +158,17 @@ const handleLeadSubmit = (data: LeadData) => {
             Welcome, {leadData?.name}! 👋
           </h2>
           <p className="text-gray-600 text-lg">
-  Let&apos;s analyze {leadData?.company}&apos;s technology stack and find optimization opportunities.
-</p>
+            Let's analyze {leadData?.company}'s technology stack and find optimization opportunities.
+          </p>
         </div>
 
-        <div className={`grid gap-8 transition-all duration-500 ${
-  !analysis && !selectedIndustry 
-    ? 'grid-cols-1 max-w-2xl mx-auto'
-    : !analysis && selectedIndustry
-    ? 'grid-cols-1 lg:grid-cols-2'
-    : 'grid-cols-1 lg:grid-cols-3'
-}`}>
-{/* Left Panel - Smart Discovery */}
+        {/* Progressive Layout Grid */}
+        <div className={`transition-all duration-700 ease-in-out ${
+          !analysis 
+            ? 'max-w-2xl mx-auto' // Single centered column until analysis
+            : 'max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8' // Full dashboard after analysis
+        }`}>
+          {/* Left Panel - Smart Discovery */}
           <div className="space-y-6">
             <div className="bg-white rounded-xl p-6 border border-gray-200 shadow-sm">
               <h2 className="text-xl font-semibold text-gray-900 mb-6">Smart Discovery</h2>
@@ -193,31 +192,6 @@ const handleLeadSubmit = (data: LeadData) => {
                     ))}
                   </select>
                 </div>
-                {/* Center Panel - Analysis Results */}
-                <div className="space-y-6">
-                  <div className="bg-white rounded-xl p-6 border border-gray-200 shadow-sm">
-                    <h2 className="text-xl font-semibold text-gray-900 mb-6">Analysis Results</h2>
-                    
-                    {/* Your existing analysis results content stays here */}
-                    {!analysis ? (
-                      <div className="text-center py-12">
-                        {/* existing content */}
-                      </div>
-                    ) : (
-                      <div className="space-y-6">
-                        {/* existing analysis content */}
-                      </div>
-                    )}
-                  </div>
-
-                  {/* NEW: Automation Intelligence */}
-                  {selectedSoftware.length > 0 && (
-                    <AutomationDetector
-                      selectedSoftware={selectedSoftware}
-                      leadData={leadData}
-                    />
-                  )}
-                </div>
 
                 {/* ROI Calculator Section */}
                 {selectedIndustry && (
@@ -227,7 +201,6 @@ const handleLeadSubmit = (data: LeadData) => {
                         <BarChart3 className="w-5 h-5 text-blue-600" />
                         <span>ROI Quick Assessment</span>
                       </h3>
-                      
                       <div className="space-y-4">
                         <div>
                           <label className="block text-sm font-medium text-gray-700 mb-2">
@@ -307,7 +280,6 @@ const handleLeadSubmit = (data: LeadData) => {
                           </div>
                         </div>
                       </div>
-
                       {/* ROI Display */}
                       {roiData.estimatedSavings > 0 && (
                         <div className="mt-6 bg-green-50 border border-green-200 rounded-lg p-4">
@@ -355,16 +327,14 @@ const handleLeadSubmit = (data: LeadData) => {
                     </div>
                   </div>
                 )}
-
-                {/* Current Software */}
-                {/* Enhanced Software Selector with Integration Toggles */}
+                {/* Software Selector */}
                 {selectedIndustry && (
-             <SoftwareSelector
-                  selectedIndustry={selectedIndustry}  // ← Add this line
-                  selectedSoftware={selectedSoftware}
-                  setSelectedSoftware={setSelectedSoftware}
-                  onCalculateROI={calculateROI}
-            />
+                  <SoftwareSelector
+                    selectedIndustry={selectedIndustry}
+                    selectedSoftware={selectedSoftware}
+                    setSelectedSoftware={setSelectedSoftware}
+                    onCalculateROI={calculateROI}
+                  />
                 )}
 
                 {/* Pain Points */}
@@ -416,19 +386,12 @@ const handleLeadSubmit = (data: LeadData) => {
               </div>
             </div>
           </div>
-{/* Center Panel - Analysis Results */}
-          <div className="space-y-6">
-            <div className="bg-white rounded-xl p-6 border border-gray-200 shadow-sm">
-              <h2 className="text-xl font-semibold text-gray-900 mb-6">Analysis Results</h2>
-              
-              {!analysis ? (
-                <div className="text-center py-12">
-                  <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <TrendingUp className="w-8 h-8 text-blue-600" />
-                  </div>
-                  <p className="text-gray-600">Select an industry and complete the assessment to see intelligent recommendations</p>
-                </div>
-              ) : (
+          {/* Center Panel - Only show AFTER analysis */}
+          {analysis && (
+            <div className="space-y-6">
+              <div className="bg-white rounded-xl p-6 border border-gray-200 shadow-sm">
+                <h2 className="text-xl font-semibold text-gray-900 mb-6">Analysis Results</h2>
+                
                 <div className="space-y-6">
                   {/* Total Savings */}
                   <div className="bg-green-50 border border-green-200 rounded-lg p-6">
@@ -492,15 +455,23 @@ const handleLeadSubmit = (data: LeadData) => {
                     </div>
                   </div>
                 </div>
+              </div>
+
+              {/* Automation Intelligence */}
+              {selectedSoftware.length > 0 && (
+                <AutomationDetector
+                  selectedSoftware={selectedSoftware}
+                  leadData={leadData}
+                />
               )}
             </div>
-          </div>
-{/* Right Panel - Recommendations */}
-          <div className="space-y-6">
-            <div className="bg-white rounded-xl p-6 border border-gray-200 shadow-sm">
-              <h2 className="text-xl font-semibold text-gray-900 mb-6">Smart Recommendations</h2>
-              
-              {analysis ? (
+          )}
+          {/* Right Panel - Only show AFTER analysis */}
+          {analysis && (
+            <div className="space-y-6">
+              <div className="bg-white rounded-xl p-6 border border-gray-200 shadow-sm">
+                <h2 className="text-xl font-semibold text-gray-900 mb-6">Smart Recommendations</h2>
+                
                 <div className="space-y-4">
                   {analysis.recommendations.map((rec) => (
                     <div key={rec.id} className={`bg-gray-50 rounded-lg p-4 border-l-4 hover:bg-gray-100 transition-all cursor-pointer ${
@@ -528,59 +499,53 @@ const handleLeadSubmit = (data: LeadData) => {
                     </div>
                   ))}
                 </div>
-              ) : (
-                <div className="text-center py-8">
-                  <AlertCircle className="w-12 h-12 text-gray-400 mx-auto mb-3" />
-                  <p className="text-gray-600">Complete the assessment to see personalized recommendations</p>
+              </div>
+
+              {/* Export Options */}
+              <div className="bg-white rounded-xl p-6 border border-gray-200 shadow-sm">
+                <h3 className="text-lg font-semibold text-gray-900 mb-4">Export & Share</h3>
+                <div className="grid grid-cols-2 gap-3">
+                  <button className="bg-blue-600 text-white py-3 px-4 rounded-lg text-sm font-medium hover:bg-blue-700 transition-colors flex items-center justify-center space-x-2">
+                    <FileText className="w-4 h-4" />
+                    <span>PDF Report</span>
+                  </button>
+                  <button className="bg-gray-600 text-white py-3 px-4 rounded-lg text-sm font-medium hover:bg-gray-700 transition-colors flex items-center justify-center space-x-2">
+                    <Download className="w-4 h-4" />
+                    <span>Proposal</span>
+                  </button>
+                  <button className="bg-green-600 text-white py-3 px-4 rounded-lg text-sm font-medium hover:bg-green-700 transition-colors flex items-center justify-center space-x-2">
+                    <Mail className="w-4 h-4" />
+                    <span>Email</span>
+                  </button>
+                  <button className="bg-orange-600 text-white py-3 px-4 rounded-lg text-sm font-medium hover:bg-orange-700 transition-colors flex items-center justify-center space-x-2">
+                    <Calendar className="w-4 h-4" />
+                    <span>Schedule</span>
+                  </button>
+                </div>
+              </div>
+              {/* Lead Summary */}
+              {leadData && (
+                <div className="bg-white rounded-xl p-6 border border-gray-200 shadow-sm">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-4">Assessment Summary</h3>
+                  <div className="space-y-3 text-sm">
+                    <div className="flex justify-between">
+                      <span className="text-gray-600">Company:</span>
+                      <span className="text-gray-900 font-medium">{leadData.company}</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-gray-600">Employees:</span>
+                      <span className="text-gray-900 font-medium">{leadData.employeeCount}</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-gray-600">Contact:</span>
+                      <span className="text-gray-900 font-medium">{leadData.email}</span>
+                    </div>
+                  </div>
                 </div>
               )}
             </div>
-
-            {/* Export Options */}
-            <div className="bg-white rounded-xl p-6 border border-gray-200 shadow-sm">
-              <h3 className="text-lg font-semibold text-gray-900 mb-4">Export & Share</h3>
-              <div className="grid grid-cols-2 gap-3">
-                <button className="bg-blue-600 text-white py-3 px-4 rounded-lg text-sm font-medium hover:bg-blue-700 transition-colors flex items-center justify-center space-x-2">
-                  <FileText className="w-4 h-4" />
-                  <span>PDF Report</span>
-                </button>
-                <button className="bg-gray-600 text-white py-3 px-4 rounded-lg text-sm font-medium hover:bg-gray-700 transition-colors flex items-center justify-center space-x-2">
-                  <Download className="w-4 h-4" />
-                  <span>Proposal</span>
-                </button>
-                <button className="bg-green-600 text-white py-3 px-4 rounded-lg text-sm font-medium hover:bg-green-700 transition-colors flex items-center justify-center space-x-2">
-                  <Mail className="w-4 h-4" />
-                  <span>Email</span>
-                </button>
-                <button className="bg-orange-600 text-white py-3 px-4 rounded-lg text-sm font-medium hover:bg-orange-700 transition-colors flex items-center justify-center space-x-2">
-                  <Calendar className="w-4 h-4" />
-                  <span>Schedule</span>
-                </button>
-              </div>
-            </div>
-
-            {/* Lead Summary */}
-            {leadData && (
-              <div className="bg-white rounded-xl p-6 border border-gray-200 shadow-sm">
-                <h3 className="text-lg font-semibold text-gray-900 mb-4">Assessment Summary</h3>
-                <div className="space-y-3 text-sm">
-                  <div className="flex justify-between">
-                    <span className="text-gray-600">Company:</span>
-                    <span className="text-gray-900 font-medium">{leadData.company}</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-gray-600">Employees:</span>
-                    <span className="text-gray-900 font-medium">{leadData.employeeCount}</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-gray-600">Contact:</span>
-                    <span className="text-gray-900 font-medium">{leadData.email}</span>
-                  </div>
-                </div>
-              </div>
-            )}
-          </div>
-</div>
+          )}
+        </div>
       </div>
     </div>
   );
