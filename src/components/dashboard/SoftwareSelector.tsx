@@ -219,20 +219,20 @@ export default function SoftwareSelector({
   const availableSoftware = getIndustryRelevantSoftware();
 
   const handleAddCustomSoftware = () => {
-    if (newSoftware.name.trim()) {
-      const custom: CustomSoftware = {
-        name: newSoftware.name.trim(),
-        category: newSoftware.category.trim() || 'Custom Software',
-        integrations: newSoftware.integrations.split(',').map(s => s.trim()).filter(s => s),
-        isCustom: true
-      };
-      
-      setCustomSoftware([...customSoftware, custom]);
-      setNewSoftware({ name: '', category: '', integrations: '' });
-      setShowAddSoftware(false);
-      onCalculateROI();
-    }
-  };
+  if (newSoftware.name.trim()) {
+    const custom: CustomSoftware = {
+      name: newSoftware.name.trim(),
+      category: 'Other', // Always set to "Other"
+      integrations: newSoftware.integrations.split(',').map(s => s.trim()).filter(s => s),
+      isCustom: true
+    };
+    
+    setCustomSoftware([...customSoftware, custom]);
+    setNewSoftware({ name: '', category: '', integrations: '' });
+    setShowAddSoftware(false);
+    onCalculateROI();
+  }
+};
 
   const handleSoftwareToggle = (softwareName: string, isChecked: boolean) => {
     if (isChecked) {
@@ -345,17 +345,7 @@ export default function SoftwareSelector({
           </div>
           
           <div className="space-y-3">
-            <div>
-              <label className="block text-xs font-medium text-gray-700 mb-1">Software Name *</label>
-              <input
-                type="text"
-                value={newSoftware.name}
-                onChange={(e) => setNewSoftware({...newSoftware, name: e.target.value})}
-                placeholder="e.g., Custom CRM, VoIP Provider"
-                className="w-full px-3 py-2 border border-gray-300 rounded text-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-              />
-            </div>
-            
+            <input type="hidden" value="Other" />            
             <div>
               <label className="block text-xs font-medium text-gray-700 mb-1">Category</label>
               <input
@@ -396,8 +386,8 @@ export default function SoftwareSelector({
         </div>
       )}
 
-      <div className="space-y-3 max-h-96 overflow-y-auto bg-gray-50 rounded-lg p-4 border border-gray-200">
-        {availableSoftware.slice(0, 25).map((software) => {
+      <div className="space-y-3 max-h-[600px] overflow-y-auto bg-gray-50 rounded-lg p-4 border border-gray-200">
+        {availableSoftware.map((software) => {
           const isSelected = selectedSoftware.includes(software.name);
           const stats = getIntegrationStats(software.name);
           const showDetails = showIntegrationDetails[software.name];
