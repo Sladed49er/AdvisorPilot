@@ -42,7 +42,6 @@ export default function AdvisorPilotDashboard() {
   const handleLeadSubmit = (data: LeadData) => {
     setLeadData(data);
     setShowDashboard(true);
-    const [integrationStatuses, setIntegrationStatuses] = useState<Record<string, IntegrationStatus>>({});
     console.log('New lead captured:', data);
   };
 
