@@ -20,7 +20,6 @@ import {
   Shield,
   Target,
   BarChart3,
-  CheckCircle,
   AlertCircle
 } from 'lucide-react';
 

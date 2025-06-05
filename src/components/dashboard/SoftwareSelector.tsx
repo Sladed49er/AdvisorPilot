@@ -2,7 +2,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Users, CheckCircle, XCircle, AlertTriangle, Link } from 'lucide-react';
+import { Users, CheckCircle, XCircle, Link } from 'lucide-react';
 import Tooltip from '../ui/Tooltip';
 
 interface Software {
