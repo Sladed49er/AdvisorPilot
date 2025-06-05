@@ -149,20 +149,18 @@ const softwareWithIntegrations = selectedSoftware.map(softwareName => {
     name: softwareName,
     main_functions: integrationData?.main_functions || ['Business Software'],
     integrates_with: integrationData?.integrates_with || [],
-    verified: integrationData?.verified || false
+    verified: integrationData?.verified || false,
+    best_used_for_industries: integrationData?.best_used_for_industries || []
   };
 });
 
 const integrationOpportunities = findIntegrationOpportunities(selectedSoftware);
-const recommendations = generateRecommendations(softwareWithIntegrations as any, companySize, integrationOpportunities);
+const recommendations = generateRecommendations(softwareWithIntegrations as Software[], companySize, integrationOpportunities);
   const totalSavings = recommendations.reduce((sum, rec) => sum + rec.estimated_savings, 0);
 
   return {
     industry,
-    current_stack: softwareWithIntegrations.map(s => ({
-  ...s,
-  best_used_for_industries: []
-})) as Software[],
+    current_stack: softwareWithIntegrations as Software[],
     recommendations,
     total_savings: totalSavings,
     integration_opportunities: {
@@ -174,7 +172,7 @@ const recommendations = generateRecommendations(softwareWithIntegrations as any,
 }
 
 function generateRecommendations(
-  software: any[],
+ software: Software[],
   companySize?: string, 
   integrationOps?: { missing: IntegrationOpportunity[]; existing: IntegrationOpportunity[]; quickWins: IntegrationOpportunity[]; }
 ): Recommendation[] {
