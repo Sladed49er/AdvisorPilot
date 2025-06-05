@@ -1,5 +1,6 @@
 {
-  "RingCentral": {
+  "name_variations": {
+    "RingCentral": {
     "variants": ["Ring Central", "Ringcentral", "Ring Central Inc.", "ringcentral", "RC phone"]
   },
   "Salesforce": {
@@ -10,9 +11,6 @@
   },
   "Zoom": {
     "variants": ["Zoom Meetings", "Zoom.us", "zoom video", "zoom app", "zoommeet"]
-  },
-  "Slack": {
-    "variants": ["Slack App", "slack.com", "slackchat", "slack app", "Slack IM"]
   },
   "Google Workspace": {
     "variants": ["G Suite", "Google Suite", "googleworkspace", "workspace google", "gsuite"]
@@ -26,9 +24,6 @@
   "Asana": {
     "variants": ["Asana App", "asana.com", "asana project", "asana tasks", "Asana PM"]
   },
-  "Trello": {
-    "variants": ["Trello App", "trello.com", "trello board", "trelloboard", "trello project"]
-  },
   "HubSpot": {
     "variants": ["Hub Spot", "hubspot.com", "Hub CRM", "Hubspot CRM", "hubspotmarketing"]
   },
@@ -40,9 +35,6 @@
   },
   "Tableau": {
     "variants": ["Tableu", "tableau.com", "Tableau Software", "tableausoftware", "tablue"]
-  },
-  "Power BI": {
-    "variants": ["PowerBI", "power bi microsoft", "power bi app", "ms power bi", "pwr bi"]
   },
   "AWS": {
     "variants": ["Amazon Web Services", "aws.amazon.com", "Amazon Cloud", "aws cloud", "a w s"]
@@ -91,15 +83,6 @@
   },
   "Monday.com": {
     "variants": ["Monday", "monday project management", "mondayapp", "mondaydotcom", "monday.com app"]
-  },
-  "Smartsheet": {
-    "variants": ["Smart Sheet", "smartsheet.com", "smartsheet app", "smart sheets", "smartsheettask"]
-  },
-  "ClickUp": {
-    "variants": ["Click Up", "clickup.com", "clickupapp", "click up tasks", "clickup cloud"]
-  },
-  "Notion": {
-    "variants": ["Notion.so", "notion app", "notionso", "notion workspace", "notionspace"]
   },
   "Atlassian": {
     "variants": ["Atlassian.com", "Atlassian Jira", "Atlassian Confluence", "atlasian", "atlassian cloud"]
@@ -151,9 +134,6 @@
   },
   "Microsoft 365": {
     "variants": ["Office 365", "Microsoft Office 365", "microsoft365", "ms 365", "office365"]
-  },
-  "Google Meet": {
-    "variants": ["GoogleMeet", "google meet video", "gmeet", "googlemeet.com", "google meeting"]
   },
   "Webex": {
     "variants": ["Cisco Webex", "webex meetings", "webex.com", "web ex", "cisco webex meetings"]
@@ -428,14 +408,8 @@
   "Cerner": {
     "variants": ["Cerner EHR", "cerner.com", "cerner health", "cerner healthcare", "cernerehr"]
   },
-  "NextGen Healthcare": {
-    "variants": ["Next Gen Healthcare", "nextgen healthcare", "nextgen ehr", "nextgenhealthcare.com", "nextgenhealth"]
-  },
   "Allscripts": {
     "variants": ["All Scripts", "allscripts.com", "allscripts cloud", "allscripts ehr", "all scripts healthcare"]
-  },
-  "eClinicalWorks": {
-    "variants": ["e Clinical Works", "eclinicalworks.com", "eclinicalworks ehr", "eclinical cloud", "e clinicalworks"]
   },
   "Plex Systems": {
     "variants": ["Plex MES", "plexsystems.com", "plex cloud", "plex erp", "plex manufacturing"]
@@ -488,14 +462,8 @@
   "Smartsheet": {
     "variants": ["Smart Sheet", "smartsheet.com", "smartsheet project management", "smart sheet app", "smartsheetcloud"]
   },
-  "Trello": {
-    "variants": ["Trello Board", "trello.com", "trello cloud", "trelloboard", "trello app"]
-  },
   "ClickUp": {
     "variants": ["Click Up", "clickup.com", "clickup project management", "clickup cloud", "clickupapp"]
-  },
-  "Miro": {
-    "variants": ["Miro Board", "miro.com", "miro app", "miro cloud", "miro whiteboard"]
   },
   "Lucidchart": {
     "variants": ["Lucid Chart", "lucidchart.com", "lucid chart app", "lucidchart diagrams", "lucidchart cloud"]
@@ -1349,9 +1317,6 @@
   "Plaid": {
     "variants": ["Plaid API", "plaid.com", "plaid banking", "plaid data cloud", "plaidplatform"]
   },
-  "Bill.com": {
-    "variants": ["Bill Dot Com", "bill.com", "bill.com payments", "billcom", "billcloud"]
-  },
   "Tipalti": {
     "variants": ["Tip Alti", "tipalti.com", "tipalti payments", "tipalti cloud", "tipaltiplatform"]
   },
@@ -1415,4 +1380,298 @@
   "Sage Business Cloud Accounting": {
     "variants": ["Sage Accounting", "sage business cloud", "sage accounting cloud", "sage businesscloud", "sageaccountingplatform"]
   }
+},
+  "industry_mappings": {
+  "Insurance (Retail P&C)": {
+    "keywords": ["insurance", "agencies", "agency", "broker", "carrier", "property", "casualty", "p&c", "pc", "mga", "wholesale", "retail", "commercial", "personal", "claims", "underwriting"],
+    "required_software": ["HawkSoft", "EZLynx", "AMS360", "Applied Epic", "Applied Systems", "Vertafore", "QQCatalyst"],
+    "common_software": ["Salesforce", "Microsoft Teams", "RingCentral", "DocuSign", "QuickBooks", "Outlook"]
+  },
+  
+  "Insurance (Commercial)": {
+    "keywords": ["insurance", "commercial", "business", "liability", "property", "workers", "compensation", "umbrella", "cyber"],
+    "required_software": ["Applied Epic", "AMS360", "Vertafore", "ImageRight", "Applied Systems"],
+    "common_software": ["Salesforce", "Microsoft Teams", "DocuSign", "Adobe Sign"]
+  },
+  
+  "Insurance (Life & Health)": {
+    "keywords": ["life", "health", "benefits", "annuities", "disability", "medicare", "group"],
+    "required_software": ["WinFlex", "BenefitPoint", "Applied Benefits", "Health Sherpa"],
+    "common_software": ["Salesforce", "HubSpot", "Calendly", "DocuSign"]
+  }
+},
+"Healthcare": {
+  "keywords": ["healthcare", "medical", "hospital", "clinic", "patient", "ehr", "emr", "practice", "physician", "dental", "pharmacy", "therapy", "veterinary"],
+  "required_software": ["Epic", "Cerner", "Allscripts", "athenahealth", "eClinicalWorks", "NextGen"],
+  "common_software": ["Microsoft Teams", "Zoom", "Salesforce Health Cloud", "DocuSign", "Slack"]
+},
+
+"Manufacturing": {
+  "keywords": ["manufacturing", "production", "factory", "industrial", "supply", "chain", "inventory", "erp", "mrp", "plm", "mes", "scada"],
+  "required_software": ["SAP", "Oracle ERP", "Siemens", "Rockwell", "GE Digital", "PTC"],
+  "common_software": ["Microsoft Teams", "Slack", "Salesforce", "AutoCAD", "SolidWorks"]
+},
+
+"Financial Services": {
+  "keywords": ["financial", "banking", "credit", "loan", "investment", "wealth", "advisory", "fintech", "payment", "mortgage", "accounting"],
+  "required_software": ["Salesforce Financial Cloud", "Encompass", "Calyx Point", "LOS", "Blend", "QuickBooks"],
+  "common_software": ["Microsoft Teams", "Zoom", "DocuSign", "Slack", "HubSpot"]
+},
+
+"Real Estate": {
+  "keywords": ["real", "estate", "property", "mls", "listing", "broker", "agent", "transaction", "escrow", "title"],
+  "required_software": ["MLS", "Chime", "BoomTown", "Wise Agent", "Top Producer"],
+  "common_software": ["DocuSign", "Salesforce", "Microsoft Teams", "Zoom", "QuickBooks"]
+},
+"Technology": {
+  "keywords": ["technology", "software", "saas", "development", "programming", "coding", "tech", "startup", "app", "web", "mobile"],
+  "required_software": ["GitHub", "Jira", "Confluence", "Visual Studio", "Docker", "AWS"],
+  "common_software": ["Slack", "Microsoft Teams", "Zoom", "Salesforce", "HubSpot", "Asana"]
+},
+
+"Legal": {
+  "keywords": ["legal", "law", "attorney", "lawyer", "litigation", "contract", "compliance", "paralegal", "court"],
+  "required_software": ["Clio", "MyCase", "PracticePanther", "LexisNexis", "Westlaw"],
+  "common_software": ["DocuSign", "Microsoft Teams", "Zoom", "Salesforce", "QuickBooks"]
+},
+
+"Education": {
+  "keywords": ["education", "school", "university", "college", "student", "teacher", "learning", "academic", "campus"],
+  "required_software": ["Canvas", "Blackboard", "PowerSchool", "Infinite Campus", "Google Classroom"],
+  "common_software": ["Microsoft Teams", "Zoom", "Google Workspace", "Slack", "Salesforce Education"]
+},
+
+"Retail": {
+  "keywords": ["retail", "store", "shop", "ecommerce", "pos", "inventory", "merchandise", "customer", "sales"],
+  "required_software": ["Shopify", "Square", "Lightspeed", "NetSuite", "BigCommerce"],
+  "common_software": ["Salesforce Commerce", "Microsoft Teams", "Slack", "QuickBooks", "Mailchimp"]
+},
+
+"Construction": {
+  "keywords": ["construction", "building", "contractor", "project", "site", "field", "trade", "renovation", "engineering"],
+  "required_software": ["Procore", "PlanGrid", "Buildertrend", "CoConstruct", "Sage Construction"],
+  "common_software": ["Microsoft Teams", "Slack", "DocuSign", "QuickBooks", "AutoCAD"]
+},
+"Healthcare (Provider Side)": {
+  "keywords": ["healthcare", "medical", "hospital", "clinic", "patient", "ehr", "emr", "practice", "physician", "provider"],
+  "required_software": ["Epic", "Cerner", "Allscripts", "athenahealth", "eClinicalWorks", "NextGen"],
+  "common_software": ["Microsoft Teams", "Zoom", "Salesforce Health Cloud", "DocuSign"]
+},
+
+"Healthcare Insurance (Payer Side)": {
+  "keywords": ["healthcare", "insurance", "payer", "claims", "benefits", "medical", "health plan"],
+  "required_software": ["Epic", "Claims management", "Benefits administration"],
+  "common_software": ["Salesforce", "Microsoft Teams", "DocuSign"]
+},
+
+"Logistics & Transportation": {
+  "keywords": ["logistics", "transportation", "shipping", "freight", "supply", "chain", "trucking", "delivery"],
+  "required_software": ["SAP TM", "Oracle Transportation", "JDA", "Manhattan Associates"],
+  "common_software": ["Microsoft Teams", "Slack", "Salesforce", "QuickBooks"]
+},
+
+"Accounting": {
+  "keywords": ["accounting", "bookkeeping", "tax", "audit", "financial", "cpa", "payroll"],
+  "required_software": ["QuickBooks", "Sage", "Xero", "Peachtree", "TaxWise"],
+  "common_software": ["Microsoft Teams", "DocuSign", "Salesforce", "Excel"]
+},
+
+"Property Management (Commercial/Residential)": {
+  "keywords": ["property", "management", "rental", "lease", "tenant", "landlord", "commercial", "residential"],
+  "required_software": ["Yardi", "RealPage", "AppFolio", "Buildium", "Rent Manager"],
+  "common_software": ["DocuSign", "QuickBooks", "Microsoft Teams", "Salesforce"]
+},
+"Pharmaceuticals": {
+  "keywords": ["pharmaceutical", "pharma", "drug", "medicine", "clinical", "trials", "fda", "regulatory"],
+  "required_software": ["Veeva", "Oracle Clinical", "Medidata", "SAS", "CTMS"],
+  "common_software": ["Salesforce Life Sciences", "Microsoft Teams", "DocuSign", "Slack"]
+},
+
+"Biotechnology": {
+  "keywords": ["biotech", "biotechnology", "research", "laboratory", "genomics", "bioinformatics"],
+  "required_software": ["LabWare", "Thermo Fisher", "Illumina", "Waters", "Agilent"],
+  "common_software": ["Microsoft Teams", "Slack", "Salesforce", "Google Workspace"]
+},
+
+"Food Services": {
+  "keywords": ["food", "restaurant", "catering", "hospitality", "dining", "kitchen", "menu"],
+  "required_software": ["Toast", "Square", "Resy", "OpenTable", "Aloha POS"],
+  "common_software": ["QuickBooks", "Slack", "Microsoft Teams", "Salesforce"]
+},
+
+"E-commerce / Retail": {
+  "keywords": ["ecommerce", "retail", "online", "store", "shopping", "marketplace", "inventory"],
+  "required_software": ["Shopify", "WooCommerce", "Magento", "BigCommerce", "Amazon Seller"],
+  "common_software": ["Salesforce Commerce", "Microsoft Teams", "Slack", "Mailchimp"]
+},
+
+"Marketing & Advertising Agencies": {
+  "keywords": ["marketing", "advertising", "agency", "creative", "campaign", "digital", "media"],
+  "required_software": ["HubSpot", "Salesforce Marketing Cloud", "Adobe Creative Suite", "Google Ads"],
+  "common_software": ["Slack", "Microsoft Teams", "Asana", "Monday.com"]
+},
+
+"Nonprofit Organizations": {
+  "keywords": ["nonprofit", "charity", "foundation", "donations", "fundraising", "grants"],
+  "required_software": ["Salesforce Nonprofit Cloud", "Blackbaud", "DonorPerfect", "Network for Good"],
+  "common_software": ["Microsoft Teams", "Zoom", "Google Workspace", "QuickBooks"]
+},
+"Government Contractors": {
+  "keywords": ["government", "contractor", "federal", "state", "public", "sector", "gsa", "contract"],
+  "required_software": ["Deltek", "JAMIS", "GovWin", "SAM.gov", "FPDS"],
+  "common_software": ["Microsoft Teams", "Salesforce", "DocuSign", "SharePoint"]
+},
+
+"Energy (Utilities, Oil, Renewables)": {
+  "keywords": ["energy", "utilities", "oil", "gas", "renewable", "solar", "wind", "power", "electric"],
+  "required_software": ["SAP IS-U", "Oracle Utilities", "GE Digital", "Schneider Electric", "ABB"],
+  "common_software": ["Microsoft Teams", "Salesforce", "AutoCAD", "SharePoint"]
+},
+
+"Hospitality (Hotels, Resorts)": {
+  "keywords": ["hospitality", "hotel", "resort", "lodging", "guest", "booking", "reservation"],
+  "required_software": ["Opera PMS", "Salesforce Hospitality", "RMS", "Booking.com", "Expedia"],
+  "common_software": ["Microsoft Teams", "Slack", "QuickBooks", "DocuSign"]
+},
+
+"Travel Agencies": {
+  "keywords": ["travel", "agency", "booking", "vacation", "trip", "airline", "tourism"],
+  "required_software": ["Sabre", "Amadeus", "Travelport", "TripIt", "Concur"],
+  "common_software": ["Salesforce", "Microsoft Teams", "QuickBooks", "DocuSign"]
+},
+
+"Engineering Firms": {
+  "keywords": ["engineering", "design", "structural", "civil", "mechanical", "electrical", "technical"],
+  "required_software": ["AutoCAD", "SolidWorks", "ANSYS", "MATLAB", "Bentley"],
+  "common_software": ["Microsoft Teams", "SharePoint", "Salesforce", "DocuSign"]
+},
+
+"Architecture Firms": {
+  "keywords": ["architecture", "design", "building", "construction", "blueprint", "cad", "bim"],
+  "required_software": ["AutoCAD", "Revit", "SketchUp", "ArchiCAD", "Rhino"],
+  "common_software": ["Microsoft Teams", "SharePoint", "DocuSign", "QuickBooks"]
+},
+"Legal Services": {
+  "keywords": ["legal", "law", "attorney", "lawyer", "litigation", "contract", "compliance", "court"],
+  "required_software": ["Clio", "MyCase", "PracticePanther", "LexisNexis", "Westlaw"],
+  "common_software": ["DocuSign", "Microsoft Teams", "Zoom", "Salesforce", "QuickBooks"]
+},
+
+"Consulting Firms": {
+  "keywords": ["consulting", "consultant", "advisory", "strategy", "business", "management"],
+  "required_software": ["Salesforce", "Microsoft Project", "Tableau", "PowerBI"],
+  "common_software": ["Microsoft Teams", "Slack", "Zoom", "DocuSign", "HubSpot"]
+},
+
+"SaaS / Software Companies": {
+  "keywords": ["saas", "software", "technology", "development", "programming", "app", "platform"],
+  "required_software": ["GitHub", "Jira", "Confluence", "AWS", "Docker", "Kubernetes"],
+  "common_software": ["Slack", "Microsoft Teams", "Zoom", "Salesforce", "HubSpot"]
+},
+
+"Telecommunications": {
+  "keywords": ["telecommunications", "telecom", "wireless", "internet", "broadband", "network"],
+  "required_software": ["Salesforce Communications", "Oracle Communications", "Amdocs"],
+  "common_software": ["Microsoft Teams", "Slack", "ServiceNow", "Salesforce"]
+},
+
+"Cybersecurity Firms": {
+  "keywords": ["cybersecurity", "security", "cyber", "threat", "protection", "firewall", "penetration"],
+  "required_software": ["CrowdStrike", "Splunk", "Palo Alto", "Fortinet", "Check Point"],
+  "common_software": ["Microsoft Teams", "Slack", "Salesforce", "Jira"]
+},
+
+"Aerospace & Defense": {
+  "keywords": ["aerospace", "defense", "aviation", "military", "aircraft", "satellite", "space"],
+  "required_software": ["SAP Defense", "Lockheed Martin", "Boeing systems", "Raytheon"],
+  "common_software": ["Microsoft Teams", "SharePoint", "Salesforce", "AutoCAD"]
+},
+"Agriculture & AgTech": {
+  "keywords": ["agriculture", "farming", "agtech", "crop", "livestock", "precision", "irrigation"],
+  "required_software": ["John Deere Operations", "Climate FieldView", "Granular", "FarmLogs"],
+  "common_software": ["Microsoft Teams", "QuickBooks", "Salesforce", "Google Workspace"]
+},
+
+"Media & Broadcasting": {
+  "keywords": ["media", "broadcasting", "television", "radio", "news", "content", "production"],
+  "required_software": ["Avid", "Adobe Creative Suite", "Final Cut Pro", "Pro Tools"],
+  "common_software": ["Slack", "Microsoft Teams", "Salesforce", "Google Workspace"]
+},
+
+"Creative Agencies": {
+  "keywords": ["creative", "agency", "design", "advertising", "branding", "graphic", "digital"],
+  "required_software": ["Adobe Creative Suite", "Sketch", "Figma", "InVision"],
+  "common_software": ["Slack", "Microsoft Teams", "Asana", "Monday.com"]
+},
+
+"Venture Capital / Private Equity": {
+  "keywords": ["venture", "capital", "private", "equity", "investment", "fund", "portfolio"],
+  "required_software": ["Salesforce Financial Services", "PitchBook", "Carta", "Airtable"],
+  "common_software": ["Microsoft Teams", "Slack", "DocuSign", "Zoom"]
+},
+
+"Human Resources Outsourcing (PEO, Staffing)": {
+  "keywords": ["human", "resources", "hr", "peo", "staffing", "recruitment", "payroll"],
+  "required_software": ["Workday", "ADP", "BambooHR", "Greenhouse", "Lever"],
+  "common_software": ["Microsoft Teams", "Slack", "Salesforce", "DocuSign"]
+},
+
+"Sports Organizations": {
+  "keywords": ["sports", "athletics", "team", "league", "fitness", "recreation", "coaching"],
+  "required_software": ["TeamSnap", "SportsEngine", "Hudl", "MaxPreps"],
+  "common_software": ["Microsoft Teams", "Slack", "QuickBooks", "Salesforce"]
+},
+"Fitness & Wellness": {
+  "keywords": ["fitness", "wellness", "gym", "health", "personal", "training", "yoga", "pilates"],
+  "required_software": ["Mindbody", "ClubReady", "Zen Planner", "Glofox"],
+  "common_software": ["Microsoft Teams", "QuickBooks", "Salesforce", "Square"]
+},
+
+"Personal Services (Spas, Salons, Studios)": {
+  "keywords": ["spa", "salon", "beauty", "hair", "nails", "massage", "studio", "personal", "services"],
+  "required_software": ["Vagaro", "Fresha", "Booker", "Phorest"],
+  "common_software": ["Square", "QuickBooks", "Instagram", "Facebook"]
+},
+
+"Automotive (Sales, Rentals, Maintenance)": {
+  "keywords": ["automotive", "car", "auto", "dealership", "rental", "maintenance", "repair", "parts"],
+  "required_software": ["DealerSocket", "CDK Global", "Reynolds", "Auto/Mate"],
+  "common_software": ["Salesforce Automotive", "QuickBooks", "Microsoft Teams"]
+},
+
+"Insurance Adjusters & TPAs": {
+  "keywords": ["insurance", "adjuster", "tpa", "claims", "third", "party", "administrator"],
+  "required_software": ["Xactimate", "ClaimCenter", "FNOL", "Symbility"],
+  "common_software": ["Salesforce", "Microsoft Teams", "DocuSign"]
+},
+
+"Home Services (Plumbing, Electrical, HVAC)": {
+  "keywords": ["home", "services", "plumbing", "electrical", "hvac", "contractor", "repair", "maintenance"],
+  "required_software": ["ServiceTitan", "Housecall Pro", "Jobber", "FieldEdge"],
+  "common_software": ["QuickBooks", "Salesforce", "Microsoft Teams", "Square"]
+},
+
+"Environmental Services (Waste Management, Recycling)": {
+  "keywords": ["environmental", "waste", "recycling", "sustainability", "green", "cleanup"],
+  "required_software": ["WasteWORKS", "AMCS", "Soft-Pak", "RouteOptix"],
+  "common_software": ["Salesforce", "Microsoft Teams", "QuickBooks"]
+},
+
+"Event Management Companies": {
+  "keywords": ["event", "planning", "wedding", "conference", "meeting", "catering", "venue"],
+  "required_software": ["Cvent", "Eventbrite", "Social Tables", "Planning Pod"],
+  "common_software": ["Salesforce", "QuickBooks", "Slack", "DocuSign"]
+},
+
+"IT Managed Service Providers (MSPs)": {
+  "keywords": ["msp", "managed", "services", "it", "technology", "support", "infrastructure"],
+  "required_software": ["ConnectWise", "Autotask", "Kaseya", "SolarWinds MSP"],
+  "common_software": ["Microsoft Teams", "Slack", "Salesforce", "QuickBooks"]
+},
+
+"Startups - Emerging Industries": {
+  "keywords": ["startup", "emerging", "innovation", "disruptive", "new", "technology", "venture"],
+  "required_software": ["Notion", "Airtable", "Linear", "GitHub"],
+  "common_software": ["Slack", "Zoom", "Google Workspace", "Salesforce Essentials"]
+}
 }
