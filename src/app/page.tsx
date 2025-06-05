@@ -10,6 +10,7 @@ import { AnalysisResult } from '@/types';
 import LeadCaptureForm, { LeadData } from '@/components/LeadCaptureForm';
 import SoftwareSelector from '@/components/dashboard/SoftwareSelector';
 import AutomationDetector from '@/components/dashboard/AutomationDetector';
+import { IntegrationStatus } from '@/types';
 import { 
   Download, 
   FileText, 
@@ -36,12 +37,12 @@ export default function AdvisorPilotDashboard() {
   const [techMaturityScore, setTechMaturityScore] = useState(0);
   const [leadData, setLeadData] = useState<LeadData | null>(null);
   const [showDashboard, setShowDashboard] = useState(false);
-  const [integrationStatuses, setIntegrationStatuses] = useState<Record<string, any>>({});
+  const [integrationStatuses, setIntegrationStatuses] = useState<Record<string, IntegrationStatus>>({});
   const industries = getIndustries();
   const handleLeadSubmit = (data: LeadData) => {
     setLeadData(data);
     setShowDashboard(true);
-    const [integrationStatuses, setIntegrationStatuses] = useState<Record<string, any>>({});
+    const [integrationStatuses, setIntegrationStatuses] = useState<Record<string, IntegrationStatus>>({});
     console.log('New lead captured:', data);
   };
 

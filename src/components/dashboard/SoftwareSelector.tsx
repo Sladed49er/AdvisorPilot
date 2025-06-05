@@ -52,8 +52,8 @@ export default function SoftwareSelector({
       if (status.isUsed) {
         const allIntegrations = Object.keys(status.integrations);
         const activeIntegrations = Object.entries(status.integrations)
-          .filter(([_, isActive]) => isActive)
-          .map(([name, _]) => name);
+          .filter(([, isActive]) => isActive)
+          .map(([name]) => name);
 
         externalStatus[softwareName] = {
           isIntegrated: activeIntegrations.length > 0,
