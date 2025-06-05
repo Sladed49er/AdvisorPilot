@@ -16,7 +16,7 @@ const typedIndustryData = industryData as IndustryDataMap;
 const typedIntegrationData = integrationData as IntegrationData;
 
 export function getIndustries(): string[] {
-  return Object.keys(typedIndustryData);
+  return Object.keys(typedIndustryData).sort();
 }
 
 // Helper function to find matching software names between industry and integration data
