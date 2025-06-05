@@ -355,11 +355,11 @@ const handleLeadSubmit = (data: LeadData) => {
                 {/* Enhanced Software Selector with Integration Toggles */}
                 {selectedIndustry && (
              <SoftwareSelector
-                availableSoftware={getSoftwareByIndustryWithIntegrations(selectedIndustry)}
-                selectedSoftware={selectedSoftware}
-               setSelectedSoftware={setSelectedSoftware}
-              onCalculateROI={calculateROI}
-                  />
+                  selectedIndustry={selectedIndustry}  // ← Add this line
+                  selectedSoftware={selectedSoftware}
+                  setSelectedSoftware={setSelectedSoftware}
+                  onCalculateROI={calculateROI}
+            />
                 )}
 
                 {/* Pain Points */}
