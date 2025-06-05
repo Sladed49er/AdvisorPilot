@@ -11,7 +11,6 @@ import LeadCaptureForm, { LeadData } from '@/components/LeadCaptureForm';
 import SoftwareSelector from '@/components/dashboard/SoftwareSelector';
 import AutomationDetector from '@/components/dashboard/AutomationDetector';
 import { 
-  TrendingUp, 
   Download, 
   FileText, 
   Mail, 
@@ -20,7 +19,6 @@ import {
   Shield,
   Target,
   BarChart3,
-  AlertCircle
 } from 'lucide-react';
 
 export default function AdvisorPilotDashboard() {
@@ -158,7 +156,7 @@ export default function AdvisorPilotDashboard() {
             Welcome, {leadData?.name}! 👋
           </h2>
           <p className="text-gray-600 text-lg">
-            Let's analyze {leadData?.company}'s technology stack and find optimization opportunities.
+            Let&apos;s analyze {leadData?.company}&apos;s technology stack and find optimization opportunities.
           </p>
         </div>
 
