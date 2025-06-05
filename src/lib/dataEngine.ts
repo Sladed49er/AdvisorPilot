@@ -140,14 +140,29 @@ export function findIntegrationOpportunities(selectedSoftware: string[]): {
 // Enhanced analysis with real integration data
 export function analyzeIndustry(industry: string, companySize?: string, selectedSoftware: string[] = []): AnalysisResult {
   // Use the basic software list for the analysis result
-  const software = getSoftwareByIndustry(industry);
-  const integrationOpportunities = findIntegrationOpportunities(selectedSoftware);
-  const recommendations = generateRecommendations(software, companySize, integrationOpportunities);
+  // Use ACTUAL selected software instead of static industry data
+const softwareWithIntegrations = selectedSoftware.map(softwareName => {
+  const matchedName = findSoftwareMatch(softwareName);
+  const integrationData = matchedName ? typedIntegrationData[matchedName] : null;
+  
+  return {
+    name: softwareName,
+    main_functions: integrationData?.main_functions || ['Business Software'],
+    integrates_with: integrationData?.integrates_with || [],
+    verified: integrationData?.verified || false
+  };
+});
+
+const integrationOpportunities = findIntegrationOpportunities(selectedSoftware);
+const recommendations = generateRecommendations(softwareWithIntegrations as any, companySize, integrationOpportunities);
   const totalSavings = recommendations.reduce((sum, rec) => sum + rec.estimated_savings, 0);
 
   return {
     industry,
-    current_stack: software,
+    current_stack: softwareWithIntegrations.map(s => ({
+  ...s,
+  best_used_for_industries: []
+})) as Software[],
     recommendations,
     total_savings: totalSavings,
     integration_opportunities: {
@@ -159,7 +174,7 @@ export function analyzeIndustry(industry: string, companySize?: string, selected
 }
 
 function generateRecommendations(
-  software: Software[], 
+  software: any[],
   companySize?: string, 
   integrationOps?: { missing: IntegrationOpportunity[]; existing: IntegrationOpportunity[]; quickWins: IntegrationOpportunity[]; }
 ): Recommendation[] {
