@@ -36,11 +36,12 @@ export default function AdvisorPilotDashboard() {
   const [techMaturityScore, setTechMaturityScore] = useState(0);
   const [leadData, setLeadData] = useState<LeadData | null>(null);
   const [showDashboard, setShowDashboard] = useState(false);
-
+  const [integrationStatuses, setIntegrationStatuses] = useState<Record<string, any>>({});
   const industries = getIndustries();
   const handleLeadSubmit = (data: LeadData) => {
     setLeadData(data);
     setShowDashboard(true);
+    const [integrationStatuses, setIntegrationStatuses] = useState<Record<string, any>>({});
     console.log('New lead captured:', data);
   };
 
@@ -83,7 +84,8 @@ export default function AdvisorPilotDashboard() {
       const result = analyzeIndustry(
         selectedIndustry, 
         leadData?.companySize, 
-        selectedSoftware
+        selectedSoftware,
+        integrationStatuses
       );
       setAnalysis(result);
       
@@ -333,6 +335,7 @@ export default function AdvisorPilotDashboard() {
                     selectedSoftware={selectedSoftware}
                     setSelectedSoftware={setSelectedSoftware}
                     onCalculateROI={calculateROI}
+                    onIntegrationStatusChange={setIntegrationStatuses}
                   />
                 )}
 
