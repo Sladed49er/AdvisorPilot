@@ -4,7 +4,6 @@ import { useState } from 'react';
 import { 
   getIndustries, 
   analyzeIndustry, 
-  getSoftwareByIndustryWithIntegrations,
   getFrictionsByIndustry 
 } from '@/lib/dataEngine';
 import { AnalysisResult } from '@/types';
