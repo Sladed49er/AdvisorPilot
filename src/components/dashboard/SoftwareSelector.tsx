@@ -16,21 +16,19 @@ interface IntegrationStatus {
   [softwareName: string]: {
     isUsed: boolean;
     integrations: {
-      [integrationName: string]: boolean; // true = already integrated, false = missing
+      [integrationName: string]: boolean;
     };
   };
 }
 
 interface SoftwareSelectorProps {
-  selectedIndustry: string;
   availableSoftware: Software[];
   selectedSoftware: string[];
-  setSelectedSoftware: React.Dispatch<React.SetStateAction<string[]>>;
+  setSelectedSoftware: (software: string[]) => void;
   onCalculateROI: () => void;
 }
 
 export default function SoftwareSelector({
-  selectedIndustry,
   availableSoftware,
   selectedSoftware,
   setSelectedSoftware,
