@@ -31,6 +31,13 @@ export interface IntegrationData {
   [softwareName: string]: SoftwareDetail;
 }
 
+// New interface for tracking integration status
+export interface IntegrationStatus {
+  isIntegrated: boolean;
+  availableIntegrations: string[];
+  activeIntegrations: string[];
+}
+
 export interface IntegrationOpportunity {
   software_a: string;
   software_b: string;
@@ -38,6 +45,7 @@ export interface IntegrationOpportunity {
   difficulty: 'Easy' | 'Medium' | 'Hard';
   estimated_setup_time: string;
   benefits: string[];
+  already_integrated?: boolean; // New property to track if user already has this integration
 }
 
 // Enhanced recommendation with integration details
