@@ -40,39 +40,35 @@ export default function SoftwareSelector({
   const [showIntegrationDetails, setShowIntegrationDetails] = useState<{[key: string]: boolean}>({});
 
   // Get software relevant to the selected industry from your integration data
-    const getIndustryRelevantSoftware = () => {
-      return Object.keys(typedIntegrationData)
-        .filter(softwareName => {
-          const software = typedIntegrationData[softwareName];
+  const getIndustryRelevantSoftware = () => {
+    return Object.keys(typedIntegrationData)
+      .filter(softwareName => {
+        const software = typedIntegrationData[softwareName];
+        
+        // Only show software that's actually tagged for this industry
+        return software.best_used_for_industries.some(industry => {
+          const normalizedIndustry = industry.toLowerCase().replace(/[^a-z0-9]/g, '');
+          const normalizedSelected = selectedIndustry.toLowerCase().replace(/[^a-z0-9]/g, '');
           
-          // More flexible industry matching
-          const industryMatch = software.best_used_for_industries.some(industry => {
-            const normalizedIndustry = industry.toLowerCase().replace(/[^a-z0-9]/g, '');
-            const normalizedSelected = selectedIndustry.toLowerCase().replace(/[^a-z0-9]/g, '');
-            
-            return normalizedIndustry.includes(normalizedSelected) || 
-                  normalizedSelected.includes(normalizedIndustry) ||
-                  industry.toLowerCase().includes('general') || // Show general software
-                  software.integrates_with.length >= 8; // Show highly connected software
-          });
-          
-          return industryMatch;
-        })
-        .map(softwareName => ({
-          name: softwareName,
-          main_functions: typedIntegrationData[softwareName].main_functions,
-          integrates_with: typedIntegrationData[softwareName].integrates_with,
-          integration_count: typedIntegrationData[softwareName].integrates_with.length,
-          verified: typedIntegrationData[softwareName].verified
-        }))
-        .sort((a, b) => {
-          // Sort by: verified first, then by integration count, then alphabetically
-          if (a.verified && !b.verified) return -1;
-          if (!a.verified && b.verified) return 1;
-          if (a.integration_count !== b.integration_count) return b.integration_count - a.integration_count;
-          return a.name.localeCompare(b.name);
+          return normalizedIndustry.includes(normalizedSelected) || 
+                 normalizedSelected.includes(normalizedIndustry);
         });
-    };
+      })
+      .map(softwareName => ({
+        name: softwareName,
+        main_functions: typedIntegrationData[softwareName].main_functions,
+        integrates_with: typedIntegrationData[softwareName].integrates_with,
+        integration_count: typedIntegrationData[softwareName].integrates_with.length,
+        verified: typedIntegrationData[softwareName].verified
+      }))
+      .sort((a, b) => {
+        // Sort by: verified first, then by integration count, then alphabetically
+        if (a.verified && !b.verified) return -1;
+        if (!a.verified && b.verified) return 1;
+        if (a.integration_count !== b.integration_count) return b.integration_count - a.integration_count;
+        return a.name.localeCompare(b.name);
+      });
+  };
 
   const availableSoftware = getIndustryRelevantSoftware();
 
