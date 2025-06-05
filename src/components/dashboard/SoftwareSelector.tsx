@@ -4,6 +4,7 @@
 import { useState, useEffect } from 'react';
 import { Users, CheckCircle, XCircle, Link, Plus } from 'lucide-react';
 import Tooltip from '../ui/Tooltip';
+import faultToleranceData from '@/data/fault-tolerance.json';
 import integrationData from '@/data/integration-data.json';
 import { IntegrationStatus } from '@/types';
 
@@ -14,6 +15,16 @@ const typedIntegrationData = integrationData as {[softwareName: string]: {
   best_used_for_industries: string[];
   verified: boolean;
 }};
+
+// Type the fault tolerance data
+const typedFaultTolerance = faultToleranceData as {
+  name_variations: Record<string, { variants: string[] }>;
+  industry_mappings: Record<string, {
+    keywords: string[];
+    required_software: string[];
+    common_software: string[];
+  }>;
+};
 
 interface IntegrationStatusInternal {
   [softwareName: string]: {
@@ -74,20 +85,47 @@ export default function SoftwareSelector({
     }
   }, [integrationStatus, onIntegrationStatusChange]);
 
-  // Get software relevant to the selected industry from your integration data
+  // Get software relevant to the selected industry using fault-tolerance data
   const getIndustryRelevantSoftware = () => {
     return Object.keys(typedIntegrationData)
       .filter(softwareName => {
         const software = typedIntegrationData[softwareName];
         
-        // Only show software that's actually tagged for this industry
-        return software.best_used_for_industries && software.best_used_for_industries.some(industry => {
+        // Method 1: Check integration-data.json industries (direct matching)
+        const hasDirectMatch = software.best_used_for_industries?.some(industry => {
           const normalizedIndustry = industry.toLowerCase().replace(/[^a-z0-9]/g, '');
           const normalizedSelected = selectedIndustry.toLowerCase().replace(/[^a-z0-9]/g, '');
-          
           return normalizedIndustry.includes(normalizedSelected) || 
                  normalizedSelected.includes(normalizedIndustry);
         });
+        
+        if (hasDirectMatch) return true;
+        
+        // Method 2: Check fault-tolerance industry mappings
+        const industryMapping = typedFaultTolerance.industry_mappings[selectedIndustry];
+        if (industryMapping) {
+          // Check if software is in required list (like HawkSoft for Insurance)
+          if (industryMapping.required_software.includes(softwareName)) {
+            return true;
+          }
+          
+          // Check if software is in common list
+          if (industryMapping.common_software.includes(softwareName)) {
+            return true;
+          }
+          
+          // Check if software's industries match fault-tolerance keywords
+          const hasKeywordMatch = software.best_used_for_industries?.some(industry => {
+            const industryLower = industry.toLowerCase();
+            return industryMapping.keywords.some(keyword => 
+              industryLower.includes(keyword.toLowerCase())
+            );
+          });
+          
+          if (hasKeywordMatch) return true;
+        }
+        
+        return false;
       })
       .map(softwareName => ({
         name: softwareName,
@@ -97,10 +135,22 @@ export default function SoftwareSelector({
         verified: typedIntegrationData[softwareName].verified
       }))
       .sort((a, b) => {
-        // Sort by: verified first, then by integration count, then alphabetically
+        // Enhanced sorting: fault-tolerance required software first
+        const industryMapping = typedFaultTolerance.industry_mappings[selectedIndustry];
+        const aIsRequired = industryMapping?.required_software.includes(a.name) || false;
+        const bIsRequired = industryMapping?.required_software.includes(b.name) || false;
+        
+        if (aIsRequired && !bIsRequired) return -1;
+        if (!aIsRequired && bIsRequired) return 1;
+        
+        // Then verified software
         if (a.verified && !b.verified) return -1;
         if (!a.verified && b.verified) return 1;
+        
+        // Then by integration count
         if (a.integration_count !== b.integration_count) return b.integration_count - a.integration_count;
+        
+        // Finally alphabetically
         return a.name.localeCompare(b.name);
       });
   };
