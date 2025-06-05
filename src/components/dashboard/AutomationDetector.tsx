@@ -81,7 +81,7 @@ export default function AutomationDetector({ selectedSoftware, leadData }: Autom
               Found: {automationAnalysis.detected_platforms.join(', ')}
             </p>
             <p className="text-green-600 text-sm">
-              Great! You're already using automation tools. Here are additional opportunities to maximize your ROI.
+              Great! You&apos;re already using automation tools. Here are additional opportunities to maximize your ROI.
             </p>
           </div>
         ) : (
