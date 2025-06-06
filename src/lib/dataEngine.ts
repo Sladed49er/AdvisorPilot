@@ -17,14 +17,14 @@ import faultToleranceData from '@/data/fault-tolerance.json';
 // Type-safe data casting
 const typedIndustryData = industryData as IndustryDataMap;
 const typedIntegrationData = integrationData as IntegrationData;
-const typedFaultTolerance = faultToleranceData as {
-  name_variations: Record<string, { variants: string[] }>;
-  industry_mappings: Record<string, {
-    keywords: string[];
-    required_software: string[];
-    common_software: string[];
-  }>;
-};
+// const typedFaultTolerance = faultToleranceData as {
+//   name_variations: Record<string, { variants: string[] }>;
+//   industry_mappings: Record<string, {
+//     keywords: string[];
+//     required_software: string[];
+//     common_software: string[];
+//   }>;
+// };
 
 export function getIndustries(): string[] {
   return Object.keys(typedIndustryData).sort();
