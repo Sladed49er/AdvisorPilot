@@ -3,7 +3,8 @@
 import { useState } from 'react';
 import { 
   getIndustries, 
-  analyzeIndustry, 
+  analyzeIndustry,
+  analyzeIndustryWithAI, 
   getFrictionsByIndustry 
 } from '@/lib/dataEngine';
 import { AnalysisResult } from '@/types';
@@ -81,12 +82,14 @@ export default function AdvisorPilotDashboard() {
     
     try {
       // Enhanced analysis with selected software and integration data
-      const result = analyzeIndustry(
-        selectedIndustry, 
-        leadData?.companySize, 
-        selectedSoftware,
-        integrationStatuses
-      );
+     const result = await analyzeIndustryWithAI(
+  selectedIndustry,
+  leadData?.companySize,
+  selectedSoftware,
+  integrationStatuses,
+  [], // customSoftware - will add this later
+  selectedPainPoints
+);
       setAnalysis(result);
       
       // Simulate AI analysis time for better UX
