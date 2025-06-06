@@ -218,11 +218,7 @@ export async function analyzeIndustryWithAI(
   const baseAnalysis = analyzeIndustry(industry, companySize, selectedSoftware, integrationStatuses);
   
   // If no OpenAI key, return base analysis
-  if (!process.env.OPENAI_API_KEY) {
-    console.log('No OpenAI key found, using template-based analysis');
-    return baseAnalysis;
-  }
-
+  
   try {
     // Call AI analysis API
     const response = await fetch('/api/analyze-ai', {
