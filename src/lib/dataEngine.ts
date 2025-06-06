@@ -12,7 +12,7 @@ import {
 import { AIIntegrationAnalysis } from './aiService';
 import industryData from '@/data/industry-ui.json';
 import integrationData from '@/data/integration-data.json';
-import faultToleranceData from '@/data/fault-tolerance.json';
+// import faultToleranceData from '@/data/fault-tolerance.json';
 
 // Type-safe data casting
 const typedIndustryData = industryData as IndustryDataMap;
