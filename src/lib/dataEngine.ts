@@ -6,21 +6,25 @@ import {
   Recommendation, 
   IntegrationData, 
   IntegrationOpportunity,
-  IntegrationMatrix 
+  IntegrationMatrix,
+  IntegrationStatus 
 } from '@/types';
+import { AIIntegrationAnalysis } from './aiService';
 import industryData from '@/data/industry-ui.json';
 import integrationData from '@/data/integration-data.json';
+import faultToleranceData from '@/data/fault-tolerance.json';
 
 // Type-safe data casting
 const typedIndustryData = industryData as IndustryDataMap;
 const typedIntegrationData = integrationData as IntegrationData;
-
-// New interface for tracking integration status
-interface IntegrationStatus {
-  isIntegrated: boolean;
-  availableIntegrations: string[];
-  activeIntegrations: string[];
-}
+const typedFaultTolerance = faultToleranceData as {
+  name_variations: Record<string, { variants: string[] }>;
+  industry_mappings: Record<string, {
+    keywords: string[];
+    required_software: string[];
+    common_software: string[];
+  }>;
+};
 
 export function getIndustries(): string[] {
   return Object.keys(typedIndustryData).sort();
@@ -85,7 +89,7 @@ export function getFrictionsByIndustry(industry: string): string[] {
   return data?.pain_points?.frictions || [];
 }
 
-// New function to find real integration opportunities using your data
+// Enhanced function to find real integration opportunities using your data
 export function findIntegrationOpportunities(
   selectedSoftware: string[],
   integrationStatuses?: Record<string, IntegrationStatus>
@@ -198,6 +202,75 @@ export function analyzeIndustry(
       quick_wins: integrationOpportunities.quickWins
     }
   };
+}
+
+// Enhanced analysis with AI integration
+export async function analyzeIndustryWithAI(
+  industry: string, 
+  companySize?: string, 
+  selectedSoftware: string[] = [],
+  integrationStatuses?: Record<string, IntegrationStatus>,
+  customSoftware: string[] = [],
+  painPoints: string[] = []
+): Promise<AnalysisResult & { aiInsights?: AIIntegrationAnalysis }> {
+  
+  // Start with your existing logic
+  const baseAnalysis = analyzeIndustry(industry, companySize, selectedSoftware, integrationStatuses);
+  
+  // If no OpenAI key, return base analysis
+  if (!process.env.OPENAI_API_KEY) {
+    console.log('No OpenAI key found, using template-based analysis');
+    return baseAnalysis;
+  }
+
+  try {
+    // Call AI analysis API
+    const response = await fetch('/api/analyze-ai', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        selectedSoftware,
+        customSoftware,
+        industry,
+        painPoints,
+        companySize
+      })
+    });
+
+    if (!response.ok) {
+      console.error('AI API call failed:', response.statusText);
+      return baseAnalysis;
+    }
+
+    const aiResult = await response.json();
+    
+    if (!aiResult.success) {
+      console.error('AI analysis failed:', aiResult.error);
+      return baseAnalysis;
+    }
+
+    const aiInsights: AIIntegrationAnalysis = aiResult.data;
+
+    // Enhance recommendations with AI insights
+    const enhancedRecommendations = generateAIEnhancedRecommendations(
+      baseAnalysis.recommendations,
+      aiInsights,
+      companySize,
+      selectedSoftware
+    );
+
+    return {
+      ...baseAnalysis,
+      recommendations: enhancedRecommendations,
+      aiInsights
+    };
+
+  } catch (error) {
+    console.error('AI analysis error:', error);
+    return baseAnalysis;
+  }
 }
 
 function generateRecommendations(
@@ -389,6 +462,111 @@ function generateRecommendations(
     const priorityDiff = priorityOrder[b.priority] - priorityOrder[a.priority];
     if (priorityDiff !== 0) return priorityDiff;
     
+    // Finally by savings
+    return b.estimated_savings - a.estimated_savings;
+  });
+}
+
+// Generate AI-enhanced recommendations
+function generateAIEnhancedRecommendations(
+  baseRecommendations: Recommendation[],
+  aiInsights: AIIntegrationAnalysis,
+  companySize?: string,
+  selectedSoftware: string[] = []
+): Recommendation[] {
+  
+  const enhancedRecommendations: Recommendation[] = [];
+  const sizeMultiplier = {
+    '1-50': 1,
+    '51-200': 2.5,
+    '200+': 5
+  };
+  const multiplier = companySize ? sizeMultiplier[companySize as keyof typeof sizeMultiplier] || 1 : 1;
+
+  // 1. Add AI contextual recommendations first (highest priority)
+  aiInsights.contextualRecommendations.forEach((recommendation, index) => {
+    enhancedRecommendations.push({
+      id: `ai-contextual-${index}`,
+      title: `🤖 Smart Insight: ${recommendation.split(':')[0] || 'AI Recommendation'}`,
+      description: recommendation,
+      priority: 'High',
+      category: 'AI Insight',
+      estimated_savings: Math.round(8000 * multiplier),
+      software_involved: selectedSoftware.slice(0, 2), // Most relevant software
+      integration_details: {
+        difficulty: 'Smart',
+        setup_time: 'AI-optimized',
+        middleware_required: false,
+        specific_benefits: ['AI-powered optimization', 'Contextual integration', 'Intelligent automation']
+      }
+    });
+  });
+
+  // 2. Add custom software insights
+  aiInsights.customSoftwareInsights.forEach((insight, index) => {
+    if (insight.suggestedIntegrations.length > 0) {
+      enhancedRecommendations.push({
+        id: `ai-custom-${index}`,
+        title: `🔗 ${insight.softwareName} Integration Opportunities`,
+        description: `Your ${insight.softwareName} (${insight.category}) can integrate with: ${insight.suggestedIntegrations.join(', ')}. ${insight.industryRelevance}`,
+        priority: 'Medium',
+        category: 'Custom Software',
+        estimated_savings: Math.round(5000 * multiplier),
+        software_involved: [insight.softwareName, ...insight.suggestedIntegrations.slice(0, 2)],
+        integration_details: {
+          difficulty: 'Medium',
+          setup_time: '2-3 weeks',
+          middleware_required: true,
+          specific_benefits: ['Custom software optimization', 'Improved data flow', 'Enhanced productivity']
+        }
+      });
+    }
+  });
+
+  // 3. Filter base recommendations to avoid VoIP conflicts
+  const filteredBaseRecommendations = baseRecommendations.filter(rec => {
+    // If AI detected VoIP, filter out VoIP recommendations
+    if (aiInsights.hasVoIP && rec.category === 'Communication') {
+      return false;
+    }
+    return true;
+  });
+
+  // 4. Add VoIP integration recommendation if they have VoIP
+  if (aiInsights.hasVoIP && aiInsights.voipProvider) {
+    enhancedRecommendations.push({
+      id: 'ai-voip-integration',
+      title: `📞 Maximize ${aiInsights.voipProvider} Integration`,
+      description: `You're already using ${aiInsights.voipProvider} for communications. Let's optimize its integration with your CRM and business tools for call logging, contact sync, and workflow automation.`,
+      priority: 'High',
+      category: 'VoIP Integration',
+      estimated_savings: Math.round(12000 * multiplier),
+      software_involved: [aiInsights.voipProvider, ...selectedSoftware.slice(0, 2)],
+      integration_details: {
+        difficulty: 'Easy',
+        setup_time: '1-2 weeks',
+        middleware_required: false,
+        specific_benefits: ['Call logging automation', 'Contact synchronization', 'Click-to-dial functionality']
+      }
+    });
+  }
+
+  // 5. Add filtered base recommendations
+  enhancedRecommendations.push(...filteredBaseRecommendations);
+
+  // 6. Sort by priority and AI insights first
+  return enhancedRecommendations.sort((a, b) => {
+    // AI insights first
+    const aIsAI = a.category === 'AI Insight';
+    const bIsAI = b.category === 'AI Insight';
+    if (aIsAI && !bIsAI) return -1;
+    if (!aIsAI && bIsAI) return 1;
+
+    // Then by priority
+    const priorityOrder = { 'High': 3, 'Medium': 2, 'Low': 1 };
+    const priorityDiff = priorityOrder[b.priority] - priorityOrder[a.priority];
+    if (priorityDiff !== 0) return priorityDiff;
+
     // Finally by savings
     return b.estimated_savings - a.estimated_savings;
   });
